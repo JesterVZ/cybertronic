@@ -57,6 +57,7 @@ input[type = radio]:checked + label{
     height: 50px;
     cursor: pointer;
     margin-top: 18px;
+    outline: none;
 }
 .input:hover{
     background-color: rgb(133, 95, 223);
@@ -67,6 +68,7 @@ input[type = radio]:checked + label{
 }
 .reg-input{
     display: block;
+    outline: none;
     margin-top: 17px;
     margin-left: 200px;
     border: 1px solid #ADADAD;
