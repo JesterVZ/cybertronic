@@ -16,6 +16,9 @@ input[type = radio] + label{
     border-bottom: 1px solid #ADADAD;
     cursor: pointer;
 }
+#reg-form{
+    display: none;
+}
 .reg-change label{
     margin-right: 30px;
     font-weight: 100;
@@ -28,7 +31,7 @@ input[type = radio]:checked + label{
     display: inline-block;
     width: 50%;
     height: 100%;
-    background-image: url("..//img/back.png");
+    background-image: url("../img/back.png");
     background-size: contain;
 }
 .reg{
