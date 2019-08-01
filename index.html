@@ -23,17 +23,28 @@
                     Сервис для взаимодействия<br>
                      учителя и учеников учреждений<br>
                      дополнительного образования
-            </div>  
+            </div>
+            <div id="space"></div>
             
         </div>
         
     </div>
     <div class="reg">
+            <div class="reg-error">
+                    Ошибка регистрации
+                </div>
+
         <div class="reg-change">
                 <input type="radio" id="radio1" name="radios" value="new" checked onclick="showReg();">
                 <label for="radio1">Вход</label>
              <input type="radio" id="radio2" name="radios"value="false" onclick="showLogin();">
                 <label for="radio2">Регистрация</label>
+        </div>
+        <div class="reg-error">
+            Ошибка регистрации
+        </div>
+        <div class="reg-success">
+            Благодарим за регистрацию
         </div>
         <div class="reg-form" id="login-form">
             <input type="text" class="reg-input login" placeholder="Логин">
@@ -46,6 +57,7 @@
             <input type="text" class="reg-input" placeholder="Введите пароль еще раз">
             <button class="input">Зарегестрироваться</button>
         </div>
+
     </div>
     <script src="js/change-form.js"></script>
 </body>
