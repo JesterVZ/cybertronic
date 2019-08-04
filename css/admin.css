@@ -62,6 +62,7 @@ a.base-link{
 .buttons:hover{
     color: #fff;
 }
+
 .profile{
     float: right;
     margin-right: 24px;
@@ -242,10 +243,10 @@ input[type=checkbox]:not(old) + label > span{
     border-radius    : 0.25em;
     vertical-align   : bottom;
 }
-input[type = radio]{
+.input-table{
     display: none;
 }
-input[type = radio] + label{
+.input-table + label{
     display: inline-block;
     font-size: 13px;
     line-height: 15px;
@@ -254,9 +255,23 @@ input[type = radio] + label{
     border-bottom: 1px solid #ADADAD;
     cursor: pointer;
 }
-input[type = radio]:checked + label{
+.input-table:checked + label{
     color: #6A3AD7;
     border-bottom: 1px solid #6A3AD7;
+}
+.label-models, .label-header-users, .label-magazine{
+    border: none;
+    color: #A2DFF6;
+}
+.input-header{
+    display: none;
+}
+.input-header + label{
+    cursor: pointer;
+}
+.input-header:checked + label{
+    border: none;
+    color: #fff;
 }
 .sort-role p{
     font-size: 12px;

@@ -18,9 +18,18 @@
                 <img src="img/logo.png" alt="Логотип">
                 <div id="logo">Кибертроник</div>
             </li>
-            <li class="nav-item buttons">Модели</li>
-            <li class="nav-item buttons">Пользователи</li>
-            <li class="nav-item buttons">Журнал действий</li>
+            <li class="nav-item buttons">
+                <input type="radio" id="radio-models" name="header-menu-button" class="input-header" value="new" checked>
+                <label for="radio-models" class="label-models">Модели</label>
+            </li>
+            <li class="nav-item buttons">
+                <input type="radio" id="radio-header-users" class="input-header" name="header-menu-button" value="new">
+                <label for="radio-header-users" class="label-header-users">Пользователи</label>
+            </li>
+            <li class="nav-item buttons">
+                <input type="radio" id="radio-magazine" class="input-header" name="header-menu-button" value="new">
+                <label for="radio-magazine" class="label-magazine">Журнал действий</label>
+            </li>
             <li class="nav-item profile">
                 <div class="profile-text">
                     <div class="profile-name">Петров Петр</div>
@@ -31,11 +40,11 @@
         </ul>
     </div>
     <div class="user-menu">
-        <input type="radio" id="radio-users" name="radios" value="new" checked>
+        <input type="radio" id="radio-users" class="input-table" name="radios" value="new" checked>
         <label for="radio-users" class="label-users">Пользователи</label>
-        <input type="radio" id="radio-groups" name="radios" value="new">
+        <input type="radio" id="radio-groups" class="input-table" name="radios" value="new">
         <label for="radio-groups" class="label-groups">Группы</label>
-        <input type="radio" id="radio-branch" name="radios" value="new">
+        <input type="radio" id="radio-branch" class="input-table" name="radios" value="new">
         <label for="radio-branch" class="label-branch">Филиалы</label>
         <li class="menu-item create-user-button">
             <button>Создать пользователя</button>
