@@ -14,45 +14,186 @@
     <div class="header">
         <ul class="nav">
             <li class="nav-item header-logo">
-                    <img src="img/logo.png" alt="Логотип">
-                    <div id="logo">Кибертроник</div>
+                <img src="img/logo.png" alt="Логотип">
+                <div id="logo">Кибертроник</div>
             </li>
-            <li class="nav-item">Модели</li>
-            <li class="nav-item">Пользователи</li>
-            <li class="nav-item">Журнал действий</li>
-            <li class="nav-item">
-                <div class="profile-name">Петров Петр</div>
-                <div class="profile-group">Группа 1</div>
+            <li class="nav-item buttons">Модели</li>
+            <li class="nav-item buttons">Пользователи</li>
+            <li class="nav-item buttons">Журнал действий</li>
+            <li class="nav-item profile">
+                <div class="profile-text">
+                    <div class="profile-name">Петров Петр</div>
+                    <div class="profile-group">Группа 1</div>
+                </div>
                 <button class="exit">Выход</button>
             </li>
         </ul>
-          <!--  <div class="header-logo">
-                    <img src="img/logo.png" alt="Логотип">
-                    <div id="logo">Кибертроник</div>
-                </div>
-        <div class="header-menu">
-           <div class="container">
-                <div class="row">
-                    <div class="col-4">
-                        Модели
-                    </div>
-                    <div class="col-4">
-                        Пользователи
-                    </div>
-                    <div class="col-4">
-                        Журнал действий
-                    </div>
-
-                </div>
-
-            </div> 
-        </div>
-        <div class="header-profile">
-            <div class="profile-name">Петров Петр</div>
-            <div class="profile-group">Группа 1</div>
-            <button class="exit">Выход</button>-->
-        </div>
     </div>
+    <div class="user-menu">
+            <input type="radio" id="radio-users" name="radios" value="new" checked>
+            <label for="radio-users" class="label-users">Пользователи</label>
+            <input type="radio" id="radio-groups" name="radios" value="new">
+            <label for="radio-groups" class="label-groups">Группы</label>
+            <input type="radio" id="radio-branch" name="radios" value="new">
+            <label for="radio-branch" class="label-branch">Филиалы</label>
+            <li class="menu-item create-user-button">
+                <button>Создать пользователя</button>
+            </li>
+
+        </div>
+
+        <div class="admin-table">
+            <div class="search">
+                <input type="search" class="input-search" placeholder="Поиск по ФИО, логину">
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col" id="table-header">Роль</th>
+                        <th scope="col">ФИО</th>
+                        <th scope="col">Логин</th>
+                        <th scope="col">Филиал</th>
+                        <th scope="col">Группа</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="space">
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr id="tr-row">
+                        <th scope="row" class="client-day-time">
+                            <button class="student">Ученик</button>
+                        </th>
+                        <td class="client-day-incoming-number">
+                            Константинопольский <br>
+                            Константин Константинович
+                        </td>
+                        <td class="client-day-type">
+                            <img src="img/login-avatar.JPG" alt="">
+                            konstantinopolsky_kk
+                        </td>
+                        <td>
+                            <div class="branch">
+                                Филиал 1
+                            </div>
+                        </td>
+                        <td>Группа 1 (4-6 лет)</td>
+
+                    </tr>
+
+                    <tr id="tr-row">
+                        <th scope="row" class="client-day-time">
+                            <button class="student">Ученик</button>
+                        </th>
+                        <td class="client-day-incoming-number">
+                            Иванов <br>
+                            Бельсемберг Космический
+                        </td>
+                        <td class="client-day-type">
+                            <img src="img/login-avatar.JPG" alt="">
+                            ivanov_bk
+                        </td>
+                        <td>
+                            <div class="branch">
+                                Филиал 2
+                            </div>
+                        </td>
+                        <td>Группа 1 (4-6 лет)</td>
+
+                    </tr>
+
+                    <tr id="tr-row">
+                        <th scope="row" class="client-day-time">
+                            <button class="student teacher">Учитель</button>
+
+                        </th>
+                        <td class="client-day-incoming-number">
+                            Константинопольский<br>
+                            Константин Константинович
+                        </td>
+                        <td class="client-day-type">
+                            <img src="img/login-avatar.JPG" alt="">
+                            konstantinopolsky_kk
+                        </td>
+                        <td>
+                            <div class="branch list">
+                                2 филиала
+                            </div>
+                        </td>
+                        <td>3 группы</td>
+
+                    </tr>
+
+                    <tr id="tr-row">
+                        <th scope="row" class="client-day-time">
+                            <button class="student teacher">Учитель</button>
+                        </th>
+                        <td class="client-day-incoming-number">
+                            Петровский<br>
+                            Роман Валерьевич
+                        </td>
+                        <td class="client-day-type">
+                            <img src="img/login-avatar.JPG" alt="">
+                            petrovsky_rv
+                        </td>
+                        <td>
+                            <div class="branch">
+                                Филиал 1
+                            </div>
+                        </td>
+                        <td>Группа 1 (4-6 лет)</td>
+
+                    </tr>
+                    <tr id="tr-row">
+                        <th scope="row" class="client-day-time">
+                            <button class="student">Ученик</button>
+                        </th>
+                        <td class="client-day-incoming-number">Константинопольский<br>
+                            Константин Константинович</td>
+                        <td class="client-day-type">
+                            <img src="img/login-avatar.JPG" alt="">
+                            konstantinopolsky_kk
+                        </td>
+                        <td>
+                            <div class="branch">
+                                Филиал 1
+                            </div>
+                        </td>
+                        <td>Группа 1 (4-6 лет)</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="sort">
+            <div class="sort-role">
+                <p>Роль пользователя</p>
+                <p><input type="checkbox" name="a">Ученик</p>
+                <p><input type="checkbox" name="a">Учитель</p>
+            </div>
+            <div class="sort-branch">
+                    <p>Филиал</p>
+                    <p><input type="checkbox" name="a">Филиал 1</p>
+                    <p><input type="checkbox" name="a">Филиал 2</p>
+                    <p><input type="checkbox" name="a">Филиал 3</p>
+                    <p><input type="checkbox" name="a">Филиал 4</p>
+            </div>
+            <div class="sort-group">
+                    <p>Филиал</p>
+                    <p><input type="checkbox" name="a">Группа 1 (4-6 лет)</p>
+                    <p><input type="checkbox" name="a">Группа 2 (7-9 лет)</p>
+                    <p><input type="checkbox" name="a">Группа 3 (10-12 лет)</p>
+                    <p><input type="checkbox" name="a">Группа 4 (13-16 лет)</p>
+            </div>
+            </div>
+
 </body>
 
 </html>

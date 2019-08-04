@@ -37,9 +37,11 @@ input[type = radio]:checked + label{
     background-size: contain;
 }
 .reg{
-    display: inline-block;
-    width: 50%;
-    margin-top: 305px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    margin-top: -111px;
 }
 .reg-change, .input{
     margin-left: 200px;
@@ -87,7 +89,7 @@ input[type = radio]:checked + label{
     text-align: left;
     width: 400px;
     margin: 0 auto;
-    top: 43%;
+    top:50%;
     position: relative;
     margin-top: -111px;
 }
@@ -148,7 +150,11 @@ input[type = radio]:checked + label{
     margin-bottom: 50px;
 }
 .reg-container{
+    float: left;
+    display: inline-block;
+    width: 50%;
     height: 100%;
+
 }
 @media(max-width: 1110px){
     .reg-logo-logotype{
@@ -180,6 +186,10 @@ input[type = radio]:checked + label{
     }
 }
 /*admin*/
+ul{
+    margin: 0;
+    padding: 0;
+}
 a.white-link{
     color: #fff;
 }
@@ -198,7 +208,7 @@ a.base-link{
     background-image: url("../img/Rectangleheader.jpg");
     background-size: cover;
 }
-.nav-item{
+.nav-item, .menu-item{
     display: inline-block;
 }
 .header-menu, .header-profile, .header-logo{
@@ -221,4 +231,157 @@ a.base-link{
     margin-bottom: 10px;
     vertical-align: top;
     margin-top: 16px;
+}
+.nav{
+    text-align: center;
+}
+.buttons{
+    margin-right: 18px;
+    margin-left: 18px;
+    margin-top: 21px;
+    color: #A2DFF6;
+    cursor: pointer;
+}
+.buttons:hover{
+    color: #fff;
+}
+.profile{
+    float: right;
+    margin-right: 24px;
+}
+.exit, .profile-text{
+    display: inline-block;
+}
+.exit{
+    vertical-align: top;
+    margin-top: 12px;
+    background-color: transparent;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid #FFFFFF;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    height: 36px;
+    width: 86px;
+}
+.profile-text{
+    text-align: left;
+    margin-top: 12px;
+    width: 100px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #fff;
+}
+.profile-group{
+    opacity: 0.5;
+}
+.header-logo{
+    float: left;
+}
+/*user-menu*/
+.user-menu{
+    margin-top: 13px;
+    margin-left: 57px;
+    height: 50px;
+    border-bottom: 1px solid #cccccc;
+}
+.create-user-button{
+    float: right;
+}
+.create-user-button button{
+    width: 226px;
+    height: 36px;
+    background: #00BFA5;
+    border-radius: 20px;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    line-height: 19px;
+}
+.label-users, .label-groups, .label-branch{
+    margin-right: 59px;
+}
+.search{
+    margin-left: 57px;
+    margin-top: 26px;
+}
+.input-search{
+    width: 95%;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    height: 40px;
+    padding: 10px;
+}
+.search{
+    width: 100%;
+}
+/*table*/
+.admin-table{
+    display: inline-block;
+    margin-left: 57px;
+    width: 63%;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #949494;
+    text-align: left;
+}
+#tr-row{
+    height: 60px;
+}
+.table td, .table th{
+    vertical-align: middle;
+    border-bottom: 1px solid #CCCCCC;
+    height: 40px;
+}
+
+.client-day-type img{
+    width: 20px;
+    height: 20px;
+}
+.student{
+    color: #fff;
+    background-color: #EB5757;
+    border-radius: 16px;
+    font-size: 13px;
+    border: none;
+    height: 24px;
+    width: 71px;
+    line-height: 16px;
+}
+.branch{
+    display: inline-block;
+    border-radius: 16px;
+    font-size: 13px;
+    border: none;
+    background-color: #DFDFDF;
+    height: 24px;
+    width: 83px;
+    text-align: center;
+    padding: 5px;
+}
+.teacher{
+    background-color: #683CD7;
+}
+.space th{
+    border: none;
+    height: 10px;
+}
+.sort{
+    display: inline-block;
+    float: right;
+    height: 100%;
+    width: 29%;
+    background-color: #F4F2F5;;
 }
