@@ -19,7 +19,8 @@
                 <div id="logo">Кибертроник</div>
             </li>
             <li class="nav-item buttons">
-                <input type="radio" id="radio-models" name="header-menu-button" class="input-header" value="new" checked>
+                <input type="radio" id="radio-models" name="header-menu-button" class="input-header" value="new"
+                    checked>
                 <label for="radio-models" class="label-models">Модели</label>
             </li>
             <li class="nav-item buttons">
@@ -39,7 +40,7 @@
             </li>
         </ul>
     </div>
-     <div class="user-menu">
+    <div class="user-menu">
         <input type="radio" id="radio-users" class="input-table" name="radios" value="new" checked>
         <label for="radio-users" class="label-users">Пользователи</label>
         <input type="radio" id="radio-groups" class="input-table" name="radios" value="new">
@@ -76,7 +77,7 @@
                     <th></th>
                     <th></th>
                 </tr>
-                <tr id="tr-row">
+                <tr class="tr-row">
                     <th scope="row" class="client-day-time">
                         <div class="student">Ученик</div>
                     </th>
@@ -97,7 +98,7 @@
 
                 </tr>
 
-                <tr id="tr-row">
+                <tr class="tr-row">
                     <th scope="row" class="client-day-time">
                         <div class="student">Ученик</div>
                     </th>
@@ -118,7 +119,7 @@
 
                 </tr>
 
-                <tr id="tr-row">
+                <tr class="tr-row">
                     <th scope="row" class="client-day-time">
                         <div class="student teacher">Учитель</div>
 
@@ -136,11 +137,15 @@
                             2 филиала
                         </div>
                     </td>
-                    <td>3 группы</td>
+                    <td>
+                        <div class="branch list">
+                            3 группы
+                        </div>
+                    </td>
 
                 </tr>
 
-                <tr id="tr-row">
+                <tr class="tr-row">
                     <th scope="row" class="client-day-time">
                         <div class="student teacher">Учитель</div>
                     </th>
@@ -160,7 +165,7 @@
                     <td>Группа 1 (4-6 лет)</td>
 
                 </tr>
-                <tr id="tr-row">
+                <tr class="tr-row">
                     <th scope="row" class="client-day-time">
                         <div class="student">Ученик</div>
                     </th>
@@ -181,6 +186,14 @@
 
             </tbody>
         </table>
+        <div class="pagination">
+                <a href="#">❮</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">❯</a>
+              </div>
     </div>
     <div class="sort">
         <div class="sort-role">
@@ -192,7 +205,7 @@
             <div>
                 <input id="checkbox1" type="checkbox" name="checkbox" value="1">
                 <label for="checkbox1"><span><span></span></span>Учитель</label>
-            </div> 
+            </div>
         </div>
         <div class="sort-branch">
             <p>Филиал</p>
@@ -231,7 +244,10 @@
                 <input id="checkbox1" type="checkbox" name="checkbox" value="1">
                 <label for="checkbox1"><span><span></span></span>Группа 4 (13-16 лет)</label>
             </div>
-        </div>
+        </div> 
+        <div class="sort-apply-button">
+            <button>Применить</button>
+        </div> 
     </div>
 
 </body>
