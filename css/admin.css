@@ -135,19 +135,19 @@ a.base-link{
     margin-right: 59px;
 }
 .search{
-    margin-left: 57px;
+    width: 100%;
     margin-top: 26px;
 }
 .input-search{
     width: 95%;
+    -webkit-appearance: none;
     border-radius: 5px;
     border: 1px solid #CCCCCC;
     height: 40px;
     padding: 10px;
 }
-.search{
-    width: 100%;
-}
+
+
 /*table*/
 .admin-table{
     display: inline-block;
@@ -191,14 +191,13 @@ th{
     width: 71px;
     line-height: 16px;
 }
-.branch{
+.branch, .group{
     display: inline-block;
     border-radius: 16px;
     font-size: 13px;
     border: none;
     background-color: #DFDFDF;
     height: 24px;
-    width: 83px;
     text-align: center;
     padding: 5px;
 }
