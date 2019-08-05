@@ -257,7 +257,7 @@ input[type=checkbox]:not(old) + label > span{
     border-radius    : 0.25em;
     vertical-align   : bottom;
 }
-.input-table{
+.input-table, .input-header{
     display: none;
 }
 .input-table + label{
@@ -277,9 +277,6 @@ input[type=checkbox]:not(old) + label > span{
 .label-models, .label-header-users, .label-magazine{
     border: none;
     color: #A2DFF6;
-}
-.input-header{
-    display: none;
 }
 .input-header + label{
     cursor: pointer;
