@@ -41,6 +41,7 @@ ul{
     text-align: center;
 }
 .buttons{
+    font-size: 16px;
     margin-right: 18px;
     margin-left: 18px;
     margin-top: 21px;
@@ -88,6 +89,12 @@ ul{
 }
 .input-table, .input-header{
     display: none;
+}
+.input-header + label{
+    cursor: pointer;
+}
+.input-header:checked + label{
+    color: #fff;
 }
 .back-arrow, .name{
     display: inline-block;
