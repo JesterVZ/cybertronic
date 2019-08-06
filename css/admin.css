@@ -2,14 +2,13 @@ body, html{
     margin: 0;
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    background-color: rgb(249, 249, 250);
 }
 ul{
     margin: 0;
     padding: 0;
 }
-.multi-roles{
-    background-color: #2196F3;
-}
+
 a.white-link{
     color: #fff;
 }
@@ -103,9 +102,10 @@ a.base-link{
 }
 /*user-menu*/
 .user-menu{
-    margin-left: 57px;
+    padding-left: 57px;
     height: 81px;
     border-bottom: 1px solid #ADADAD;
+    background-color: #fff;
 }
 .create-user-button{
     float: right;
@@ -146,8 +146,6 @@ a.base-link{
     height: 40px;
     padding: 10px;
 }
-
-
 /*table*/
 .admin-table{
     display: inline-block;
@@ -168,6 +166,13 @@ th{
 }
 .tr-row{
     height: 60px;
+}
+.pagination-row{
+    width: 100%;
+    text-align: center;
+}
+.tr-row:hover{
+    background-color: #fff;
 }
 .table td, .table th{
     vertical-align: middle;
@@ -207,6 +212,10 @@ th{
 }
 .teacher{
     background-color: #683CD7;
+}
+.multi-roles{
+    background-color: #2196F3;
+    color: #fff;
 }
 .space th{
     border: none;
@@ -304,7 +313,6 @@ input[type=checkbox]:not(old) + label > span{
 }
 .pagination{
     display: inline-block;
-    float: right;
     margin-top: 27px;
 }
 .pagination a {

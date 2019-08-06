@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/create-user.css">
+    <link rel="stylesheet" href="css/multiselect/jquery.multiSelect.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,700&display=swap" rel="stylesheet">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
     <title>Создать пользователя</title>
 </head>
 
@@ -120,16 +123,17 @@
                     <option value="Филиал 4">Филиал 4</option>
                 </select>
             </div>
-            <div class="input-block">
+            <div class="input-block multiselect-input">
                 <div class="input-block-header">
                     Группа
                 </div>
-                <select size="1" name="" class="select-role">
+                <div id="multiselect"></div>
+               <!-- <select size="1" name="" class="select-role">
                     <option value="Группа 1">Группа 1 (4-6 лет)</option>
                     <option value="Группа 2">Группа 2 (7-9 лет)</option>
                     <option value="Группа 3">Группа 3 (10-12 лет)</option>
                     <option value="Группа 4">Группа 4 (13-16 лет)</option>
-                </select>
+                </select>-->
             </div>
 
 
@@ -143,6 +147,19 @@
             </div>
         </div>
     </form>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery.multiSelect.min.js"></script>
+    <script type="text/javascript">
+        $("#multiselect").multiSelect({
+            title: "Группы",
+            elements: [
+                "Группа 1",
+                "Группа 2",
+                "Группа 3",
+                "Группа 4",
+            ]
+        });
+    </script>
 </body>
 
 </html>
