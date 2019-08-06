@@ -197,6 +197,7 @@ th{
     line-height: 16px;
 }
 .branch, .group{
+    min-width: 71px;
     display: inline-block;
     border-radius: 16px;
     font-size: 13px;
