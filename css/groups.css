@@ -1,0 +1,98 @@
+body, html{
+    margin: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    margin: 0;
+    height: 60px;
+    background-image: url("../img/Rectangleheader.jpg");
+    background-size: cover;
+}
+.nav-item, .menu-item{
+    display: inline-block;
+}
+.header-menu, .header-profile, .header-logo{
+    display: inline-block;
+}
+
+.header-logo img {
+    height: 43px;
+    width: 39px;
+    margin-top: 8px;
+    margin-left: 13px;
+}
+#logo{
+    font-family: Roboto Slab;
+    font-size: 20px;
+    display: inline-block;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+    vertical-align: top;
+    margin-top: 16px;
+}
+.nav{
+    text-align: center;
+}
+.buttons{
+    font-size: 16px;
+    margin-right: 18px;
+    margin-left: 18px;
+    margin-top: 21px;
+    color: #A2DFF6;
+    cursor: pointer;
+}
+.buttons:hover{
+    color: #fff;
+}
+
+.profile{
+    float: right;
+    margin-right: 24px;
+}
+.exit, .profile-text{
+    display: inline-block;
+}
+.exit{
+    vertical-align: top;
+    margin-top: 12px;
+    background-color: transparent;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid #FFFFFF;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    height: 36px;
+    width: 86px;
+}
+.profile-text{
+    text-align: left;
+    margin-top: 12px;
+    width: 100px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #fff;
+}
+.profile-group{
+    opacity: 0.5;
+}
+.header-logo{
+    float: left;
+}
+.input-table, .input-header{
+    display: none;
+}
+.input-header + label{
+    cursor: pointer;
+}
+.input-header:checked + label{
+    color: #fff;
+}

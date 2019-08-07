@@ -331,3 +331,6 @@ input[type=checkbox]:not(old) + label > span{
     background-color: #DFDFDF;
     border-radius: 50%;
 }
+#user_list_form{
+    height: 100%;
+}
