@@ -61,10 +61,10 @@
             <thead>
                 <tr>
                     <th scope="col" id="table-header">Роль</th>
-                    <th scope="col">ФИО</th>
-                    <th scope="col">Логин</th>
-                    <th scope="col">Филиал</th>
-                    <th scope="col">Группа</th>
+                    <th scope="col" id="table-header">ФИО</th>
+                    <th scope="col" id="table-header">Логин</th>
+                    <th scope="col" id="table-header">Филиал</th>
+                    <th scope="col" id="table-header">Группа</th>
 
                 </tr>
             </thead>
@@ -78,16 +78,18 @@
                     <th></th>
                 </tr>
                 <tr class="tr-row">
-                    <th scope="row" class="client-day-time">
+                    <th scope="row" class="client-status">
                         <div class="student">Ученик</div>
                     </th>
-                    <td class="client-day-incoming-number">
+                    <td class="client-name">
                         Константинопольский <br>
                         Константин Константинович
                     </td>
-                    <td class="client-day-type">
-                        <img src="img/icons/login-avatar.JPG" alt="">
-                        konstantinopolsky_kk
+                    <td class="client-img">
+                        <img src="img/icons/login-avatar.png" alt="">
+                        <div class="client-login">
+                            konstantinopolsky_kk
+                        </div>
                     </td>
                     <td>
                         <div class="branch">
@@ -103,16 +105,18 @@
                 </tr>
 
                 <tr class="tr-row">
-                    <th scope="row" class="client-day-time">
+                    <th scope="row" class="client-status">
                         <div class="student">Ученик</div>
                     </th>
-                    <td class="client-day-incoming-number">
+                    <td class="client-name">
                         Иванов <br>
                         Бельсемберг Космический
                     </td>
-                    <td class="client-day-type">
-                        <img src="img/icons/login-avatar.JPG" alt="">
-                        ivanov_bk
+                    <td class="client-img">
+                        <img src="img/icons/login-avatar.png" alt="">
+                        <div class="client-login">
+                            ivanov_bk
+                        </div>
                     </td>
                     <td>
                         <div class="branch">
@@ -128,17 +132,20 @@
                 </tr>
 
                 <tr class="tr-row">
-                    <th scope="row" class="client-day-time">
+                    <th scope="row" class="client-status">
                         <div class="student teacher">Учитель</div>
 
                     </th>
-                    <td class="client-day-incoming-number">
+                    <td class="client-name">
                         Константинопольский<br>
                         Константин Константинович
                     </td>
-                    <td class="client-day-type">
-                        <img src="img/icons/login-avatar.JPG" alt="">
-                        konstantinopolsky_kk
+                    <td class="client-img">
+                        <img src="img/icons/login-avatar.png" alt="">
+                        <div class="client-login">
+                            konstantinopolsky_kk
+                        </div>
+
                     </td>
                     <td>
                         <div class="branch list">
@@ -154,16 +161,19 @@
                 </tr>
 
                 <tr class="tr-row">
-                    <th scope="row" class="client-day-time">
+                    <th scope="row" class="client-status">
                         <div class="student teacher">Учитель</div>
                     </th>
-                    <td class="client-day-incoming-number">
+                    <td class="client-name">
                         Петровский<br>
                         Роман Валерьевич
                     </td>
-                    <td class="client-day-type">
-                        <img src="img/icons/login-avatar.JPG" alt="">
-                        petrovsky_rv
+                    <td class="client-img">
+                        <img src="img/icons/login-avatar.png" alt="">
+                        <div class="client-login">
+                            petrovsky_rv
+                        </div>
+
                     </td>
                     <td>
                         <div class="branch">
@@ -178,14 +188,17 @@
 
                 </tr>
                 <tr class="tr-row">
-                    <th scope="row" class="client-day-time">
+                    <th scope="row" class="client-status">
                         <div class="student">Ученик</div>
                     </th>
-                    <td class="client-day-incoming-number">Константинопольский<br>
+                    <td class="client-name">Константинопольский<br>
                         Константин Константинович</td>
-                    <td class="client-day-type">
-                        <img src="img/icons/login-avatar.JPG" alt="">
-                        konstantinopolsky_kk
+                    <td class="client-img">
+                        <img src="img/icons/login-avatar.png" alt="">
+                        <div class="client-login">
+                            konstantinopolsky_kk
+                        </div>
+
                     </td>
                     <td>
                         <div class="branch">
@@ -215,59 +228,63 @@
 
     </div>
     <div class="sort">
-        <div class="sort-role">
-            <p>Роль пользователя</p>
-            <div>
-                <input id="checkbox1" type="checkbox" name="checkbox" value="1" checked>
-                <label for="checkbox1"><span><span></span></span>Ученик</label>
+            <div class="sort-role">
+                <p>Роль пользователя</p>
+                <div>
+                    <input type="checkbox" value="1" id="checkedRoleIds1" name="checkedRoleIds"/><input type="hidden" name="_checkedRoleIds" value="on"/>
+                    <label><span><span></span></span>Администратор</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="2" id="checkedRoleIds2" name="checkedRoleIds"/><input type="hidden" name="_checkedRoleIds" value="on"/>
+                    <label><span><span></span></span>Учитель</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="3" id="checkedRoleIds3" name="checkedRoleIds"/><input type="hidden" name="_checkedRoleIds" value="on"/>
+                    <label><span><span></span></span>Ученик</label>
+                </div>
             </div>
-            <div>
-                <input id="checkbox1" type="checkbox" name="checkbox" value="1">
-                <label for="checkbox1"><span><span></span></span>Учитель</label>
+            <div class="sort-branch">
+                <p>Филиал</p>
+                <div>
+                    <input type="checkbox" value="-1" id="checkedSubdivisionIds1" name="checkedSubdivisionIds"/><input type="hidden" name="_checkedSubdivisionIds" value="on"/>
+                    <label><span><span></span></span> Филиал 1</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="-2" id="checkedSubdivisionIds2" name="checkedSubdivisionIds"/><input type="hidden" name="_checkedSubdivisionIds" value="on"/>
+                    <label><span><span></span></span> Филиал 2</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="-3" id="checkedSubdivisionIds3" name="checkedSubdivisionIds"/><input type="hidden" name="_checkedSubdivisionIds" value="on"/>
+                    <label><span><span></span></span> Филиал 3</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="-4" id="checkedSubdivisionIds4" name="checkedSubdivisionIds"/><input type="hidden" name="_checkedSubdivisionIds" value="on"/>
+                    <label><span><span></span></span> Филиал 4</label>
+                </div>
+            </div>
+            <div class="sort-group">
+                <p>Группа</p>
+                <div>
+                    <input type="checkbox" value="-1" id="checkedGroupIds1" name="checkedGroupIds"/><input type="hidden" name="_checkedGroupIds" value="on"/>
+                    <label><span><span></span></span> Группа 1</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="-2" id="checkedGroupIds2" name="checkedGroupIds"/><input type="hidden" name="_checkedGroupIds" value="on"/>
+                    <label><span><span></span></span> Группа 2</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="-3" id="checkedGroupIds3" name="checkedGroupIds"/><input type="hidden" name="_checkedGroupIds" value="on"/>
+                    <label><span><span></span></span> Группа 3</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="-4" id="checkedGroupIds4" name="checkedGroupIds"/><input type="hidden" name="_checkedGroupIds" value="on"/>
+                    <label><span><span></span></span> Группа 4</label>
+                </div>
+            </div>
+            <div class="sort-apply-button">
+                <button onclick="refreshUserList()">Применить</button>
             </div>
         </div>
-        <div class="sort-branch">
-            <p>Филиал</p>
-            <div>
-                <input id="checkbox1" type="checkbox" name="checkbox" value="1">
-                <label for="checkbox1"><span><span></span></span>Филиал 1</label>
-            </div>
-            <div>
-                <input id="checkbox1" type="checkbox" name="checkbox" value="1">
-                <label for="checkbox1"><span><span></span></span>Филиал 2</label>
-            </div>
-            <div>
-                <input id="checkbox1" type="checkbox" name="checkbox" value="1">
-                <label for="checkbox1"><span><span></span></span>Филиал 3</label>
-            </div>
-            <div>
-                <input id="checkbox1" type="checkbox" name="checkbox" value="1">
-                <label for="checkbox1"><span><span></span></span>Филиал 4</label>
-            </div>
-        </div>
-        <div class="sort-group">
-            <p>Группа</p>
-            <div>
-                <input id="checkbox1" type="checkbox" name="checkbox" value="1">
-                <label for="checkbox1"><span><span></span></span>Группа 1 (4-6 лет)</label>
-            </div>
-            <div>
-                <input id="checkbox1" type="checkbox" name="checkbox" value="1">
-                <label for="checkbox1"><span><span></span></span>Группа 2 (7-9 лет)</label>
-            </div>
-            <div>
-                <input id="checkbox1" type="checkbox" name="checkbox" value="1">
-                <label for="checkbox1"><span><span></span></span>Группа 3 (10-12 лет)</label>
-            </div>
-            <div>
-                <input id="checkbox1" type="checkbox" name="checkbox" value="1">
-                <label for="checkbox1"><span><span></span></span>Группа 4 (13-16 лет)</label>
-            </div>
-        </div>
-        <div class="sort-apply-button">
-            <button>Применить</button>
-        </div>
-    </div>
 
 </body>
 
