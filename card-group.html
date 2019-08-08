@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/card-group.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <ul class="nav">
+            <li class="nav-item header-logo">
+                <img src="img/logo.png" alt="Логотип">
+                <div id="logo">Кибертроник</div>
+            </li>
+            <li class="nav-item buttons">
+                <input type="radio" id="radio-models" name="header-menu-button" class="input-header" value="new"
+                    checked>
+                <label for="radio-models" class="label-models">Модели</label>
+            </li>
+            <li class="nav-item buttons">
+                <input type="radio" id="radio-header-users" class="input-header" name="header-menu-button" value="new">
+                <label for="radio-header-users" class="label-header-users">Пользователи</label>
+            </li>
+            <li class="nav-item buttons">
+                <input type="radio" id="radio-magazine" class="input-header" name="header-menu-button" value="new">
+                <label for="radio-magazine" class="label-magazine">Журнал действий</label>
+            </li>
+            <li class="nav-item profile">
+                <div class="profile-text">
+                    <div class="profile-name">Петров Петр</div>
+                    <div class="profile-group">Группа 1</div>
+                </div>
+                <button class="exit">Выход</button>
+            </li>
+        </ul>
+    </div>
+    <div class="group-name">
+        <div class="back-arrow">
+            <img src="img/icons/arrow_back_24px.png" alt="">
+        </div>
+        <div class="name">
+            Группа 2
+        </div>
+        <div class="group-buttons">
+            <button id="save">Сохранить</button>
+            <button id="close">Закрыть</button>
+            <button id="delete">Удалить</button>
+        </div>
+    </div>
+    <div class="group-status">
+        <div class="status branch">
+            Филиал 2
+        </div>
+    </div>
+    <form action="" class="form-data">
+        <div class="input-row">
+            <div class="input-block">
+                <div class="input-block-header">
+                    Название группы
+                </div>
+                <input type="text" name="Group-name">
+            </div>
+            <div class="input-block">
+                <div class="input-block-header">
+                    Возрастная группа
+                </div>
+                <select size="1" name="" class="select-group">
+                    <option value="4-6">4-6 лет</option>
+                    <option value="7-9">7-9 лет</option>
+                    <option value="7-9">10-12 лет</option>
+                    <option value="7-9">13-16 лет</option>
+                </select>
+            </div>
+            <div class="input-block">
+                <div class="input-block-header">
+                    Филиал
+                </div>
+                <select size="1" name="" class="select-branch">
+                    <option value="branch1">Филиал 1</option>
+                    <option value="branch2">Филиал 2</option>
+                    <option value="branch3">Филиал 3</option>
+                    <option value="branch4">Филиал 4</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="input-row">
+            <div class="input-block">
+                <div class="input-block-header">
+                    куратор
+                </div>
+                <select size="1" name="" class="select-curator">
+                    <option value="konstantinopolsky">Константинопольский Константин Константинович</option>
+                    <option value="7-9">Петровский Роман Валерьевич</option>
+                    <option value="7-9">10-12 лет</option>
+                    <option value="7-9">13-16 лет</option>
+                </select>
+            </div>
+        </div>
+        <div class="input-row">
+                <div class="input-block">
+                    <div class="input-block-header">
+                        Комментарий
+                    </div>
+                    <textarea id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+    </form>
+</body>
+
+</html>

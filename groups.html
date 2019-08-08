@@ -36,5 +36,145 @@
             </li>
         </ul>
     </div>
+    <div class="user-menu">
+        <input type="radio" id="radio-users" class="input-table" name="radios" value="new" checked>
+        <label for="radio-users" class="label-users">Пользователи</label>
+        <input type="radio" id="radio-groups" class="input-table" name="radios" value="new">
+        <label for="radio-groups" class="label-groups">Группы</label>
+        <input type="radio" id="radio-branch" class="input-table" name="radios" value="new">
+        <label for="radio-branch" class="label-branch">Филиалы</label>
+        <li class="menu-item create-user-button">
+            <button>Создать пользователя</button>
+        </li>
+
+    </div>
+    <div class="admin-table">
+        <div class="search">
+            <input type="search" class="input-search" placeholder="Поиск по ФИО, логину">
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col" id="table-header">Название группы</th>
+                    <th scope="col" id="table-header">Филиал</th>
+                    <th scope="col" id="table-header">Возрастная группа</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="space">
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr class="tr-row">
+                    <th scope="row" class="client-group">
+                        <div>Группа 1</div>
+                    </th>
+                    <td class="client-name">
+                        <div class="branch">
+                            Филиал 1
+                        </div>
+                    </td>
+                    <td class="client-age">
+                        <div>4-6 лет</div>
+                    </td>
+                </tr>
+
+                <tr class="tr-row">
+                    <th scope="row" class="client-group">
+                        <div>Группа 1</div>
+                    </th>
+                    <td class="client-name">
+                        <div class="branch">
+                            Филиал 1
+                        </div>
+                    </td>
+                    <td class="client-age">
+                        <div>4-6 лет</div>
+                    </td>
+                </tr>
+
+                <tr class="tr-row">
+                    <th scope="row" class="client-group">
+                        <div>Группа 1</div>
+                    </th>
+                    <td class="client-name">
+                        <div class="branch">
+                            Филиал 1
+                        </div>
+                    </td>
+                    <td class="client-age">
+                        <div>4-6 лет</div>
+                    </td>
+                </tr>
+
+                <tr class="tr-row">
+                    <th scope="row" class="client-group">
+                        <div>Группа 1</div>
+                    </th>
+                    <td class="client-name">
+                        <div class="branch">
+                            Филиал 1
+                        </div>
+                    </td>
+                    <td class="client-age">
+                        <div>4-6 лет</div>
+                    </td>
+                </tr>
+                <tr class="tr-row">
+                    <th scope="row" class="client-group">
+                        <div>Группа 1</div>
+                    </th>
+                    <td class="client-name">
+                        <div class="branch">
+                            Филиал 1
+                        </div>
+                    </td>
+                    <td class="client-age">
+                        <div>4-6 лет</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <div class="pagination-row">
+            <div class="pagination">
+                <a href="#">❮</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">❯</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="sort">
+        <div class="sort-branch">
+            <p>Филиал</p>
+            <div>
+                <input type="checkbox" value="-1" id="checkedSubdivisionIds1" name="checkedSubdivisionIds"/><input type="hidden" name="_checkedSubdivisionIds" value="on"/>
+                <label><span><span></span></span> Филиал 1</label>
+            </div>
+            <div>
+                <input type="checkbox" value="-2" id="checkedSubdivisionIds2" name="checkedSubdivisionIds"/><input type="hidden" name="_checkedSubdivisionIds" value="on"/>
+                <label><span><span></span></span> Филиал 2</label>
+            </div>
+            <div>
+                <input type="checkbox" value="-3" id="checkedSubdivisionIds3" name="checkedSubdivisionIds"/><input type="hidden" name="_checkedSubdivisionIds" value="on"/>
+                <label><span><span></span></span> Филиал 3</label>
+            </div>
+            <div>
+                <input type="checkbox" value="-4" id="checkedSubdivisionIds4" name="checkedSubdivisionIds"/><input type="hidden" name="_checkedSubdivisionIds" value="on"/>
+                <label><span><span></span></span> Филиал 4</label>
+            </div>
+        </div>
+        <div class="sort-apply-button">
+            <button onclick="refreshUserList()">Применить</button>
+        </div>
+    </div>
 </body>
 </html>
