@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/admin.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Администратор</title>
 </head>
 
@@ -52,10 +53,12 @@
         </li>
 
     </div>
+    <form method="POST" action="/admin/user_list" id="user_list_form">
 
     <div class="admin-table">
         <div class="search">
             <input type="search" class="input-search" placeholder="Поиск по ФИО, логину">
+            <i class="fa fa-search"></i>
         </div>
         <table class="table">
             <thead>
@@ -285,6 +288,7 @@
                 <button onclick="refreshUserList()">Применить</button>
             </div>
         </div>
+    </form>
 
 </body>
 

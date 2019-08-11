@@ -146,6 +146,16 @@ a.base-link{
     height: 40px;
     padding: 10px;
 }
+.search{
+    position: relative;
+}
+.search i{
+    position: absolute;
+    top: 11px;
+    right: 7%;
+    font-size: 18px;
+    color: #DADADA;
+}
 /*table*/
 .admin-table{
     display: inline-block;
@@ -232,7 +242,7 @@ th{
     float: right;
     padding-left: 32px;
     padding-top: 26px;
-    height: 85%;
+    height: 100%;
     width: 223px;
     background-color: #F4F2F5;;
 }
@@ -338,7 +348,7 @@ input[type=checkbox]:not(old) + input[type=hidden] + label > span{
     border-radius: 50%;
 }
 #user_list_form{
-    height: 100%;
+    height: 85%;
 }
 .client-name, .client-img{
     font-size: 13px;
@@ -351,7 +361,13 @@ input[type=checkbox]:not(old) + input[type=hidden] + label > span{
 .client-img{
     width: 300px;
 }
-
+#group_list_form{
+    height: 85%;
+}
+a.table-list{
+    text-decoration: none;
+    color: #333333;
+}
 @media(max-width: 1400px){
     .client-img{
         width: 243px;

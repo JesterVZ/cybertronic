@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/action-log.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <ul class="nav">
+            <li class="nav-item header-logo">
+                <img src="img/logo.png" alt="Логотип">
+                <div id="logo">Кибертроник</div>
+            </li>
+            <li class="nav-item buttons">
+                <input type="radio" id="radio-models" name="header-menu-button" class="input-header" value="new"
+                    checked>
+                <label for="radio-models" class="label-models">Модели</label>
+            </li>
+            <li class="nav-item buttons">
+                <input type="radio" id="radio-header-users" class="input-header" name="header-menu-button" value="new">
+                <label for="radio-header-users" class="label-header-users">Пользователи</label>
+            </li>
+            <li class="nav-item buttons">
+                <input type="radio" id="radio-magazine" class="input-header" name="header-menu-button" value="new">
+                <label for="radio-magazine" class="label-magazine">Журнал действий</label>
+            </li>
+            <li class="nav-item profile">
+                <div class="profile-text">
+                    <div class="profile-name">Петров Петр</div>
+                    <div class="profile-group">Группа 1</div>
+                </div>
+                <button class="exit">Выход</button>
+            </li>
+        </ul>
+    </div>
+    <div class="admin-table">
+        <div class="search">
+            <input type="search" class="input-search" placeholder="Поиск по ФИО, логину">
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col" id="table-header">Время</th>
+                    <th scope="col" id="table-header">Пользователь</th>
+                    <th scope="col" id="table-header">Филиал</th>
+                    <th scope="col" id="table-header">Действие</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="space">
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr class="tr-row">
+                    <td scope="row" class="client-time">
+                        <div>10:00</div>
+                    </td>
+                    <td class="client-img">
+                        <img src="img/icons/login-avatar.png" alt="">
+                        <div class="client-login">
+                            Пользователь 1
+                        </div>
+                    </td>
+                    <td>
+                        <div class="branch">
+                            Филиал 1
+                        </div>
+                    </td>
+                    <td class="client-act">
+                        <div>
+                            Авторизация
+                        </div>
+                    </td>
+                </tr>
+                <tr class="tr-row">
+                    <td scope="row" class="client-time">
+                        <div>10:00</div>
+                    </td>
+                    <td class="client-img">
+                        <img src="img/icons/login-avatar.png" alt="">
+                        <div class="client-login">
+                            Пользователь 2
+                        </div>
+                    </td>
+                    <td>
+                        <div class="branch">
+                            Филиал 1
+                        </div>
+                    </td>
+                    <td class="client-act">
+                        <div>
+                            Открыл Модель 123 (время работы 5 минут) 
+                        </div>
+                    </td>
+                </tr>
+                <tr class="tr-row">
+                    <td scope="row" class="client-time">
+                        <div>10:00</div>
+                    </td>
+                    <td class="client-img">
+                        <img src="img/icons/login-avatar.png" alt="">
+                        <div class="client-login">
+                            Пользователь 3
+                        </div>
+                    </td>
+                    <td>
+                        <div class="branch">
+                            Филиал 1
+                        </div>
+                    </td>
+                    <td class="client-act">
+                        <div>
+                            Открыл Модель 456 (время работы 40 минут)
+                        </div>
+                    </td>
+                </tr>
+                <tr class="tr-row">
+                    <td scope="row" class="client-time">
+                        <div>10:01</div>
+                    </td>
+                    <td class="client-img">
+                        <img src="img/icons/login-avatar.png" alt="">
+                        <div class="client-login">
+                            Пользователь 4
+                        </div>
+                    </td>
+                    <td>
+                        <div class="branch">
+                            Филиал 1
+                        </div>
+                    </td>
+                    <td class="client-act">
+                        <div>
+                            Конец сеанса
+                        </div>
+                    </td>
+                </tr>
+                <tr class="tr-row">
+                    <td scope="row" class="client-time">
+                        <div>10:01</div>
+                    </td>
+                    <td class="client-img">
+                        <img src="img/icons/login-avatar.png" alt="">
+                        <div class="client-login">
+                            Пользователь 5
+                        </div>
+                    </td>
+                    <td>
+                        <div class="branch">
+                            Филиал 1
+                        </div>
+                    </td>
+                    <td class="client-act">
+                        <div>
+                            Авторизация
+                        </div>
+                    </td>
+                </tr>
+                <tr class="tr-row">
+                    <td scope="row" class="client-time">
+                        <div>10:02</div>
+                    </td>
+                    <td class="client-img">
+                        <img src="img/icons/login-avatar.png" alt="">
+                        <div class="client-login">
+                            Пользователь 6
+                        </div>
+                    </td>
+                    <td>
+                        <div class="branch">
+                            Филиал 1
+                        </div>
+                    </td>
+                    <td class="client-act">
+                        <div>
+                            Открыл Модель 123 (время работы 5 минут) 
+                        </div>
+                    </td>
+                </tr>
+                <tr class="tr-row">
+                    <td scope="row" class="client-time">
+                        <div>10:02</div>
+                    </td>
+                    <td class="client-img">
+                        <img src="img/icons/login-avatar.png" alt="">
+                        <div class="client-login">
+                            Пользователь 6
+                        </div>
+                    </td>
+                    <td>
+                        <div class="branch">
+                            Филиал 1
+                        </div>
+                    </td>
+                    <td class="client-act">
+                        <div>
+                            Открыл Модель 123 (время работы 5 минут) 
+                        </div>
+                    </td>
+                </tr>
+                <tr class="tr-row">
+                    <td scope="row" class="client-time">
+                        <div>10:02</div>
+                    </td>
+                    <td class="client-img">
+                        <img src="img/icons/login-avatar.png" alt="">
+                        <div class="client-login">
+                            Пользователь 6
+                        </div>
+                    </td>
+                    <td>
+                        <div class="branch">
+                            Филиал 1
+                        </div>
+                    </td>
+                    <td class="client-act">
+                        <div>
+                            Открыл Модель 123 (время работы 5 минут) 
+                        </div>
+                    </td>
+                </tr>
+                <tr class="tr-row">
+                    <td scope="row" class="client-time">
+                        <div>10:02</div>
+                    </td>
+                    <td class="client-img">
+                        <img src="img/icons/login-avatar.png" alt="">
+                        <div class="client-login">
+                            Пользователь 6
+                        </div>
+                    </td>
+                    <td>
+                        <div class="branch">
+                            Филиал 1
+                        </div>
+                    </td>
+                    <td class="client-act">
+                        <div>
+                            Открыл Модель 123 (время работы 5 минут) 
+                        </div>
+                    </td>
+                </tr>
+                <tr class="tr-row">
+                    <td scope="row" class="client-time">
+                        <div>10:02</div>
+                    </td>
+                    <td class="client-img">
+                        <img src="img/icons/login-avatar.png" alt="">
+                        <div class="client-login">
+                            Пользователь 6
+                        </div>
+                    </td>
+                    <td>
+                        <div class="branch">
+                            Филиал 1
+                        </div>
+                    </td>
+                    <td class="client-act">
+                        <div>
+                            Открыл Модель 123 (время работы 5 минут) 
+                        </div>
+                    </td>
+                </tr>
+                <tr class="tr-row">
+                    <td scope="row" class="client-time">
+                        <div>10:02</div>
+                    </td>
+                    <td class="client-img">
+                        <img src="img/icons/login-avatar.png" alt="">
+                        <div class="client-login">
+                            Пользователь 6
+                        </div>
+                    </td>
+                    <td>
+                        <div class="branch">
+                            Филиал 1
+                        </div>
+                    </td>
+                    <td class="client-act">
+                        <div>
+                            Открыл Модель 123 (время работы 5 минут) 
+                        </div>
+                    </td>
+                </tr>
+
+                
+            </tbody>
+        </table>
+        <div class="pagination-row">
+            <div class="pagination">
+                <a href="#">❮</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">❯</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -101,7 +101,7 @@ ul{
 }
 .user-name{
     margin-left: 57px;
-    height: 60px;
+    height: 80px;
     padding-top: 24px;
     border-bottom: 1px solid rgb(221, 221, 221);
 }
@@ -143,6 +143,7 @@ ul{
     margin-left: 57px;
 }
 .status{
+    width: 83px;
     display: inline-block;
     padding: 5px;
     margin-right: 10px;
@@ -171,9 +172,17 @@ ul{
     margin-right: 24px;
 }
 .input-block-header{
+    margin-bottom: 5px;
     font-size: 12px;
     line-height: 14px;
     color: #949494;
+}
+.teacher{
+    background-color: #683CD7;
+}
+.multi-roles{
+    background-color: #2196F3;
+    color: #fff;
 }
 .input-row{
     margin-bottom: 30px;
