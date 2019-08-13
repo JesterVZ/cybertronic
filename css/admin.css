@@ -2,7 +2,6 @@ body, html{
     margin: 0;
     height: 100%;
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(249, 249, 250);
 }
 ul{
     margin: 0;
@@ -120,6 +119,14 @@ a.base-link{
     font-size: 16px;
     line-height: 19px;
 }
+.create-user-button button:hover{
+    background: rgb(0, 146, 127);
+    transition: 0.2s;
+}
+.sort-apply-button button:hover{
+    background: rgb(0, 146, 127);
+    transition: 0.2s;
+}
 .create-user-button button{
     margin-right: 24px;
     margin-top: 21px;
@@ -139,15 +146,19 @@ a.base-link{
     margin-top: 26px;
 }
 .input-search{
-    width: 95%;
+    width: 91%;
     -webkit-appearance: none;
     border-radius: 5px;
     border: 1px solid #CCCCCC;
     height: 40px;
     padding: 10px;
+    margin-left: 57px;
+    font-size: 16px;
+    outline: none;
 }
 .search{
     position: relative;
+
 }
 .search i{
     position: absolute;
@@ -159,8 +170,7 @@ a.base-link{
 /*table*/
 .admin-table{
     display: inline-block;
-    margin-left: 57px;
-    width: 70%;
+    width: 88%;
 }
 .table{
     width: 100%;
@@ -174,19 +184,33 @@ th{
     color: #949494;
     text-align: left;
 }
+.client-status, .thead tr th{
+    padding-left: 57px;
+}
+thead tr th{
+    padding-left: 57px;
+}
 .tr-row{
+    position: relative;
     height: 78px;
+}
+.tr-row::after{
+    position: absolute;
+    content: "";
+    left: 2.7%;
+    right: 17%;
+    height: 1px;
+    border-bottom: 1px solid #CCCCCC;
 }
 .pagination-row{
     width: 100%;
     text-align: center;
 }
 .tr-row:hover{
-    background-color: #fff;
+    box-shadow: 0px 30px 30px -15px rgba(0, 0, 0, 0.1); 
 }
 .table td{
     vertical-align: middle;
-    border-bottom: 1px solid #CCCCCC;
     height: 40px;
 }
 .table th{
@@ -238,6 +262,8 @@ th{
     height: 10px;
 }
 .sort{
+    position: relative;
+    z-index: 3;
     display: inline-block;
     float: right;
     padding-left: 32px;
@@ -289,6 +315,7 @@ input[type=checkbox]:not(old) + input[type=hidden] + label > span{
     display: inline-block;
     font-size: 13px;
     line-height: 15px;
+    font-weight: 300;
     font-size: 24px;
     height: 50px;
     border-bottom: 1px solid #ADADAD;
@@ -368,9 +395,43 @@ a.table-list{
     text-decoration: none;
     color: #333333;
 }
+@media(max-width: 1876px){
+    .admin-table{
+        width: 86%;
+    }
+    .tr-row::after{
+        right: 20%;
+    }
+}
+@media(max-width: 1609px){
+    .admin-table{
+        width: 84%;
+    }
+}
 @media(max-width: 1400px){
     .client-img{
         width: 243px;
+    }
+}
+@media(max-width: 1411px){
+    .admin-table{
+        width: 82%;
+    }
+}
+@media(max-width: 1257px){
+    .admin-table{
+        width: 80%;
+    }
+    .tr-row::after{
+        right: 22%;
+    }
+}
+@media(max-width: 1132px){
+    .admin-table{
+        width: 70%;
+    }
+    .tr-row::after{
+        right: 24%;
     }
 }
 @media(max-width: 1128px){

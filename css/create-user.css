@@ -7,6 +7,10 @@ ul{
     margin: 0;
     padding: 0;
 }
+button{
+    outline: none;
+    cursor: pointer;
+}
 .header{
     width: 100%;
     margin: 0;
@@ -122,6 +126,9 @@ ul{
     border: none;
     color: #fff;
     margin-right: 10px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
 }
 #save{
     background-color: #00BFA5;
@@ -143,7 +150,7 @@ ul{
     margin-left: 57px;
 }
 .status{
-    width: 83px;
+    min-width: 71px;
     display: inline-block;
     padding: 5px;
     margin-right: 10px;
@@ -189,6 +196,7 @@ ul{
 }
 .input-row textarea{
     border: 1px solid #CCCCCC;
+    padding: 10px;
     box-sizing: border-box;
     border-radius: 5px;
     font-size: 16px;
@@ -226,6 +234,7 @@ ul{
     bottom: 0;
     right: 0;
     margin-bottom: 24px;
+    display: block;
 }
 .save-label-close{
     display: inline-block;
@@ -260,13 +269,15 @@ ul{
 .popup-header{
     font-size: 18px;
     line-height: 21px;
-    font-weight: 300;
+    font-weight: 100;
     margin-left: 43px;
     margin-top: 39px;
 }
 .popup-descr{
     font-weight: normal;
     margin-left: 43px;
+    margin-right: 43px;
+    max-height: 65px;
     margin-top: 25px;
     font-size: 16px;
     line-height: 19px;

@@ -47,16 +47,20 @@
                     <th scope="col" id="table-header">Пользователь</th>
                     <th scope="col" id="table-header">Филиал</th>
                     <th scope="col" id="table-header">Действие</th>
+                    
                 </tr>
             </thead>
             <tbody>
                 <tr class="space">
+                    <td class="client-date">
+                    29.07.2019
+                    </td>
                     <th></th>
                     <th></th>
                     <th></th>
                     <th></th>
                     <th></th>
-                    <th></th>
+                    
                 </tr>
                 <tr class="tr-row">
                     <td scope="row" class="client-time">
@@ -304,6 +308,30 @@
             </div>
         </div>
 
+    </div>
+    <div class="sort">
+        <div class="sort-branch">
+            <p>Филиал</p>
+            <div>
+                <input type="checkbox" value="-1" id="checkedSubdivisionIds1" name="checkedSubdivisionIds"/><input type="hidden" name="_checkedSubdivisionIds" value="on"/>
+                <label><span><span></span></span> Филиал 1</label>
+            </div>
+            <div>
+                <input type="checkbox" value="-2" id="checkedSubdivisionIds2" name="checkedSubdivisionIds"/><input type="hidden" name="_checkedSubdivisionIds" value="on"/>
+                <label><span><span></span></span> Филиал 2</label>
+            </div>
+            <div>
+                <input type="checkbox" value="-3" id="checkedSubdivisionIds3" name="checkedSubdivisionIds"/><input type="hidden" name="_checkedSubdivisionIds" value="on"/>
+                <label><span><span></span></span> Филиал 3</label>
+            </div>
+            <div>
+                <input type="checkbox" value="-4" id="checkedSubdivisionIds4" name="checkedSubdivisionIds"/><input type="hidden" name="_checkedSubdivisionIds" value="on"/>
+                <label><span><span></span></span> Филиал 4</label>
+            </div>
+        </div>
+        <div class="sort-apply-button">
+            <button onclick="refreshUserList()">Применить</button>
+        </div>
     </div>
 </body>
 </html>

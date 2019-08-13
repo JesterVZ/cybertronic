@@ -170,7 +170,6 @@ th{
     border: none;
 }
 .space th{
-    border: none;
     height: 10px;
 }
 .client-group div{
@@ -222,4 +221,118 @@ th{
     font-weight: normal;
     font-size: 13px;
     line-height: 100%;
+}
+/*input/sort*/
+.sort{
+    display: inline-block;
+    float: right;
+    padding-left: 32px;
+    padding-top: 26px;
+    height: 100%;
+    width: 223px;
+    background-color: #F4F2F5;;
+}
+.input-search{
+    width: 95%;
+    -webkit-appearance: none;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    height: 40px;
+    padding: 10px;
+}
+input[type=checkbox]:not(old){
+    width     : 2em;
+    margin    : 0;
+    padding   : 0;
+    font-size : 1em;
+    opacity   : 0;
+    line-height: 1.5em;
+  }
+input[type=checkbox]:not(old) + input[type=hidden] + label{
+    display      : inline-block;
+    margin-left  : -2em;
+    margin-bottom: 9px;
+    line-height  : 1.5em;
+}
+input[type=checkbox]:not(old):checked + input[type=hidden] +  label > span > span{
+    display          : block;
+    width            : 10px;
+    height           : 10px;
+    margin           : 2px;
+    border-radius    : 0.125em;
+    background       : #683CD7;
+
+}
+input[type=checkbox]:not(old):checked + input[type=hidden] + label > span{
+    background-image :    -moz-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+
+}
+input[type=checkbox]:not(old) + input[type=hidden] + label > span{
+    display          : inline-block;
+    width            : 0.875em;
+    height           : 0.875em;
+    margin           : 0.25em 0.5em 0.25em 0.25em;
+    border           : 0.0625em solid rgb(192,192,192);
+    border-radius    : 0.25em;
+    vertical-align   : bottom;
+}
+.input-table, .input-header{
+    display: none;
+}
+.input-table + label{
+    display: inline-block;
+    font-size: 13px;
+    line-height: 15px;
+    font-size: 24px;
+    height: 50px;
+    border-bottom: 1px solid #ADADAD;
+    cursor: pointer;
+}
+.input-table:checked + label{
+    color: #6A3AD7;
+    margin-top: 31px;
+    border-bottom: 1px solid #6A3AD7;
+}
+.label-models, .label-header-users, .label-magazine{
+    border: none;
+    color: #A2DFF6;
+}
+.input-header + label{
+    cursor: pointer;
+}
+.input-header:checked + label{
+    border: none;
+    color: #fff;
+}
+.sort-branch{
+    margin-bottom: 31px;
+}
+.sort-branch p{
+    font-size: 12px;
+    line-height: 14px;
+    color: #949494;
+}
+.pagination{
+    display: inline-block;
+    margin-top: 27px;
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 13px;
+    text-decoration: none;
+}
+.pagination a.active {
+    background-color: #2196F3;
+    color: white;
+    border-radius: 50%;
+}
+.pagination a:hover:not(.active) {
+    background-color: #DFDFDF;
+    border-radius: 50%;
+}
+.client-date{
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
 }

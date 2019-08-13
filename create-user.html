@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/create-user.css">
     <link rel="stylesheet" href="css/multiselect/jquery.multiSelect.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 
     <title>Создать пользователя</title>
@@ -148,7 +148,7 @@
         </div>
     </form>
     <div class="save-label">Изменения сохранены <div class="save-label-close">&#10006</div></div>
-    <div class="overlay">
+  <!-- <div class="overlay">
         <div class="popup">
             <div class="popup-header">
                 Вы действительно хотите удалить пользователя<br>
@@ -162,17 +162,17 @@
                 <button id="cancel">Отмена</button>
             </div>
         </div>
-    </div>
+    </div>-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/jquery.multiSelect.min.js"></script>
+    <script src="js/jquery.multiSelect.js"></script>
     <script type="text/javascript">
         $("#multiselect").multiSelect({
             title: "Группы",
             elements: [
-                "Группа 1",
-                "Группа 2",
-                "Группа 3",
-                "Группа 4",
+                "Группа 1 (4-6 лет)",
+                "Группа 2 (7-9 лет)",
+                "Группа 3 (10-12 лет)",
+                "Группа 4 (13-16 лет)",
             ]
         });
     </script>
