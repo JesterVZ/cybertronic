@@ -172,8 +172,9 @@ a.base-link{
     display: inline-block;
     width: 88%;
 }
-.client-name a:hover{
+.client-name:hover{
     color: #3564E0;
+    cursor: pointer;
 }
 .table{
     width: 100%;
