@@ -179,7 +179,7 @@ th{
     color: #000;
     cursor: pointer;
 }
-.client-login:hover{
+.client-login:hover {
     color: #3564E0;
     cursor: pointer;
 }
@@ -307,10 +307,16 @@ input[type=checkbox]:not(old) + input[type=hidden] + label > span{
 .sort-branch{
     margin-bottom: 31px;
 }
-.sort-branch p{
+.sort-branch p, .sort-date p{
     font-size: 12px;
     line-height: 14px;
     color: #949494;
+}
+.sort-date input[type=date]{
+    height: 36px;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 5px;
 }
 .pagination{
     display: inline-block;

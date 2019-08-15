@@ -3,6 +3,14 @@ body, html{
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
+a.base-link {
+    color: #3564E0;
+    text-decoration: none;
+}
+.for-link {
+    margin-left: 200px;
+    margin-top: 17px;
+}
 /*reg/login*/
 h1{
     margin: 0;

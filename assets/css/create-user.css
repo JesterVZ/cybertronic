@@ -183,7 +183,7 @@ button{
     width: 71px;
 }
 .branch{
-    width: 83px;
+    min-width: 83px;
     background-color: #DFDFDF;
     color: #000;
 }
