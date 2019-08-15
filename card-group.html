@@ -109,6 +109,17 @@
                 </div>
             </div>
     </form>
+    <div class="overlay">
+            <div class="popup">
+                <div class="popup-header">Вы действительно хотите удалить группу<br> null?</div>
+                <div class="popup-descr">
+                </div>
+                <div class="popup-buttons">
+                    <button id="delete" onclick="javascript:callUrl('/admin/group_delete?id=null');">Удалить</button>
+                    <button id="cancel" onclick="hideDialog()">Отмена</button>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>

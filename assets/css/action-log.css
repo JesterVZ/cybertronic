@@ -187,13 +187,13 @@ th{
     width: 100%;
     margin-top: 26px;
 }
-.input-search{
-    width: 95%;
-    -webkit-appearance: none;
-    border-radius: 5px;
-    border: 1px solid #CCCCCC;
-    height: 40px;
-    padding: 10px;
+.search i{
+    position: relative;
+    top: 2px;
+    right: 4%;
+    font-size: 18px;
+    color: #DADADA;
+    cursor: pointer;
 }
 .client-img{
     font-size: 13px;
@@ -233,12 +233,14 @@ th{
     background-color: #F4F2F5;;
 }
 .input-search{
-    width: 95%;
+    width: 98%;
     -webkit-appearance: none;
     border-radius: 5px;
     border: 1px solid #CCCCCC;
     height: 40px;
     padding: 10px;
+    font-size: 16px;
+    outline: none;
 }
 input[type=checkbox]:not(old){
     width     : 2em;

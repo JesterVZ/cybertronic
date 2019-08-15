@@ -98,7 +98,7 @@ ul{
 }
 .group-name{
     margin-left: 57px;
-    height: 60px;
+    height: 80px;
     padding-top: 24px;
     border-bottom: 1px solid rgb(221, 221, 221);
 }
@@ -113,7 +113,7 @@ ul{
     float: right;
     margin-right: 24px; 
 }
-.group-buttons button{
+.group-buttons button, .popup-buttons button{
     height: 36px;
     border-radius: 20px;
     border: none;
@@ -196,6 +196,49 @@ ul{
     font-size: 16px;
     width: 280px;
     height: 36px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    display: none;
+}
+.popup{
+    position: fixed;
+    width: 504px;
+    height: 245px;
+    background-color: #fff;
+    left: 50%;
+    top: 262px;
+    transform: translateX(-50%);
+    display: none;
+}
+.popup-buttons{
+    margin-left: 43px;
+    margin-top: 32px;
+}
+#cancel{
+    width: 104px;
+    color: #000;
+}
+.popup-header{
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 300;
+    margin-left: 43px;
+    margin-top: 39px;
+}
+.popup-descr{
+    font-weight: normal;
+    margin-left: 43px;
+    margin-right: 43px;
+    max-height: 65px;
+    margin-top: 25px;
+    font-size: 16px;
+    line-height: 19px;
 }
 .save-label{
     background: #00BFA5;
