@@ -11,6 +11,9 @@ button{
     outline: none;
     cursor: pointer;
 }
+.back-arrow{
+    cursor: pointer;
+}
 .header{
     width: 100%;
     margin: 0;
