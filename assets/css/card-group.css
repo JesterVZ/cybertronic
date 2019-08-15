@@ -96,9 +96,6 @@ ul{
 .input-header:checked + label{
     color: #fff;
 }
-.back-arrow, .name{
-    display: inline-block;
-}
 .group-name{
     margin-left: 57px;
     height: 60px;
@@ -122,21 +119,42 @@ ul{
     border: none;
     color: #fff;
     margin-right: 10px;
+    outline: none;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
 }
 #save{
     background-color: #00BFA5;
     width: 133px;
 }
+#save:hover{
+    background-color: rgb(0, 148, 128);
+    transition: 0.2s;
+}
 #close{
     background-color: #2196F3;
     width: 110px;
+}
+#close:hover{
+    background-color: rgb(24, 112, 184);
+    transition: 0.2s;
 }
 #delete{
     background-color: #E91E63;
     width: 104px;
 }
+#delete:hover{
+    background-color: rgb(168, 24, 72);
+    transition: 0.2s;
+
+}
 .back-arrow, .name{
     margin-top: 4px;
+    display: inline-block;
+}
+.back-arrow{
+    cursor: pointer;
 }
 .branch{
     width: 83px;
@@ -179,6 +197,28 @@ ul{
     width: 280px;
     height: 36px;
 }
+.save-label{
+    background: #00BFA5;
+    box-shadow: 0px 20px 40px rgba(0, 117, 101, 0.2);
+    margin-right: 24px;
+    border-radius: 5px;
+    width: 253px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 12px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 24px;
+    display: block;
+}
+.save-label-close{
+    display: inline-block;
+    margin-left: 20px;
+    cursor: pointer;
+}
 .form-data{
     margin-top: 31px;
     margin-left: 57px;
@@ -190,8 +230,10 @@ ul{
     border: 1px solid #CCCCCC;
     box-sizing: border-box;
     border-radius: 5px;
+    padding: 10px;
     font-size: 16px;
     resize: none;
     height: 130px;
     width: 587px;
+    outline: none;
 }
