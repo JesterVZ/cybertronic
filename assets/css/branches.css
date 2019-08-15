@@ -131,15 +131,6 @@ ul{
     background: rgb(0, 145, 125);
     transition: 0.2s;
 }
-.sort-apply-button button{
-    width: 155px;
-    height: 36px;
-    margin-left: 9px;
-}
-.sort-apply-button button:hover{
-    background: rgb(0, 145, 125);
-    transition: 0.2s;
-}
 .label-users, .label-groups, .label-branch{
     margin-right: 59px;
 }
@@ -147,6 +138,7 @@ ul{
     position: relative;
     width: 100%;
     margin-top: 26px;
+    margin-bottom: 23px;
 }
 .search i{
     position: absolute;
@@ -165,6 +157,29 @@ ul{
     margin-left: 57px;
     font-size: 16px;
     outline: none;
+}
+.pagination-row{
+    width: 100%;
+    text-align: center;
+}
+.pagination{
+    display: inline-block;
+    margin-top: 27px;
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 13px;
+    text-decoration: none;
+}
+.pagination a.active {
+    background-color: #2196F3;
+    color: white;
+    border-radius: 50%;
+}
+.pagination a:hover:not(.active) {
+    background-color: #DFDFDF;
+    border-radius: 50%;
 }
 input[type=checkbox]:not(old){
     width     : 2em;
@@ -231,10 +246,17 @@ input[type=checkbox]:not(old) + input[type=hidden] + label > span{
     border: none;
     color: #fff;
 }
-/*table*/
+/*branches*/
+.space{
+    border: none;
+}
+.table-list{
+    padding-left: 57px;
+}
 .admin-table{
     display: inline-block;
-    width: 88%;
+    width: 100%;
+    margin-top: 23px;
 }
 .table{
     width: 100%;
@@ -255,6 +277,10 @@ th{
     color: #3564E0;
     cursor: pointer;
 }
+.table-list:hover{
+    color: #3564E0;
+    cursor: pointer;
+}
 thead tr th{
     padding-left: 57px;
 }
@@ -264,12 +290,13 @@ thead tr th{
 }
 .tr-row:hover{
     box-shadow: 0px 30px 30px -15px rgba(0, 0, 0, 0.1); 
+    background-color: #fff;
 }
 .tr-row::after{
     position: absolute;
     content: "";
     left: 2.7%;
-    right: 17%;
+    right: 6%;
     height: 1px;
     border-bottom: 1px solid #CCCCCC;
 }
@@ -280,158 +307,12 @@ thead tr th{
     width: 100%;
     text-align: center;
 }
-.tr-row:hover{
-    background-color: #fff;
-}
 .table td, .table th{
     vertical-align: middle;
-    height: 40px;
+    height: 10px;
 }
 .client-age div{
     font-size: 13px;
     line-height: 18px;
     font-weight: normal;
-}
-.student{
-    padding: 5px;
-    text-align: center;
-    color: #fff;
-    background-color: #EB5757;
-    border-radius: 16px;
-    font-size: 13px;
-    border: none;
-    height: 24px;
-    width: 71px;
-    line-height: 16px;
-}
-.branch, .group{
-    min-width: 71px;
-    display: inline-block;
-    border-radius: 16px;
-    font-size: 13px;
-    border: none;
-    background-color: #DFDFDF;
-    text-align: center;
-    padding: 5px;
-}
-.list{
-    background-color: #2196F3;
-    color: #fff;
-}
-#table-header{
-    border: none;
-}
-.space th{
-    border: none;
-    height: 10px;
-}
-.client-group div{
-    font-size: 16px;
-    line-height: 140.62%;
-    font-weight: normal;
-    color: #000;
-    cursor: pointer;
-}
-.client-group div:hover{
-    color: #3564E0;
-}
-.sort-branch{
-    margin-bottom: 31px;
-}
-.sort-role p{
-    font-size: 12px;
-    line-height: 14px;
-    color: #949494;
-}
-.sort-group p{
-    font-size: 12px;
-    line-height: 14px;
-    color: #949494;
-}
-.sort-branch p{
-    font-size: 12px;
-    line-height: 14px;
-    color: #949494;
-}
-.pagination{
-    display: inline-block;
-    margin-top: 27px;
-}
-.pagination a {
-    color: black;
-    float: left;
-    padding: 8px 13px;
-    text-decoration: none;
-}
-.pagination a.active {
-    background-color: #2196F3;
-    color: white;
-    border-radius: 50%;
-}
-.pagination a:hover:not(.active) {
-    background-color: #DFDFDF;
-    border-radius: 50%;
-}
-.sort{
-    display: inline-block;
-    float: right;
-    padding-left: 32px;
-    padding-top: 26px;
-    height: 100%;
-    width: 223px;
-    background-color: #F4F2F5;;
-}
-/*branches*/
-.table-list{
-    padding-left: 57px;
-}
-@media(max-width: 1876px){
-    .admin-table{
-        width: 86%;
-    }
-    .tr-row::after{
-        right: 20%;
-    }
-}
-@media(max-width: 1609px){
-    .admin-table{
-        width: 84%;
-    }
-}
-@media(max-width: 1411px){
-    .admin-table{
-        width: 82%;
-    }
-}
-@media(max-width: 1257px){
-    .admin-table{
-        width: 80%;
-    }
-    .tr-row::after{
-        right: 22%;
-    }
-}
-@media(max-width: 1132px){
-    .admin-table{
-        width: 70%;
-    }
-    .tr-row::after{
-        right: 24%;
-    }
-}
-@media(max-width: 1128px){
-    .client-img{
-        width: 175px;
-    }
-}
-@media(max-width: 1007px){
-    .client-img{
-        width: 164px;
-    }
-    .client-name{
-        width: 182px;
-    }
-    .search i{
-        right: 4%;
-    }
 }
