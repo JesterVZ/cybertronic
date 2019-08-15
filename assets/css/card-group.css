@@ -157,7 +157,7 @@ ul{
     cursor: pointer;
 }
 .branch{
-    width: 83px;
+    min-width: 83px;
     background-color: #DFDFDF;
 }
 .group-status{
