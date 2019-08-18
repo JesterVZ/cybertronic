@@ -189,7 +189,7 @@ th{
 }
 .search i{
     position: relative;
-    top: 2px;
+    top: 1px;
     right: 4%;
     font-size: 18px;
     color: #DADADA;
@@ -316,9 +316,17 @@ input[type=checkbox]:not(old) + input[type=hidden] + label > span{
 }
 .sort-date input[type=date]{
     height: 36px;
+    width: 167px;
+    padding: 10px;
+    font-size: 16px;
     border: 1px solid #CCCCCC;
     box-sizing: border-box;
     border-radius: 5px;
+}
+.sort-date input[type=date]:hover{
+    padding-right: 26px;
+    width: 189px;
+    transition: 0.5s;
 }
 .pagination{
     display: inline-block;
@@ -339,8 +347,36 @@ input[type=checkbox]:not(old) + input[type=hidden] + label > span{
     background-color: #DFDFDF;
     border-radius: 50%;
 }
+.sort-apply-button button{
+    background: #00BFA5;
+    border-radius: 20px;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    line-height: 19px;
+    width: 155px;
+    height: 36px;
+    margin-left: 9px;
+}
+.sort-apply-button button:hover{
+    background: rgb(0, 146, 127);
+    transition: 0.2s;
+}
 .client-date{
     font-weight: bold;
     font-size: 13px;
     line-height: 18px;
+}
+.input-date-img{
+    position: relative;
+    right: 15%;
+    top: 6px;
+    width: 20px;
+}
+@media(max-width: 1493px){
+    .input-search{
+        width: 97%;
+    }
 }

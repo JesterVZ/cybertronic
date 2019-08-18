@@ -362,6 +362,7 @@ input[type=checkbox]:not(old) + input[type=hidden] + label > span{
 .pagination{
     display: inline-block;
     margin-top: 27px;
+    cursor: pointer;
 }
 .pagination a {
     color: black;

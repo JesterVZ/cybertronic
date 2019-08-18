@@ -110,6 +110,7 @@ button{
     margin-left: 57px;
     height: 60px;
     padding-top: 24px;
+    padding-bottom: 60px;
     border-bottom: 1px solid rgb(221, 221, 221);
 }
 .name{

@@ -356,6 +356,7 @@ thead tr th{
 .pagination{
     display: inline-block;
     margin-top: 27px;
+    cursor: pointer;
 }
 .pagination a {
     color: black;
@@ -380,10 +381,6 @@ thead tr th{
     height: 100%;
     width: 223px;
     background-color: #F4F2F5;;
-}
-/*branches*/
-.table-list{
-    padding-left: 57px;
 }
 @media(max-width: 1876px){
     .admin-table{
