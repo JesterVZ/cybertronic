@@ -8,7 +8,9 @@ ul{
     margin: 0;
     padding: 0;
 }
-
+#event_list_form{
+    height: 100%;
+}
 a.white-link{
     color: #fff;
 }
@@ -128,9 +130,7 @@ th{
     width: 100%;
     text-align: center;
 }
-.tr-row:hover{
-    background-color: #fff;
-}
+
 .table td, .table th{
     vertical-align: middle;
     border-bottom: 1px solid #CCCCCC;
@@ -183,6 +183,7 @@ th{
 .client-login:hover {
     color: #3564E0;
     cursor: pointer;
+    transition: 0.2s;
 }
 .search{
     width: 100%;
@@ -347,6 +348,8 @@ input[type=checkbox]:not(old) + input[type=hidden] + label > span{
 .pagination a:hover:not(.active) {
     background-color: #DFDFDF;
     border-radius: 50%;
+    transition: 0.2s;
+    cursor: pointer;
 }
 .sort-apply-button button{
     background: #00BFA5;
@@ -363,6 +366,7 @@ input[type=checkbox]:not(old) + input[type=hidden] + label > span{
 }
 .sort-apply-button button:hover{
     background: rgb(0, 146, 127);
+    transition: 0.2s;
 }
 .client-date{
     font-weight: bold;
@@ -371,9 +375,21 @@ input[type=checkbox]:not(old) + input[type=hidden] + label > span{
 }
 .input-date-img{
     position: relative;
-    right: 15%;
+    right: 20%;
     top: 6px;
     width: 20px;
+}
+#datetimepicker{
+    width: 167px;
+    height: 30px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 7px;
 }
 @media(max-width: 1493px){
     .input-search{
