@@ -1,3 +1,4 @@
+
 body, html{
     margin: 0;
     height: 100%;
@@ -26,10 +27,7 @@ a.base-link{
     background-image: url("../img/Rectangleheader.jpg");
     background-size: cover;
 }
-.nav-item, .menu-item{
-    display: inline-block;
-}
-.header-menu, .header-profile, .header-logo{
+.header-menu, .header-profile, .header-logo, .nav-item, .menu-item, .exit, .profile-text{
     display: inline-block;
 }
 
@@ -67,9 +65,6 @@ a.base-link{
 .profile{
     float: right;
     margin-right: 24px;
-}
-.exit, .profile-text{
-    display: inline-block;
 }
 .exit{
     vertical-align: top;
@@ -126,6 +121,7 @@ a.base-link{
 .sort-apply-button button:hover{
     background: rgb(0, 146, 127);
     transition: 0.2s;
+
 }
 .create-user-button button{
     margin-right: 24px;
@@ -175,6 +171,8 @@ a.base-link{
 .client-name:hover{
     color: #3564E0;
     cursor: pointer;
+    transition: 0.2s;
+
 }
 .table{
     width: 100%;
@@ -212,6 +210,8 @@ th{
 }
 .tr-row:hover{
     box-shadow: 0px 30px 30px -15px rgba(0, 0, 0, 0.1); 
+    transition: 0.2s;
+
 }
 .table td{
     vertical-align: middle;
@@ -378,6 +378,8 @@ input[type=checkbox]:not(old) + input[type=hidden] + label > span{
 .pagination a:hover:not(.active) {
     background-color: #DFDFDF;
     border-radius: 50%;
+    transition: 0.2s;
+
 }
 #user_list_form{
     height: 85%;

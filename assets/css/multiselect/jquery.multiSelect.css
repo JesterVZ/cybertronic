@@ -5,7 +5,7 @@ font-size: 12px;
 #multiSelectElementsSelected {
 border: solid 1px #cccccc;
 border-radius: 5px 1px 1px 5px;
-font-size: 16px;
+font-size: 13px;
 min-height: 36px;
 width: 558px;
 min-height: 25px;
@@ -16,11 +16,10 @@ float: left;
 }
 .multiSelectElementSelected {
 line-height: 20px;
-height: 26px;
+height: 20px;
 background: #DFDFDF;
 float: left;
 padding-left: 5px;
-padding-top: 5px;
 -webkit-border-radius: 2px 2px 2px 2px;
 -moz-border-radius : 2px 2px 2px 2px;
 -ms-border-radius : 2px 2px 2px 2px;
@@ -54,7 +53,7 @@ cursor: pointer;
 }
 #multiSelectElements {
 display: none;
-width: 310px;
+width: 588px;
 min-height: 20px;
 line-height: 20px;
 min-height: 20px;
@@ -67,10 +66,12 @@ background: #fff;
 padding-right: 5px;
 padding-left: 5px;
 font-size: 15px;
-width: 300px;
+width: 578px;
 cursor: pointer;
 }
-
+.multiSelectElement:hover{
+    background: #CCCCCC;
+}
 .multiselect-input{
     vertical-align: top;
 }

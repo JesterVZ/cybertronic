@@ -21,7 +21,7 @@
             selector.append('<div id="multiSelectSelected"></div>');
             var selected = $("#multiSelectSelected");
             selected.append('<div id="multiSelectElementsSelected">'+params.title+'</div>');
-            selected.append('<div id="multiSelectClick">V</div>');
+            selected.append('<div id="multiSelectClick">▼</div>');
 
             selector.append('<div id="multiSelectElements"></div>');
             var elements = $("#multiSelectElements");

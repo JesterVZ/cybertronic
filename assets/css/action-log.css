@@ -1,3 +1,4 @@
+
 body, html{
     margin: 0;
     height: 100%;
@@ -362,7 +363,6 @@ input[type=checkbox]:not(old) + input[type=hidden] + label > span{
 }
 .sort-apply-button button:hover{
     background: rgb(0, 146, 127);
-    transition: 0.2s;
 }
 .client-date{
     font-weight: bold;
