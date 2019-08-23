@@ -4,10 +4,10 @@ font-size: 12px;
 }
 #multiSelectElementsSelected {
 border: solid 1px #cccccc;
-border-radius: 5px 1px 1px 5px;
+border-radius: 5px;
 font-size: 13px;
 min-height: 36px;
-width: 558px;
+width: 576px;
 min-height: 25px;
 line-height: 30px;
 padding-right: 5px;
@@ -30,44 +30,44 @@ margin-top: 5px;
 margin-bottom: 5px;
 }
 .multiSelectElementSelected .multiSelectClose {
-float: right;
-padding-right: 5px;
-padding-left: 5px;
-cursor: pointer;
-color: #949494;
-font-size: 16px;
+    float: right;
+    padding-right: 5px;
+    padding-left: 5px;
+    cursor: pointer;
+    color: #949494;
+    font-size: 9px;
+    font-weight: bold;
 }
 #multiSelectClick {
     position: absolute;
-    margin-left: 569px;
-float: left;
-background: transparent;
-padding: 5px;
-min-height: 20px;
-line-height: 20px;
-border: solid 1px #cccccc;
-border-radius: 1px 5px 5px 1px;
-color: #cccccc;
-border-left: 1px solid #fff;
-cursor: pointer;
+    margin-left: 556px;
+    float: left;
+    background: transparent;
+    padding: 5px;
+    min-height: 20px;
+    line-height: 20px;
+    color: #cccccc;
+    cursor: pointer;
 }
 #multiSelectElements {
-display: none;
-width: 588px;
-min-height: 20px;
-line-height: 20px;
-min-height: 20px;
-clear: both;
-border: solid 1px #cccccc;
-border-top: none;
+    display: none;
+    width: 586px;
+    min-height: 20px;
+    line-height: 20px;
+    min-height: 20px;
+    clear: both;
+    border: solid 1px #cccccc;
+    border-radius: 5px;
+    border-top: none;
 }
 .multiSelectElement {
-background: #fff;
-padding-right: 5px;
-padding-left: 5px;
-font-size: 15px;
-width: 578px;
-cursor: pointer;
+    background: #fff;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 15px;
+    width: 576px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 .multiSelectElement:hover{
     background: #CCCCCC;
