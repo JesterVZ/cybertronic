@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+    <div>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../assets/css/branches.css">
+        <link rel="stylesheet" href="../assets/css/bootstrap-grid.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <title>Кибертроник</title>
+    </div>
+</head>
+
+<body>
+    <span><div class="header">
+    <ul class="nav">
+        <li class="nav-item header-logo">
+            <img src="../assets/img/logo.png" alt="">
+            <div id="logo">Кибертроник</div>
+        </li>
+        <li class="nav-item buttons">
+            <input type="radio" id="radio-models" name="header-menu-button" class="input-header" value="new">
+            <label for="radio-models" class="label-models">Модели</label>
+        </li>
+        <li class="nav-item buttons">
+            <input type="radio" id="radio-header-users" class="input-header" name="header-menu-button" value="new" checked>
+            <label for="radio-header-users" class="label-header-users">Пользователи</label>
+        </li>
+        <li class="nav-item buttons">
+            <input type="radio" id="radio-magazine" class="input-header" name="header-menu-button" value="new">
+            <label for="radio-magazine" class="label-magazine">Журнал действий</label>
+        </li>
+        <li class="nav-item profile">
+            <div class="profile-text">
+                <div class="profile-name">&lt;...&gt;</div>
+                <div class="profile-group">Группы нет</div>
+            </div>
+            <button class="exit" onclick="logout()">Выход</button>
+        </li>
+    </ul>
+    <form action="/logout" id="logout_form" method="post">
+    </form>
+</div></span>
+
+    <div class="user-menu">
+        <input type="radio" id="radio-users" class="input-table" name="radios" onclick="callUrl('/admin/user_list')">
+        <label for="radio-users" class="label-users">Пользователи</label>
+        <input type="radio" id="radio-groups" class="input-table" name="radios" onclick="callUrl('/admin/group_list')">
+        <label for="radio-groups" class="label-groups">Группы</label>
+        <input type="radio" id="radio-branch" class="input-table" name="radios" checked>
+        <label for="radio-branch" class="label-branch">Филиалы</label>
+        <li class="menu-item create-user-button">
+            <button onclick="callUrl('/admin/subdivision_edit?id=')">Создать филиал</button>
+        </li>
+
+    </div>
+
+    <form method="POST" action="/admin/subdivision_list" id="subdivision_list_form">
+        <div class="admin-table">
+            <div class="search">
+                <input type="search" class="input-search" placeholder="Поиск по наименованию" id="searchString" name="searchString" value="">
+                <i class="fa fa-search"></i>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Название филиала</th>
+                        <th scope="col">Комментарий</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="space">
+                        <th></th>
+                        <th></th>
+                    </tr>
+
+                    <tr class="tr-row" onclick="javascript:callUrl(&#39;/admin/subdivision_edit?id=-1&#39;);">
+                        <td class="table-list"> Филиал 1</td>
+                        <td class="client-name">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s</td>
+                    </tr>
+
+                    <tr class="tr-row" onclick="javascript:callUrl(&#39;/admin/subdivision_edit?id=-2&#39;);">
+                        <td class="table-list"> Филиал 2</td>
+                        <td class="client-name">Aldus PageMaker including versions of Lorem Ipsum.</td>
+                    </tr>
+
+                    <tr class="tr-row" onclick="javascript:callUrl(&#39;/admin/subdivision_edit?id=-3&#39;);">
+                        <td class="table-list"> Филиал 3</td>
+                        <td class="client-name"></td>
+                    </tr>
+
+                    <tr class="tr-row" onclick="javascript:callUrl(&#39;/admin/subdivision_edit?id=-4&#39;);">
+                        <td class="table-list"> Филиал 4</td>
+                        <td class="client-name"></td>
+                    </tr>
+
+                    <tr class="tr-row" onclick="javascript:callUrl(&#39;/admin/subdivision_edit?id=1&#39;);">
+                        <td class="table-list">Школа 132</td>
+                        <td class="client-name">продали на месяц им 10 моделей</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <span><div class="pagination-row">
+    <div class="pagination">
+        <a href="#" class="disabled">❮</a>
+        <span>
+            <a href="#" class="active">1</a>
+        </span>
+            <a href="#" class="disabled">❯</a>
+        </div>
+        </div>
+        </span>
+
+        </div>
+    </form>
+
+    <script src="/../assets/js/script.js"></script>
+</body>
+
+</html>

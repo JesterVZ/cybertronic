@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/card-group.css">
+    <link rel="stylesheet" href="../assets/css/card-group.css">
     <title>Document</title>
 </head>
 
@@ -14,12 +14,11 @@
     <div class="header">
         <ul class="nav">
             <li class="nav-item header-logo">
-                <img src="assets/img/logo.png" alt="Логотип">
+                <img src="../assets/img/logo.png" alt="Логотип">
                 <div id="logo">Кибертроник</div>
             </li>
             <li class="nav-item buttons">
-                <input type="radio" id="radio-models" name="header-menu-button" class="input-header" value="new"
-                    checked>
+                <input type="radio" id="radio-models" name="header-menu-button" class="input-header" value="new" checked>
                 <label for="radio-models" class="label-models">Модели</label>
             </li>
             <li class="nav-item buttons">
@@ -41,7 +40,7 @@
     </div>
     <div class="group-name">
         <div class="back-arrow">
-            <img src="assets/img/arrow_back_24px.png" alt="">
+            <img src="../assets/img/arrow_back_24px.png" alt="">
         </div>
         <div class="name">
             Группа 2
@@ -101,25 +100,25 @@
             </div>
         </div>
         <div class="input-row">
-                <div class="input-block">
-                    <div class="input-block-header">
-                        Комментарий
-                    </div>
-                    <textarea id="" cols="30" rows="10"></textarea>
+            <div class="input-block">
+                <div class="input-block-header">
+                    Комментарий
                 </div>
-            </div>
-    </form>
-    <div class="overlay">
-            <div class="popup">
-                <div class="popup-header">Вы действительно хотите удалить группу<br> null?</div>
-                <div class="popup-descr">
-                </div>
-                <div class="popup-buttons">
-                    <button id="delete" onclick="javascript:callUrl('/admin/group_delete?id=null');">Удалить</button>
-                    <button id="cancel" onclick="hideDialog()">Отмена</button>
-                </div>
+                <textarea id="" cols="30" rows="10"></textarea>
             </div>
         </div>
+    </form>
+    <div class="overlay">
+        <div class="popup">
+            <div class="popup-header">Вы действительно хотите удалить группу<br> null?</div>
+            <div class="popup-descr">
+            </div>
+            <div class="popup-buttons">
+                <button id="delete" onclick="javascript:callUrl('/admin/group_delete?id=null');">Удалить</button>
+                <button id="cancel" onclick="hideDialog()">Отмена</button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

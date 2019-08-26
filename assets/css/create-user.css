@@ -1,30 +1,40 @@
-body, html{
+body,
+html {
     margin: 0;
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
-ul{
+
+ul {
     margin: 0;
     padding: 0;
 }
-button{
+
+button {
     outline: none;
     cursor: pointer;
 }
-.back-arrow{
+
+.back-arrow {
     cursor: pointer;
 }
-.header{
+
+.header {
     width: 100%;
     margin: 0;
     height: 60px;
     background-image: url("../img/Rectangleheader.jpg");
     background-size: cover;
 }
-.nav-item, .menu-item{
+
+.nav-item,
+.menu-item {
     display: inline-block;
 }
-.header-menu, .header-profile, .header-logo{
+
+.header-menu,
+.header-profile,
+.header-logo {
     display: inline-block;
 }
 
@@ -34,7 +44,8 @@ button{
     margin-top: 8px;
     margin-left: 13px;
 }
-#logo{
+
+#logo {
     font-family: Roboto Slab;
     font-size: 20px;
     display: inline-block;
@@ -44,10 +55,12 @@ button{
     vertical-align: top;
     margin-top: 16px;
 }
-.nav{
+
+.nav {
     text-align: center;
 }
-.buttons{
+
+.buttons {
     font-size: 16px;
     margin-right: 18px;
     margin-left: 18px;
@@ -55,18 +68,22 @@ button{
     color: #A2DFF6;
     cursor: pointer;
 }
-.buttons:hover{
+
+.buttons:hover {
     color: #fff;
 }
 
-.profile{
+.profile {
     float: right;
     margin-right: 24px;
 }
-.exit, .profile-text{
+
+.exit,
+.profile-text {
     display: inline-block;
 }
-.exit{
+
+.exit {
     vertical-align: top;
     margin-top: 12px;
     background-color: transparent;
@@ -79,7 +96,8 @@ button{
     height: 36px;
     width: 86px;
 }
-.profile-text{
+
+.profile-text {
     text-align: left;
     margin-top: 12px;
     width: 100px;
@@ -88,32 +106,42 @@ button{
     font-weight: normal;
     color: #fff;
 }
-.profile-group{
+
+.profile-group {
     opacity: 0.5;
 }
-.header-logo{
+
+.header-logo {
     float: left;
 }
-.input-table, .input-header{
+
+.input-table,
+.input-header {
     display: none;
 }
-.input-header + label{
+
+.input-header+label {
     cursor: pointer;
 }
-.input-header:checked + label{
+
+.input-header:checked+label {
     color: #fff;
 }
-.back-arrow, .name{
+
+.back-arrow,
+.name {
     display: inline-block;
 }
-.user-name{
+
+.user-name {
     margin-left: 57px;
     height: 60px;
     padding-top: 24px;
     padding-bottom: 60px;
     border-bottom: 1px solid rgb(221, 221, 221);
 }
-.name{
+
+.name {
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
@@ -121,7 +149,9 @@ button{
     line-height: 28px;
     margin-left: 17px;
 }
-.user-buttons button, .popup-buttons button{
+
+.user-buttons button,
+.popup-buttons button {
     font-size: 16px;
     line-height: 19px;
     height: 36px;
@@ -130,44 +160,54 @@ button{
     color: #fff;
     margin-right: 10px;
 }
-#save{
+
+#save {
     background-color: #00BFA5;
     width: 133px;
 }
-#save:hover{
+
+#save:hover {
     background-color: rgb(0, 148, 128);
     transition: 0.2s;
 }
-#close{
+
+#close {
     background-color: #2196F3;
     width: 110px;
 }
-#close:hover{
+
+#close:hover {
     background-color: rgb(24, 112, 184);
     transition: 0.2s;
 }
-.user-buttons{
+
+.user-buttons {
     display: inline-block;
     float: right;
-    margin-right: 24px; 
+    margin-right: 24px;
 }
-#delete{
+
+#delete {
     background-color: #E91E63;
     width: 104px;
 }
-#delete:hover{
+
+#delete:hover {
     background-color: rgb(168, 24, 72);
     transition: 0.2s;
-
 }
-.back-arrow, .name{
+
+.back-arrow,
+.name {
     margin-top: 4px;
 }
-.user-status{
+
+.user-status {
     margin-top: 30px;
     margin-left: 57px;
 }
-.status{
+
+.status {
     min-width: 71px;
     display: inline-block;
     padding: 5px;
@@ -179,40 +219,49 @@ button{
     border: none;
     line-height: 16px;
 }
-.student{
+
+.student {
     background-color: #EB5757;
     width: 71px;
 }
-.branch{
+
+.branch {
     min-width: 83px;
     background-color: #DFDFDF;
     color: #000;
 }
-.group{
+
+.group {
     background-color: #DFDFDF;
     color: #000;
 }
-.input-block{
+
+.input-block {
     display: inline-block;
     margin-right: 24px;
 }
-.input-block-header{
+
+.input-block-header {
     margin-bottom: 5px;
     font-size: 12px;
     line-height: 14px;
     color: #949494;
 }
-.teacher{
+
+.teacher {
     background-color: #683CD7;
 }
-.multi-roles{
+
+.multi-roles {
     background-color: #2196F3;
     color: #fff;
 }
-.input-row{
+
+.input-row {
     margin-bottom: 30px;
 }
-.input-row textarea{
+
+.input-row textarea {
     border: 1px solid #CCCCCC;
     padding: 10px;
     box-sizing: border-box;
@@ -223,7 +272,9 @@ button{
     width: 584px;
     outline: none;
 }
-.input-block input, .select-role{
+
+.input-block input,
+.select-role {
     border: 1px solid #CCCCCC;
     color: #333333;
     padding-left: 10px;
@@ -234,11 +285,13 @@ button{
     width: 280px;
     height: 36px;
 }
-.form-data{
+
+.form-data {
     margin-top: 31px;
     margin-left: 57px;
 }
-.save-label{
+
+.save-label {
     background: #00BFA5;
     box-shadow: 0px 20px 40px rgba(0, 117, 101, 0.2);
     margin-right: 24px;
@@ -255,12 +308,14 @@ button{
     margin-bottom: 24px;
     display: block;
 }
-.save-label-close{
+
+.save-label-close {
     display: inline-block;
     margin-left: 20px;
     cursor: pointer;
 }
-.overlay{
+
+.overlay {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
@@ -269,7 +324,8 @@ button{
     top: 0;
     display: none;
 }
-.popup{
+
+.popup {
     position: fixed;
     width: 504px;
     height: 245px;
@@ -279,22 +335,26 @@ button{
     transform: translateX(-50%);
     display: none;
 }
-.popup-buttons{
+
+.popup-buttons {
     margin-left: 43px;
     margin-top: 32px;
 }
-#cancel{
+
+#cancel {
     width: 104px;
     color: #000;
 }
-.popup-header{
+
+.popup-header {
     font-size: 18px;
     line-height: 21px;
     font-weight: 300;
     margin-left: 43px;
     margin-top: 39px;
 }
-.popup-descr{
+
+.popup-descr {
     font-weight: normal;
     margin-left: 43px;
     margin-right: 43px;
@@ -302,4 +362,16 @@ button{
     margin-top: 25px;
     font-size: 16px;
     line-height: 19px;
+}
+
+#multiSelectElementsSelected {
+    width: 576px;
+}
+
+#multiSelectElements {
+    width: 586px;
+}
+
+.multiSelectElement {
+    width: 576px;
 }

@@ -1,34 +1,36 @@
 body {
-font-family: Arial, Helvetica, Sans-serif;
-font-size: 12px;
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size: 12px;
 }
+
 #multiSelectElementsSelected {
-border: solid 1px #cccccc;
-border-radius: 5px;
-font-size: 13px;
-min-height: 36px;
-width: 576px;
-min-height: 25px;
-line-height: 30px;
-padding-right: 5px;
-padding-left: 5px;
-float: left;
+    border: solid 1px #cccccc;
+    border-radius: 5px;
+    font-size: 13px;
+    min-height: 36px;
+    min-height: 25px;
+    line-height: 30px;
+    padding-right: 5px;
+    padding-left: 5px;
+    float: left;
 }
+
 .multiSelectElementSelected {
-line-height: 20px;
-height: 20px;
-background: #DFDFDF;
-float: left;
-padding-left: 5px;
--webkit-border-radius: 2px 2px 2px 2px;
--moz-border-radius : 2px 2px 2px 2px;
--ms-border-radius : 2px 2px 2px 2px;
--o-border-radius : 2px 2px 2px 2px;
-border-radius: 16px;
-margin-right: 5px;
-margin-top: 5px;
-margin-bottom: 5px;
+    line-height: 20px;
+    height: 20px;
+    background: #DFDFDF;
+    float: left;
+    padding-left: 5px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    -moz-border-radius: 2px 2px 2px 2px;
+    -ms-border-radius: 2px 2px 2px 2px;
+    -o-border-radius: 2px 2px 2px 2px;
+    border-radius: 16px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
+
 .multiSelectElementSelected .multiSelectClose {
     float: right;
     padding-right: 5px;
@@ -38,6 +40,7 @@ margin-bottom: 5px;
     font-size: 9px;
     font-weight: bold;
 }
+
 #multiSelectClick {
     position: absolute;
     margin-left: 556px;
@@ -49,9 +52,9 @@ margin-bottom: 5px;
     color: #cccccc;
     cursor: pointer;
 }
+
 #multiSelectElements {
     display: none;
-    width: 586px;
     min-height: 20px;
     line-height: 20px;
     min-height: 20px;
@@ -60,18 +63,20 @@ margin-bottom: 5px;
     border-radius: 5px;
     border-top: none;
 }
+
 .multiSelectElement {
     background: #fff;
     padding-right: 5px;
     padding-left: 5px;
     font-size: 15px;
-    width: 576px;
     border-radius: 5px;
     cursor: pointer;
 }
-.multiSelectElement:hover{
+
+.multiSelectElement:hover {
     background: #CCCCCC;
 }
-.multiselect-input{
+
+.multiselect-input {
     vertical-align: top;
 }

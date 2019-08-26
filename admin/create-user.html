@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/create-user.css">
-    <link rel="stylesheet" href="assets/css/multiselect/jquery.multiSelect.css">
+    <link rel="stylesheet" href="../assets/css/create-user.css">
+    <link rel="stylesheet" href="../assets/css/multiselect/jquery.multiSelect.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,12 +18,11 @@
     <div class="header">
         <ul class="nav">
             <li class="nav-item header-logo">
-                <img src="assets/img/logo.png" alt="Логотип">
+                <img src="../assets/img/logo.png" alt="Логотип">
                 <div id="logo">Кибертроник</div>
             </li>
             <li class="nav-item buttons">
-                <input type="radio" id="radio-models" name="header-menu-button" class="input-header" value="new"
-                    checked>
+                <input type="radio" id="radio-models" name="header-menu-button" class="input-header" value="new" checked>
                 <label for="radio-models" class="label-models">Модели</label>
             </li>
             <li class="nav-item buttons">
@@ -45,7 +44,7 @@
     </div>
     <div class="user-name">
         <div class="back-arrow">
-            <img src="assets/img/arrow_back_24px.png" alt="">
+            <img src="../assets/img/arrow_back_24px.png" alt="">
         </div>
         <div class="name">
             Иванов Бельсемберг Космический
@@ -129,7 +128,7 @@
                     Группа
                 </div>
                 <div id="multiselect"></div>
-               
+
             </div>
 
 
@@ -143,12 +142,13 @@
             </div>
         </div>
     </form>
-    <div class="save-label">Изменения сохранены <div class="save-label-close">&#10006</div></div>
+    <div class="save-label">Изменения сохранены
+        <div class="save-label-close">&#10006</div>
+    </div>
     <div class="overlay">
         <div class="popup">
             <div class="popup-header">
-                Вы действительно хотите удалить пользователя<br>
-                Иванов Бельсемберг Космический?
+                Вы действительно хотите удалить пользователя<br> Иванов Бельсемберг Космический?
             </div>
             <div class="popup-descr">
                 Все данные пользователя будут стерты
@@ -160,7 +160,7 @@
         </div>
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="assets/js/jquery.multiSelect.js"></script>
+    <script src="../assets/js/jquery.multiSelect.js"></script>
     <script type="text/javascript">
         $("#multiselect").multiSelect({
             title: "Группы",

@@ -1,32 +1,44 @@
-body, html{
+body,
+html {
     margin: 0;
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
-ul{
+
+ul {
     margin: 0;
     padding: 0;
 }
 
-a.white-link{
+a.white-link {
     color: #fff;
 }
-a.base-link{
+
+a.base-link {
     color: #3564E0;
     text-decoration: none;
 }
-.for-link{
+
+.for-link {
     margin-left: 200px;
     margin-top: 17px;
 }
-.header{
+
+.header {
     width: 100%;
     margin: 0;
     height: 60px;
     background-image: url("../img/Rectangleheader.jpg");
     background-size: cover;
 }
-.header-menu, .header-profile, .header-logo, .nav-item, .menu-item, .exit, .profile-text{
+
+.header-menu,
+.header-profile,
+.header-logo,
+.nav-item,
+.menu-item,
+.exit,
+.profile-text {
     display: inline-block;
 }
 
@@ -37,7 +49,7 @@ a.base-link{
     margin-left: 13px;
 }
 
-#logo{
+#logo {
     font-family: Roboto Slab;
     font-size: 20px;
     display: inline-block;
@@ -47,25 +59,30 @@ a.base-link{
     vertical-align: top;
     margin-top: 16px;
 }
-.nav{
+
+.nav {
     text-align: center;
 }
-.buttons{
+
+.buttons {
     margin-right: 18px;
+    font-size: 16px;
     margin-left: 18px;
     margin-top: 21px;
     color: #A2DFF6;
     cursor: pointer;
 }
-.buttons:hover{
+
+.buttons:hover {
     color: #fff;
 }
 
-.profile{
+.profile {
     float: right;
     margin-right: 24px;
 }
-.exit{
+
+.exit {
     vertical-align: top;
     margin-top: 12px;
     background-color: transparent;
@@ -78,7 +95,8 @@ a.base-link{
     height: 36px;
     width: 86px;
 }
-.profile-text{
+
+.profile-text {
     text-align: left;
     margin-top: 12px;
     width: 100px;
@@ -87,40 +105,52 @@ a.base-link{
     font-weight: normal;
     color: #fff;
 }
-.profile-group{
+
+.profile-group {
     opacity: 0.5;
 }
-.header-logo{
+
+.header-logo {
     float: left;
 }
-.input-table, .input-header{
+
+.input-table,
+.input-header {
     display: none;
 }
-.input-header + label{
+
+.input-header+label {
     cursor: pointer;
 }
-.input-header:checked + label{
+
+.input-header:checked+label {
     color: #fff;
 }
+
+
 /*user-menu*/
-.card-name{
+
+.card-name {
     margin-left: 57px;
     height: 80px;
     padding-top: 24px;
     border-bottom: 1px solid rgb(221, 221, 221);
 }
-.name{
+
+.name {
     font-weight: 300;
     font-size: 24px;
     line-height: 28px;
     margin-left: 17px;
 }
-.group-buttons{
+
+.group-buttons {
     display: inline-block;
     float: right;
-    margin-right: 24px; 
+    margin-right: 24px;
 }
-.group-buttons button{
+
+.group-buttons button {
     height: 36px;
     border-radius: 20px;
     border: none;
@@ -131,57 +161,73 @@ a.base-link{
     line-height: 19px;
     cursor: pointer;
 }
-#save{
+
+#save {
     background-color: #00BFA5;
     width: 133px;
 }
-#save:hover{
+
+#save:hover {
     background-color: rgb(0, 148, 128);
     transition: 0.2s;
 }
-#close{
+
+#close {
     background-color: #2196F3;
     width: 110px;
 }
-#close:hover{
+
+#close:hover {
     background-color: rgb(24, 112, 184);
     transition: 0.2s;
 }
-#delete{
+
+#delete {
     background-color: #E91E63;
     width: 104px;
 }
-#delete:hover{
+
+#delete:hover {
     background-color: rgb(168, 24, 72);
     transition: 0.2s;
-
 }
-.back-arrow, .name{
+
+.back-arrow,
+.name {
     margin-top: 4px;
     display: inline-block;
 }
-.back-arrow{
+
+.back-arrow {
     cursor: pointer;
 }
+
+
 /*input row, input block*/
+
 .form-data {
     margin-top: 31px;
     margin-left: 57px;
 }
-.input-block{
+
+.input-block {
     display: inline-block;
     margin-right: 24px;
 }
-.input-block-header{
+
+.input-block-header {
     font-size: 12px;
     line-height: 14px;
     color: #949494;
     margin-bottom: 6px;
 }
-.input-row{
+
+.input-row {
     margin-bottom: 30px;
 }
-.input-block input, select{
+
+.input-block input,
+select {
     border: 1px solid #CCCCCC;
     color: #333333;
     padding-left: 10px;
@@ -192,7 +238,8 @@ a.base-link{
     width: 432px;
     height: 36px;
 }
-.input-block textarea{
+
+.input-block textarea {
     border: 1px solid #CCCCCC;
     box-sizing: border-box;
     border-radius: 5px;
@@ -203,14 +250,17 @@ a.base-link{
     width: 887px;
     outline: none;
 }
-.row-image{
+
+.row-image {
     border-top: 1px solid rgb(240, 240, 240);
     margin-right: 79px;
 }
-.row-image .input-block{
+
+.row-image .input-block {
     margin-top: 30px;
 }
-.add-image-item{
+
+.add-image-item {
     display: inline-block;
     width: 150px;
     color: #fff;
@@ -225,7 +275,8 @@ a.base-link{
     text-align: center;
     cursor: pointer;
 }
-.image-item{
+
+.image-item {
     display: inline-block;
     width: 150px;
     height: 119px;
@@ -235,31 +286,38 @@ a.base-link{
     margin-right: 24px;
     cursor: pointer;
 }
-#image-1{
+
+#image-1 {
     background-image: url(../img/models/Rectangle\ 2.1.png);
 }
-#image-2{
+
+#image-2 {
     background-image: url(../img/models/Rectangle\ 2model-1.png);
 }
-.add-image-item:hover{
+
+.add-image-item:hover {
     background-color: rgb(22, 101, 165);
     transition: 0.5s;
 }
-.image-item-menu:hover{
+
+.image-item-menu:hover {
     background-color: rgba(0, 0, 0, 0.377);
     transition: 0.5s;
 }
-.image-item-menu:hover .image-item-menu-button{
+
+.image-item-menu:hover .image-item-menu-button {
     display: block;
 }
-.image-item-menu{
+
+.image-item-menu {
     width: 100%;
-    height: 100%;   
+    height: 100%;
     border-radius: 5px;
     text-align: center;
     color: rgba(255, 255, 255, 0.466);
 }
-.image-item-menu-button{
+
+.image-item-menu-button {
     display: none;
     padding-top: 31px;
     font-style: normal;
@@ -267,7 +325,12 @@ a.base-link{
     font-size: 16px;
     line-height: 19px;
 }
-.image-item-menu-button:hover{
+
+.image-item-menu-button:hover {
     color: #fff;
     transition: 0.5s;
+}
+
+#multiSelectElementsSelected {
+    width: 300px;
 }
