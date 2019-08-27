@@ -322,7 +322,6 @@ button {
     position: fixed;
     z-index: 3;
     top: 0;
-    display: none;
 }
 
 .popup {
@@ -333,7 +332,6 @@ button {
     left: 50%;
     top: 262px;
     transform: translateX(-50%);
-    display: none;
 }
 
 .popup-buttons {
