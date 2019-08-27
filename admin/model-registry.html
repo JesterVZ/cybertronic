@@ -16,35 +16,40 @@
 </head>
 
 <body>
-    <span><div class="header">
-    <ul class="nav">
-        <li class="nav-item header-logo">
-            <img src="../assets/img/logo.png" alt="">
-            <div id="logo">Кибертроник</div>
-        </li>
-        <li class="nav-item buttons">
-            <input type="radio" id="radio-models" name="header-menu-button" class="input-header" value="new" onclick="callUrl('/admin/model_list')" checked="checked">
-            <label for="radio-models" class="label-models">Модели</label>
-        </li>
-        <li class="nav-item buttons">
-            <input type="radio" id="radio-header-users" class="input-header" name="header-menu-button" value="new" onclick="callUrl('/admin/user_list')">
-            <label for="radio-header-users" class="label-header-users">Пользователи</label>
-        </li>
-        <li class="nav-item buttons">
-            <input type="radio" id="radio-magazine" class="input-header" name="header-menu-button" value="new" onclick="callUrl('/admin/event_list')">
-            <label for="radio-magazine" class="label-magazine">Журнал действий</label>
-        </li>
-        <li class="nav-item profile">
-            <div class="profile-text">
-                <div class="profile-name">&lt;...&gt;</div>
-                <div class="profile-group">Группы нет</div>
-            </div>
-            <button class="exit" onclick="submitForm('logout_form')">Выход</button>
-        </li>
-    </ul>
-    <form action="/logout" id="logout_form" method="post">
-    </form>
-</div></span>
+    <span>
+        <div class="header">
+            <ul class="nav">
+                <li class="nav-item header-logo">
+                    <img src="../assets/img/logo.png" alt="">
+                    <div id="logo">Кибертроник</div>
+                </li>
+                <li class="nav-item buttons">
+                    <input type="radio" id="radio-models" name="header-menu-button" class="input-header" value="new"
+                        onclick="callUrl('/admin/model_list')" checked="checked">
+                    <label for="radio-models" class="label-models">Модели</label>
+                </li>
+                <li class="nav-item buttons">
+                    <input type="radio" id="radio-header-users" class="input-header" name="header-menu-button"
+                        value="new" onclick="callUrl('/admin/user_list')">
+                    <label for="radio-header-users" class="label-header-users">Пользователи</label>
+                </li>
+                <li class="nav-item buttons">
+                    <input type="radio" id="radio-magazine" class="input-header" name="header-menu-button" value="new"
+                        onclick="callUrl('/admin/event_list')">
+                    <label for="radio-magazine" class="label-magazine">Журнал действий</label>
+                </li>
+                <li class="nav-item profile">
+                    <div class="profile-text">
+                        <div class="profile-name">&lt;...&gt;</div>
+                        <div class="profile-group">Группы нет</div>
+                    </div>
+                    <button class="exit" onclick="submitForm('logout_form')">Выход</button>
+                </li>
+            </ul>
+            <form action="/logout" id="logout_form" method="post">
+            </form>
+        </div>
+    </span>
 
     <div class="group-name">
         <div class="name">
@@ -166,8 +171,8 @@
                 <div class="pagination">
                     <a onclick="javascript:changePage(&#39;model_list_form&#39;, &#39;0&#39;);" class="disabled">❮</a>
                     <span>
-                    <a onclick="javascript:changePage(&#39;model_list_form&#39;, &#39;1&#39;);" class="active">1</a>
-                </span>
+                        <a onclick="javascript:changePage(&#39;model_list_form&#39;, &#39;1&#39;);" class="active">1</a>
+                    </span>
                     <a onclick="javascript:changePage(&#39;model_list_form&#39;, &#39;2&#39;);" class="disabled">❯</a>
                 </div>
             </div>
