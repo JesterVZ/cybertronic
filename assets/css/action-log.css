@@ -110,7 +110,7 @@ a.base-link{
 .admin-table{
     display: inline-block;
     margin-left: 57px;
-    width: 70%;
+    width: 80%;
 }
 .table{
     width: 100%;
@@ -407,11 +407,26 @@ input[type=checkbox]:not(old) + input[type=hidden] + label > span{
         width: 97%;
     }
 }
+@media(max-width: 1420px){
+    .admin-table{
+        width: 73%;
+    }
+}
 @media(max-width: 1116px){
     .td-branch, .header-branches {
         text-align: center;
     }
     .search i{
         right: 6%;
+    }
+}
+@media(max-width: 1054px){
+    .admin-table{
+        width: 69%;
+    }
+    .search i{
+        position: absolute;
+        right: 30%;
+        top: 99px;
     }
 }
