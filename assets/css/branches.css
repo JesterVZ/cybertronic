@@ -306,7 +306,8 @@ thead tr th{
     left: 2.7%;
     right: 6%;
     height: 1px;
-    border-bottom: 1px solid #CCCCCC;
+    border-bottom: 1px solid #000;
+    opacity: 0.1;
 }
 .tr-row{
     height: 78px;

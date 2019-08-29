@@ -242,7 +242,8 @@ th {
     left: 2.7%;
     right: 17%;
     height: 1px;
-    border-bottom: 1px solid #CCCCCC;
+    border-bottom: 1px solid #000;
+    opacity: 0.1;
 }
 
 .pagination-row {
@@ -327,7 +328,13 @@ th {
     height: 100%;
     width: 223px;
     background-color: #F4F2F5;
-    ;
+}
+.sort-branch div label div, .sort-role div label div, .sort-group div label div{
+    display: initial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
 }
 
 input[type=checkbox]:not(old) {
@@ -408,26 +415,31 @@ input[type=checkbox]:not(old)+input[type=hidden]+label>span {
 }
 
 .sort-role,
-.sort-branch,
-.sort-group {
+.sort-branch {
+    margin-bottom: 12px;
+}
+.sort-group{
     margin-bottom: 31px;
 }
 
 .sort-role p {
     font-size: 12px;
     line-height: 14px;
+    padding-left: 5px;
     color: #949494;
 }
 
 .sort-group p {
     font-size: 12px;
     line-height: 14px;
+    padding-left: 5px;
     color: #949494;
 }
 
 .sort-branch p {
     font-size: 12px;
     line-height: 14px;
+    padding-left: 5px;
     color: #949494;
 }
 

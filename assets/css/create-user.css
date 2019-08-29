@@ -273,7 +273,7 @@ button {
     outline: none;
 }
 
-.input-block input,
+.input-block .input-block-input,
 .select-role {
     border: 1px solid #CCCCCC;
     color: #333333;
@@ -283,7 +283,7 @@ button {
     border-radius: 5px;
     font-size: 16px;
     width: 280px;
-    height: 36px;
+    min-height: 36px;
 }
 
 .form-data {
@@ -316,6 +316,7 @@ button {
 }
 
 .overlay {
+    display: none;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
@@ -360,16 +361,4 @@ button {
     margin-top: 25px;
     font-size: 16px;
     line-height: 19px;
-}
-
-#multiSelectElementsSelected {
-    width: 576px;
-}
-
-#multiSelectElements {
-    width: 586px;
-}
-
-.multiSelectElement {
-    width: 576px;
 }

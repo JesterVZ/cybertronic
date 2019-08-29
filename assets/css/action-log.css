@@ -36,6 +36,7 @@ a.base-link{
     display: inline-block;
 }
 
+
 .header-logo img {
     height: 43px;
     width: 39px;
@@ -232,8 +233,16 @@ th{
     padding-top: 26px;
     height: 100%;
     width: 223px;
-    background-color: #F4F2F5;;
+    background-color: #F4F2F5;
 }
+.sort-branch div label div{
+    display: initial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+}
+
 .input-search{
     width: 98%;
     -webkit-appearance: none;
@@ -375,13 +384,15 @@ input[type=checkbox]:not(old) + input[type=hidden] + label > span{
 }
 .input-date-img{
     position: relative;
-    right: 20%;
-    top: 6px;
-    width: 20px;
+    right: 18%;
+    top: 4px;
+    width: 16px;
+    height: 18px;
 }
 #datetimepicker{
     width: 167px;
-    height: 30px;
+    height: 36px;
+    font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -394,5 +405,13 @@ input[type=checkbox]:not(old) + input[type=hidden] + label > span{
 @media(max-width: 1493px){
     .input-search{
         width: 97%;
+    }
+}
+@media(max-width: 1116px){
+    .td-branch, .header-branches {
+        text-align: center;
+    }
+    .search i{
+        right: 6%;
     }
 }

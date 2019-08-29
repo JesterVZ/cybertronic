@@ -177,7 +177,6 @@ input[type=checkbox]:not(old){
 input[type=checkbox]:not(old) + input[type=hidden] + label{
     display      : inline-block;
     margin-left  : -2em;
-    margin-bottom: 9px;
     line-height  : 1.5em;
 }
 input[type=checkbox]:not(old):checked + input[type=hidden] +  label > span > span{
@@ -248,14 +247,14 @@ th{
     color: #949494;
     text-align: left;
 }
-.client-name, .thead tr th{
+.client-name{
     padding-left: 57px;
 }
 .client-name:hover{
     color: #3564E0;
     cursor: pointer;
 }
-thead tr th{
+.th-first{
     padding-left: 57px;
 }
 .tr-row{
@@ -271,8 +270,8 @@ thead tr th{
     left: 2.7%;
     right: 17%;
     height: 1px;
-    border-bottom: 1px solid #CCCCCC;
-}
+    border-bottom: 1px solid #000;
+    opacity: 0.1;}
 .tr-row{
     height: 78px;
 }
@@ -338,20 +337,14 @@ thead tr th{
 .sort-branch{
     margin-bottom: 31px;
 }
-.sort-role p{
-    font-size: 12px;
-    line-height: 14px;
-    color: #949494;
-}
-.sort-group p{
-    font-size: 12px;
-    line-height: 14px;
-    color: #949494;
-}
 .sort-branch p{
     font-size: 12px;
     line-height: 14px;
+    padding-left: 5px;
     color: #949494;
+}
+.sort-branch div{
+    margin-bottom: 9px;
 }
 .pagination{
     display: inline-block;
@@ -373,14 +366,23 @@ thead tr th{
     background-color: #DFDFDF;
     border-radius: 50%;
 }
-.sort{
+.sort {
+    position: relative;
+    z-index: 3;
     display: inline-block;
     float: right;
     padding-left: 32px;
     padding-top: 26px;
     height: 100%;
     width: 223px;
-    background-color: #F4F2F5;;
+    background-color: #F4F2F5;
+}
+.sort-branch div label div{
+    display: initial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
 }
 @media(max-width: 1876px){
     .admin-table{

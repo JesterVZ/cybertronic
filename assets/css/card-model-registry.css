@@ -371,6 +371,7 @@ select {
     position: fixed;
     z-index: 3;
     top: 0;
+    display: none;
 }
 .popup{
     position: fixed;
@@ -380,6 +381,7 @@ select {
     left: 50%;
     top: 262px;
     transform: translateX(-50%);
+    display: none;
 }
 .popup-buttons{
     margin-left: 43px;

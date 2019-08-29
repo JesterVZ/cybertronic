@@ -293,15 +293,17 @@ input[type=checkbox]:not(old)+input[type=hidden]+label>span {
     color: #fff;
 }
 
-.sort-role,
-.sort-branch,
-.sort-group {
+.sort-category,
+.sort-level,
+.sort-group,
+.sort-img,
+.sort-instructions {
     margin-bottom: 31px;
 }
 
 .sort-category p,
 .sort-level p,
-.sort-age p,
+.sort-group p,
 .sort-img p,
 .sort-instructions p {
     font-size: 12px;
@@ -332,6 +334,14 @@ input[type=checkbox]:not(old)+input[type=hidden]+label>span {
     width: 218px;
     background-color: #F4F2F5;
 }
+.sort-category div label div, .sort-level div label div, .sort-group div label div, .sort-img div label div, .sort-instructions div label div{
+    display: initial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+}
+
 
 .sort-apply-button button {
     height: 36px;
