@@ -30,7 +30,7 @@ a.base-link{
     background-size: cover;
 }
 .nav-item, .menu-item{
-    display: inline-block;
+    display: inline-block !important;
 }
 .header-menu, .header-profile, .header-logo{
     display: inline-block;
@@ -312,6 +312,8 @@ input[type=checkbox]:not(old) + input[type=hidden] + label > span{
 }
 .input-header + label{
     cursor: pointer;
+    font-weight: normal !important;
+
 }
 .input-header:checked + label{
     border: none;

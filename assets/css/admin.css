@@ -39,9 +39,9 @@ a.base-link {
 .menu-item,
 .exit,
 .profile-text {
-    display: inline-block;
+    display: inline-block  !important; 
+    
 }
-
 .header-logo img {
     height: 43px;
     width: 39px;
@@ -407,6 +407,7 @@ input[type=checkbox]:not(old)+input[type=hidden]+label>span {
 
 .input-header+label {
     cursor: pointer;
+    font-weight: normal !important;
 }
 
 .input-header:checked+label {

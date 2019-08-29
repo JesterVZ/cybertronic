@@ -34,7 +34,7 @@ a.base-link {
 
 .nav-item,
 .menu-item {
-    display: inline-block;
+    display: inline-block !important;
 }
 
 .header-menu,
@@ -127,6 +127,8 @@ a.base-link {
 
 .input-header+label {
     cursor: pointer;
+    font-weight: normal !important;
+
 }
 
 .input-header:checked+label {

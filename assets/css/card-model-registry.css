@@ -39,7 +39,7 @@ a.base-link {
 .menu-item,
 .exit,
 .profile-text {
-    display: inline-block;
+    display: inline-block !important;
 }
 
 .header-logo img {
@@ -121,6 +121,8 @@ a.base-link {
 
 .input-header+label {
     cursor: pointer;
+    font-weight: normal !important;
+
 }
 
 .input-header:checked+label {
