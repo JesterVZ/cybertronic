@@ -211,7 +211,7 @@ a.base-link {
     width: 88%;
 }
 
-.client-name:hover {
+.client-status :hover {
     color: #3564E0;
     cursor: pointer;
     transition: 0.2s;
