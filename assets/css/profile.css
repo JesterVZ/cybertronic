@@ -165,7 +165,7 @@ a.base-link {
 .create-user-button button {
     margin-right: 24px;
     margin-top: 21px;
-    width: 226px;
+    width: 155px;
     height: 36px;
 }
 
@@ -267,6 +267,7 @@ th {
 .table td {
     vertical-align: middle;
     height: 40px;
+    width: 26%;
 }
 
 .table th {
@@ -274,15 +275,124 @@ th {
     border: none;
     height: 40px;
 }
-
-.client-img img {
-    width: 20px;
-    margin-right: 9px;
-    height: 20px;
+input[type=checkbox]:not(old) {
+    width: 2em;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    opacity: 0;
+    line-height: 1.5em;
 }
 
-.client-name,
+input[type=checkbox]:not(old)+input[type=hidden]+label {
+    display: inline-block;
+    margin-left: -2em;
+    margin-bottom: 9px;
+    line-height: 1.5em;
+}
+
+input[type=checkbox]:not(old):checked+input[type=hidden]+label>span>span {
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    margin: 0.125em;
+    border-radius: 0.125em;
+    background: #683CD7;
+}
+
+input[type=checkbox]:not(old):checked+input[type=hidden]+label>span {
+    background-image: -moz-linear-gradient(rgb(224, 224, 224), rgb(240, 240, 240));
+}
+
+input[type=checkbox]:not(old)+input[type=hidden]+label>span {
+    display: inline-block;
+    width: 0.875em;
+    height: 0.875em;
+    margin: 0.25em 0.5em 0.25em 0.25em;
+    border: 0.0625em solid rgb(192, 192, 192);
+    border-radius: 0.25em;
+    vertical-align: bottom;
+}
+
+.input-table+label {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 300;
+    font-size: 24px;
+    height: 50px;
+    border-bottom: 1px solid #ADADAD;
+    cursor: pointer;
+}
+
+.input-table:checked+label {
+    color: #6A3AD7;
+    margin-top: 31px;
+    border-bottom: 1px solid #6A3AD7;
+}
+
+.sort-status div label div, .sort-lesson-type div label div, .sort-group div label div{
+    display: initial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.client-status,
+.client-student,
+.client-profile-type,
 .client-img {
     font-size: 13px;
     line-height: 18px;
+}
+.individual div{
+    padding-left: 10px;
+    padding-top: 3px;
+    height: 24px;
+    width: 131px;
+    background: #EB5757;
+    border-radius: 16px;
+    color: #fff;
+}
+.group div{
+    padding-left: 10px;
+    padding-top: 3px;
+    width: 89px;
+    height: 24px;
+    background: #2196F3;
+    border-radius: 16px;
+    color: #fff;
+}
+.sort {
+    position: relative;
+    z-index: 3;
+    display: inline-block;
+    float: right;
+    padding-left: 32px;
+    padding-top: 26px;
+    height: 100%;
+    width: 223px;
+    background-color: #F4F2F5;
+}
+.sort-group p, .sort-lesson-type p, .sort-status p{
+    font-size: 12px;
+    line-height: 14px;
+    padding-left: 5px;
+    color: #949494;
+}
+
+.sort-apply-button button {
+    height: 36px;
+    width: 155px;
+    background: #00BFA5;
+    border-radius: 20px;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 9px;
+    margin-top: 33px;
 }

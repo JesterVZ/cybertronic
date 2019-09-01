@@ -530,7 +530,7 @@ input[type=checkbox]:not(old)+input[type=hidden]+label>span {
 }
 
 #model_list_form {
-    height: 100%;
+    height: 110%;
 }
 
 
