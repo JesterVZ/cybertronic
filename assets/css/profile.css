@@ -267,7 +267,7 @@ th {
 .table td {
     vertical-align: middle;
     height: 40px;
-    width: 26%;
+    width: 22%;
 }
 
 .table th {
@@ -395,4 +395,146 @@ input[type=checkbox]:not(old)+input[type=hidden]+label>span {
     line-height: 19px;
     margin-left: 9px;
     margin-top: 33px;
+}
+
+.pagination {
+    display: inline-block;
+    margin-top: 27px;
+    cursor: pointer;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 13px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #2196F3;
+    color: white;
+    border-radius: 50%;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #DFDFDF;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+.search {
+    position: relative;
+    width: 100%;
+    margin-top: 26px;
+}
+
+.input-search {
+    width: 91%;
+    -webkit-appearance: none;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    height: 40px;
+    padding: 10px;
+    margin-left: 57px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search i {
+    position: absolute;
+    top: 11px;
+    right: 7%;
+    font-size: 18px;
+    color: #DADADA;
+}
+
+.button-status{
+    font-size: 13px;
+    line-height: 15px;
+    width: 113px;
+    height: 30px;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.button-status img{
+    position: relative;
+    top: 2px;
+    width: 16px;
+    height: 15px;
+}
+.active{
+    background: #7135D6;
+    padding-left: 12px;
+    padding-top: 5px;
+}
+.not-active{
+    border: 1px solid #7135D6;
+    box-sizing: border-box;
+    color: #7135D6;
+    padding-left: 15px;
+    padding-top: 6px;
+}
+.overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    z-index: 3;
+    top: 0;
+}
+
+.popup {
+    position: fixed;
+    width: 504px;
+    height: 245px;
+    background-color: #fff;
+    left: 50%;
+    top: 262px;
+    transform: translateX(-50%);
+}
+
+@media(max-width: 1876px) {
+    .admin-table {
+        width: 86%;
+    }
+    .tr-row::after {
+        right: 20%;
+    }
+}
+
+@media(max-width: 1609px) {
+    .admin-table {
+        width: 84%;
+    }
+}
+
+@media(max-width: 1400px) {
+    .client-img {
+        width: 243px;
+    }
+}
+
+@media(max-width: 1411px) {
+    .admin-table {
+        width: 82%;
+    }
+}
+
+@media(max-width: 1257px) {
+    .admin-table {
+        width: 80%;
+    }
+    .tr-row::after {
+        right: 22%;
+    }
+}
+
+@media(max-width: 1132px) {
+    .admin-table {
+        width: 70%;
+    }
+    .tr-row::after {
+        right: 24%;
+    }
 }

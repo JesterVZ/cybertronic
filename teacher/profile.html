@@ -102,8 +102,7 @@
                             Константин Константинович</div>
                     </td>
                     <td>
-
-
+                        <div class="button-status active"><img src="../assets/img/active-star.png" alt=""><span>Активный</span> </div>
                     </td>
                 </tr>
 
@@ -131,7 +130,7 @@
                             Бельсемберг Космический</div>
                     </td>
                     <td>
-
+                            <div class="button-status not-active"><span>Активировать</span> </div>
                     </td>
                 </tr>
 
@@ -157,7 +156,8 @@
                     <td class="client-student">
                         <div class="branch"></div>
                     </td>
-                    <td class="client-student">
+                    <td>
+                            <div class="button-status not-active"><span>Активировать</span> </div>
 
                     </td>
                 </tr>
@@ -185,6 +185,7 @@
                         <div class="branch"></div>
                     </td>
                     <td>
+                            <div class="button-status not-active"><span>Активировать</span> </div>
 
                     </td>
                 </tr>
@@ -210,7 +211,8 @@
                     <td class="client-student">
                         <div class="branch"></div>
                     </td>
-                    <td class="">
+                    <td>
+                            <div class="button-status active"><img src="../assets/img/active-star.png" alt=""><span>Активный</span> </div>
 
                     </td>
                 </tr>
@@ -253,7 +255,7 @@
             </div>
         </div>
         <div class="sort-lesson-type">
-            <p>Группа</p>
+            <p>Тип занятия</p>
             <div>
                 <input type="checkbox" value="-1" id="checkedSubdivisionIds1" name="checkedSubdivisionIds" /><input type="hidden" name="_checkedSubdivisionIds" value="on" />
                 <label><span><span></span></span><div>Групповой</div></label>
@@ -264,7 +266,7 @@
             </div>
         </div>
         <div class="sort-status">
-            <p>Группа</p>
+            <p>Статус</p>
             <div>
                 <input type="checkbox" value="-1" id="checkedSubdivisionIds1" name="checkedSubdivisionIds" /><input type="hidden" name="_checkedSubdivisionIds" value="on" />
                 <label><span><span></span></span><div>Активный</div></label>
@@ -278,6 +280,20 @@
             <button onclick="refreshGroupList()">Применить</button>
         </div>
     </div>
+    <div class="overlay">
+            <div class="popup">
+                <div class="popup-header">
+                    Создание нового задания
+                </div>
+                <div class="popup-descr">
+                    Все данные пользователя будут стерты
+                </div>
+                <div class="popup-buttons">
+                    <button id="delete">Удалить</button>
+                    <button id="cancel">Отмена</button>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>
