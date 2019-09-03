@@ -277,7 +277,7 @@ th {
     border: none;
     height: 40px;
 }
-input[type=checkbox]:not(old) {
+.sort-checkbox:not(old), .create-new-lesson-checkbox:not(old) {
     width: 2em;
     margin: 0;
     padding: 0;
@@ -286,14 +286,14 @@ input[type=checkbox]:not(old) {
     line-height: 1.5em;
 }
 
-input[type=checkbox]:not(old)+input[type=hidden]+label {
+.sort-checkbox:not(old)+input[type=hidden]+label, .create-new-lesson-checkbox:not(old)+input[type=hidden]+label {
     display: inline-block;
     margin-left: -2em;
     margin-bottom: 9px;
     line-height: 1.5em;
 }
 
-input[type=checkbox]:not(old):checked+input[type=hidden]+label>span>span {
+.sort-checkbox:not(old):checked+input[type=hidden]+label>span>span {
     display: block;
     width: 0.5em;
     height: 0.5em;
@@ -301,12 +301,22 @@ input[type=checkbox]:not(old):checked+input[type=hidden]+label>span>span {
     border-radius: 0.125em;
     background: #683CD7;
 }
-
-input[type=checkbox]:not(old):checked+input[type=hidden]+label>span {
+.create-new-lesson-checkbox:not(old):checked+input[type=hidden]+label>span>span {
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    margin: 0.125em;
+    border-radius: 0.5em;
+    background: #683CD7;
+}
+.sort-checkbox:not(old):checked+input[type=hidden]+label>span {
+    background-image: -moz-linear-gradient(rgb(224, 224, 224), rgb(240, 240, 240));
+}
+.create-new-lesson-checkbox:not(old):checked+input[type=hidden]+label>span {
     background-image: -moz-linear-gradient(rgb(224, 224, 224), rgb(240, 240, 240));
 }
 
-input[type=checkbox]:not(old)+input[type=hidden]+label>span {
+.sort-checkbox:not(old)+input[type=hidden]+label>span {
     display: inline-block;
     width: 0.875em;
     height: 0.875em;
@@ -315,7 +325,15 @@ input[type=checkbox]:not(old)+input[type=hidden]+label>span {
     border-radius: 0.25em;
     vertical-align: bottom;
 }
-
+.create-new-lesson-checkbox:not(old)+input[type=hidden]+label>span {
+    display: inline-block;
+    width: 0.875em;
+    height: 0.875em;
+    margin: 0.25em 0.5em 0.25em 0.25em;
+    border: 0.0625em solid rgb(192, 192, 192);
+    border-radius: 0.5em;
+    vertical-align: bottom;
+}
 .input-table+label {
     display: inline-block;
     font-size: 13px;
@@ -333,7 +351,7 @@ input[type=checkbox]:not(old)+input[type=hidden]+label>span {
     border-bottom: 1px solid #6A3AD7;
 }
 
-.sort-status div label div, .sort-lesson-type div label div, .sort-group div label div{
+.sort-status div label div, .sort-lesson-type div label div, .sort-group div label div, .popup div label div{
     display: initial;
     font-style: normal;
     font-weight: normal;
@@ -477,7 +495,6 @@ input[type=checkbox]:not(old)+input[type=hidden]+label>span {
     padding-top: 6px;
 }
 .overlay {
-    display: none;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
@@ -488,14 +505,78 @@ input[type=checkbox]:not(old)+input[type=hidden]+label>span {
 
 .popup {
     position: fixed;
-    width: 504px;
-    height: 245px;
+    width: 366px;
+    height: 524px;
+    padding-left: 43px;
     background-color: #fff;
     left: 50%;
     top: 262px;
     transform: translateX(-50%);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.popup-header{
+    margin-bottom: 42px;
+    margin-top: 49px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+}
+.input-block {
+    display: inline-block;
+    margin-right: 24px;
 }
 
+.input-block .input-block-input, .select-group{
+    border: 1px solid #CCCCCC;
+    color: #333333;
+    padding-left: 10px;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 280px;
+    height: 36px !important;
+}
+
+.input-block-header {
+    font-size: 12px;
+    line-height: 14px;
+    color: #949494;
+    margin-bottom: 6px;
+}
+.popup-checks, .select-group-check, .active-check{
+    margin-top: 30px;
+    margin-bottom: 6px;
+}
+.active-descr{
+    position: relative;
+    left: 32px;
+    top: -10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+}
+.create-lesson-button{
+    color: #fff;
+    width: 172px;
+    height: 36px;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: #fff;
+    background: #7135D6;
+    border-radius: 20px;
+    border: none;
+}
+.cancel-button{
+    background: #DFDFDF;
+    color: #000;
+    width: 104px;
+    margin-left: 10px;
+}
 @media(max-width: 1876px) {
     .admin-table {
         width: 86%;
