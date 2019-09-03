@@ -4,13 +4,16 @@ html {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
+button{
+    outline: none;
 
+}
 ul {
     margin: 0;
     padding: 0;
 }
-form{
-    height: 100%;
+#user_list_form{
+    height: 85%;
 }
 a.white-link {
     color: #fff;
@@ -175,7 +178,10 @@ a.base-link {
     background: rgb(0, 145, 125);
     transition: 0.2s;
 }
-
+.sort-apply-button button:hover{
+    background: rgb(0, 145, 125);
+    transition: 0.2s;
+}
 .input-table+label {
     display: inline-block;
     font-weight: 100;
@@ -571,12 +577,21 @@ th {
     background: #7135D6;
     border-radius: 20px;
     border: none;
+    cursor: pointer;
+}
+.create-lesson-button:hover{
+    background: rgb(87, 40, 168);
+    transition: 0.2s;
 }
 .cancel-button{
     background: #DFDFDF;
     color: #000;
     width: 104px;
     margin-left: 10px;
+}
+.cancel-button:hover{
+    background: rgb(167, 167, 167);
+    transition: 0.2s;
 }
 @media(max-width: 1876px) {
     .admin-table {
