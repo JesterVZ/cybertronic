@@ -182,16 +182,6 @@ a.base-link {
     background: rgb(0, 145, 125);
     transition: 0.2s;
 }
-.input-table+label {
-    display: inline-block;
-    font-weight: 100;
-    font-size: 13px;
-    line-height: 15px;
-    font-size: 24px;
-    height: 50px;
-    border-bottom: 1px solid #ADADAD;
-    cursor: pointer;
-}
 
 .input-table:checked+label {
     color: #6A3AD7;

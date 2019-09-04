@@ -1,12 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/css/search-profile.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic-ext"
+        rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div class="header">
+        <ul class="nav">
+            <li class="nav-item header-logo">
+                <img src="../assets/img/logo.png" alt="">
+                <div id="logo">Кибертроник</div>
+            </li>
+            <li class="nav-item buttons">
+                <input type="radio" id="radio-models" name="header-menu-button" class="input-header" value="new"
+                    onclick="callUrl('/admin/model_list')" checked="checked">
+                <label for="radio-models" class="label-models">Модели</label>
+            </li>
+            <li class="nav-item buttons">
+                <input type="radio" id="radio-header-users" class="input-header" name="header-menu-button" value="new"
+                    onclick="callUrl('/admin/user_list')">
+                <label for="radio-header-users" class="label-header-users">Ученики</label>
+            </li>
+            <li class="nav-item profile">
+                <div class="profile-text">
+                    <div class="profile-name">&lt;...&gt;</div>
+                    <div class="profile-group">Группы нет</div>
+                </div>
+                <button class="exit" onclick="submitForm('logout_form')">Выход</button>
+            </li>
+        </ul>
+        <form action="/logout" id="logout_form" method="post">
+        </form>
+    </div>
+    <div class="user-name">
+        <div class="back-arrow">
+            <img src="../assets/img/arrow_back_24px.png" alt="">
+        </div>
+        <div class="name">
+            Занятие 23
+        </div>
+        <div class="user-buttons">
+            <button id="save">Сохранить</button>
+            <button id="close">Закрыть</button>
+            <button id="delete">Удалить</button>
+        </div>
+    </div>
+    <div class="user-menu">
+        <input type="radio" id="radio-users" class="input-table" name="radios" checked
+            onclick="callUrl('/admin/user_list')">
+        <label for="radio-users" class="label-employment">Описание</label>
+        <input type="radio" id="radio-groups" class="input-table" name="radios">
+        <label for="radio-groups" class="label-registry">Добавить модель</label>
+
+    </div>
+    <div class="description-block">
+        <div class="description-lesson-type">
+            <div id="group">Групповой</div>
+            <div id="group-type">Группа 1 (4-6 лет)</div>
+        </div>
+        <div class="input-block">
+            <div class="input-block-header">
+                Название занятия
+            </div>
+            <input type="text" name="FIO" class="input-block-input">
+        </div>
+        <div class="description-checkboxes-block">
+            <div class="input-block checkboxes">
+                <div class="input-block-header popup-checks">
+                    Тип занятия
+                </div>
+                <div>
+                    <input type="radio" class="create-new-lesson-checkbox" value="-1" id="checkedSubdivisionIds1"
+                        name="checkedSubdivisionIds" /><input type="hidden" name="_checkedSubdivisionIds" value="on" />
+                    <label><span><span></span></span>
+                        <div>Индивидуальный</div>
+                    </label>
+                </div>
+            </div>
+            <div class="input-block checkboxes">
+
+                <div>
+                    <input type="radio" class="create-new-lesson-checkbox" value="-1" id="checkedSubdivisionIds1"
+                        name="checkedSubdivisionIds" /><input type="hidden" name="_checkedSubdivisionIds" value="on" />
+                    <label><span><span></span></span>
+                        <div>Индивидуальный</div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="input-block">
+            <div class="input-block-header select-group-check">
+                Группа
+            </div>
+            <select size="1" name="" class="select-group">
+                <option value="1">Группа 1 (4-6 лет)</option>
+                <option value="2">Группа 2 (7-9 лет)</option>
+                <option value="3">Группа 3 (10-12 лет)</option>
+                <option value="4">Группа 4 (13-16 лет)</option>
+            </select>
+        </div>
+        <div class="input-block active-check">
+            <div>
+                <input type="checkbox" class="sort-checkbox" value="-1" id="checkedSubdivisionIds1"
+                    name="checkedSubdivisionIds" /><input type="hidden" name="_checkedSubdivisionIds" value="on" />
+                <label><span><span></span></span>
+                    <div>Активировать новое занятие </div>
+                </label>
+                <div class="active-descr">(остальные занятия для выбранной группы станут неактивными)</div>
+
+            </div>
+
+        </div>
+        
+
+    </div>
+    <div class="registry-block">
+            <div class="search">
+                <input type="search" class="input-search" placeholder="Поиск по ФИО, логину" id="searchString" name="searchString" value="">
+                <i class="fa fa-search"></i>
+
+            </div>
+            <input type="hidden" name="page" id="page" value="1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="registry-block-item">
+                            <div class="registry-block-item-pdf">
+                                PDF
+                            </div>
+                            <img src="../assets/img/no-photo.png" alt="">
+                            <div class="registry-block-item-header"> Модель 1</div>
+                            <div class="registry-block-item-attributes">
+                                <div class="attributes-header">
+                                    Категория:
+                                </div>
+                                <div class="attributes-parameter">Категория 1</div>
+                                <div class="attributes-header">
+                                    Сложность:
+                                </div>
+                                <div class="attributes-parameter attributes-level-4">Легкая</div>
+                                <div class="attributes-header">
+                                    Группа:
+                                </div>
+                                <div class="attributes-parameter">4-6 лет</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="registry-block-item">
+                            <div class="registry-block-item-pdf">
+                                PDF
+                            </div>
+                            <img src="../assets/img/no-photo.png" alt="">
+                            <div class="registry-block-item-header"> Модель 2</div>
+                            <div class="registry-block-item-attributes">
+                                <div class="attributes-header">
+                                    Категория:
+                                </div>
+                                <div class="attributes-parameter">Категория 1</div>
+                                <div class="attributes-header">
+                                    Сложность:
+                                </div>
+                                <div class="attributes-parameter attributes-level-4">Нормальная</div>
+                                <div class="attributes-header">
+                                    Группа:
+                                </div>
+                                <div class="attributes-parameter">7-9 лет</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="registry-block-item">
+                            <div class="registry-block-item-pdf">
+                                PDF
+                            </div>
+                            <img src="../assets/img/no-photo.png" alt="">
+                            <div class="registry-block-item-header"> Модель 3</div>
+                            <div class="registry-block-item-attributes">
+                                <div class="attributes-header">
+                                    Категория:
+                                </div>
+                                <div class="attributes-parameter">Категория 2</div>
+                                <div class="attributes-header">
+                                    Сложность:
+                                </div>
+                                <div class="attributes-parameter attributes-level-4">Нормальная</div>
+                                <div class="attributes-header">
+                                    Группа:
+                                </div>
+                                <div class="attributes-parameter">10-12 лет</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="registry-block-item">
+                            <div class="registry-block-item-pdf">
+                                PDF
+                            </div>
+                            <img src="../assets/img/no-photo.png" alt="">
+                            <div class="registry-block-item-header"> Модель 4</div>
+                            <div class="registry-block-item-attributes">
+                                <div class="attributes-header">
+                                    Категория:
+                                </div>
+                                <div class="attributes-parameter">Категория 2</div>
+                                <div class="attributes-header">
+                                    Сложность:
+                                </div>
+                                <div class="attributes-parameter attributes-level-4">Легкая</div>
+                                <div class="attributes-header">
+                                    Группа:
+                                </div>
+                                <div class="attributes-parameter">13-16 лет</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination-row">
+                <div class="pagination">
+                    <a onclick="javascript:changePage(&#39;model_list_form&#39;, &#39;0&#39;);" class="disabled">❮</a>
+                    <span>
+                        <a onclick="javascript:changePage(&#39;model_list_form&#39;, &#39;1&#39;);" class="active">1</a>
+                    </span>
+                    <a onclick="javascript:changePage(&#39;model_list_form&#39;, &#39;2&#39;);" class="disabled">❯</a>
+                </div>
+            </div>
+        </div>
 </body>
+
 </html>
