@@ -670,6 +670,9 @@ a.base-link {
     display: block;
     z-index: 4;
 }
+.buttons-for-new-lesson{
+    margin-top: 24px;
+}
 .save-label-close {
     display: inline-block;
     margin-left: 20px;
