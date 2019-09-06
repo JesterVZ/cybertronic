@@ -240,10 +240,11 @@ a.base-link {
 .description-lesson-type{
     margin-bottom: 30px;
 }
-#group{
+.group{
+    display: inline-block;
     padding-left: 10px;
+    padding-right: 10px;
     padding-top: 3px;
-    width: 89px;
     height: 24px;
     background: #2196F3;
     border-radius: 16px;
@@ -251,7 +252,19 @@ a.base-link {
     margin-bottom: 14px;
     font-size: 13px;
 }
-#group-type{
+.individual {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 14px;
+    padding-top: 3px;
+    height: 24px;
+    font-size: 13px;
+    background: #EB5757;
+    border-radius: 16px;
+    color: #fff;
+}
+.group-type{
     display: inline-block;
     padding-left: 10px;
     padding-right: 10px;
@@ -324,6 +337,7 @@ a.base-link {
     border: 1px solid #CCCCCC;
     color: #333333;
     padding-left: 10px;
+    padding-right: 10px;
     outline: none;
     box-sizing: border-box;
     border-radius: 5px;
@@ -643,6 +657,7 @@ a.base-link {
 #cancel {
     width: 104px;
     color: #000;
+    background: #DFDFDF;    
 }
 #delete {
     background-color: #E91E63;
