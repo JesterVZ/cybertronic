@@ -332,7 +332,7 @@ input[type=checkbox]:not(old)+input[type=hidden]+label>span {
 }
 .label-employment, .label-registry {
     margin-right: 59px;
-
+}
 .sort {
     position: relative;
     z-index: 3;
