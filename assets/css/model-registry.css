@@ -324,7 +324,15 @@ input[type=checkbox]:not(old)+input[type=hidden]+label>span {
     line-height: 14px;
     color: #949494;
 }
-
+.user-menu {
+    padding-left: 57px;
+    height: 81px;
+    border-bottom: 1px solid #ADADAD;
+    background-color: #fff;
+}
+.label-users, .label-groups, .label-branch {
+    margin-right: 59px;
+}
 .sort {
     position: relative;
     z-index: 3;
