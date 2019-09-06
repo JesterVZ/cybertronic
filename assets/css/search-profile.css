@@ -208,7 +208,7 @@ a.base-link {
 .user-menu {
     margin-left: 95px;
     margin-bottom: 30px;
-    height: 66px;
+    height: 84px;
     border-bottom: 1px solid rgb(221, 221, 221);
     background-color: #fff;
 }
@@ -216,11 +216,10 @@ a.base-link {
 
 .input-table+label {
     display: inline-block;
-    font-size: 13px;
     line-height: 15px;
     font-weight: 300;
-    font-size: 16px;
-    height: 37px;
+    font-size: 24px;
+    height: 55px;
     border-bottom: 1px solid #ADADAD;
     cursor: pointer;
 }
@@ -264,7 +263,56 @@ a.base-link {
     font-size: 13px;
 
 }
+.back-arrow,
+.name,
+.user-buttons{
+    display: inline-block
+}
+.user-buttons button,
+.popup-buttons button {
+    font-size: 16px;
+    line-height: 19px;
+    height: 36px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    margin-right: 10px;
+}
 
+#save {
+    background-color: #00BFA5;
+    width: 133px;
+}
+
+#save:hover {
+    background-color: rgb(0, 148, 128);
+    transition: 0.2s;
+}
+
+#close {
+    background-color: #2196F3;
+    width: 110px;
+}
+
+#close:hover {
+    background-color: rgb(24, 112, 184);
+    transition: 0.2s;
+}
+.user-buttons {
+    display: inline-block;
+    float: right;
+    margin-right: 24px;
+}
+
+#delete {
+    background-color: #E91E63;
+    width: 104px;
+}
+
+#delete:hover {
+    background-color: rgb(168, 24, 72);
+    transition: 0.2s;
+}
 .input-block-header {
     font-size: 12px;
     line-height: 14px;
@@ -301,8 +349,8 @@ a.base-link {
 }
 .create-new-lesson-checkbox:not(old):checked+input[type=hidden]+label>span>span {
     display: block;
-    width: 0.6em;
-    height: 0.6em;
+    width: 0.5em;
+    height: 0.5em;
     margin: 0.125em;
     border-radius: 0.5em;
     background: #683CD7;
@@ -516,6 +564,121 @@ a.base-link {
     color: #fff;
     transition: 0.5s;
 }
+/*for new lesson*/
+.models-label-error{
+    height: 100%;
+    width: 75%;
+    padding-top: 181px;
+    float: right;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 124%;
+    color: #333333;
+    opacity: 0.5;
+}
+.models-label-error span{
+    color: #2196F3;
+}
+.models-label-error span:hover{
+    color: rgb(76, 169, 245);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.create-user-button {
+    float: right;
+}
+
+.create-user-button button,
+.sort-apply-button button {
+    background: #00BFA5;
+    border-radius: 20px;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    line-height: 19px;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    z-index: 3;
+    top: 0;
+}
+.popup {
+    position: fixed;
+    width: 504px;
+    height: 245px;
+    background-color: #fff;
+    left: 50%;
+    top: 262px;
+    transform: translateX(-50%);
+}
+.popup-header {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 300;
+    margin-left: 43px;
+    margin-top: 39px;
+}
+.popup-buttons {
+    margin-left: 43px;
+    margin-top: 32px;
+}
+.popup-descr {
+    font-weight: normal;
+    margin-left: 43px;
+    margin-right: 43px;
+    max-height: 65px;
+    margin-top: 25px;
+    font-size: 16px;
+    line-height: 19px;
+}
+#cancel {
+    width: 104px;
+    color: #000;
+}
+#delete {
+    background-color: #E91E63;
+    width: 104px;
+}
+.create-user-button button {
+    margin-right: 24px;
+    margin-top: 21px;
+    width: 155px;
+    height: 36px;
+}
+.save-label {
+    background: #00BFA5;
+    box-shadow: 0px 20px 40px rgba(0, 117, 101, 0.2);
+    margin-right: 24px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 12px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 24px;
+    display: block;
+    z-index: 4;
+}
+.save-label-close {
+    display: inline-block;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.create-user-button button:hover {
+    background: rgb(0, 145, 125);
+    transition: 0.2s;
+}
 /*media for registry block*/
 @media(max-width: 1824px){
     .registry-block{
@@ -532,5 +695,11 @@ a.base-link {
 @media(max-width: 1668px){
     .registry-block{
         width: 60%;
+    }
+}
+@media(max-width: 1163px){
+    .search i{
+        right: -91%;
+        top: -29px;
     }
 }
