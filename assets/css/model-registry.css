@@ -330,9 +330,9 @@ input[type=checkbox]:not(old)+input[type=hidden]+label>span {
     border-bottom: 1px solid #ADADAD;
     background-color: #fff;
 }
-.label-users, .label-groups, .label-branch {
+.label-employment, .label-registry {
     margin-right: 59px;
-}
+
 .sort {
     position: relative;
     z-index: 3;
