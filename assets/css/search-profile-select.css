@@ -6,7 +6,7 @@ html {
 }
 button{
     outline: none;
-
+    cursor: pointer;
 }
 ul {
     margin: 0;
@@ -145,12 +145,28 @@ a.base-link {
 /*user-menu*/
 
 .user-menu {
-    margin-left: 57px;
+    margin-left: 95px;
     height: 66px;
     border-bottom: 1px solid rgb(221, 221, 221);
     background-color: #fff;
 }
+.no-pdf {
+    position: relative;
+    background-color: #EB5757 !important;
+}
 
+.no-pdf::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    color: red;
+    width: 100%;
+    height: 0;
+    border-bottom: 2px solid #fff;
+    transform: rotate(-15deg);
+}
 .create-user-button {
     float: right;
 }
