@@ -188,6 +188,9 @@ a.base-link {
     margin-top: 29px;
     border-bottom: 1px solid #2196F3;
 }
+.back-arrow{
+    cursor: pointer;
+}
 .back-arrow,
 .name,
 .user-buttons{
