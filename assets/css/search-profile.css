@@ -4,6 +4,10 @@ html {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
+button{
+    outline: none;
+    cursor: pointer;
+}
 ul {
     margin: 0;
     padding: 0;
@@ -14,7 +18,10 @@ ul {
 a.white-link {
     color: #fff;
 }
-
+a {
+    color: #2196F3;
+    text-decoration: none;
+}
 a.base-link {
     color: #3564E0;
     text-decoration: none;
@@ -204,23 +211,46 @@ a.base-link {
     background-color: rgb(168, 24, 72);
     transition: 0.2s;
 }
+.no-pdf {
+    position: relative;
+    background-color: #EB5757 !important;
+}
 
+.no-pdf::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    color: red;
+    width: 100%;
+    height: 0;
+    border-bottom: 2px solid #fff;
+    transform: rotate(-15deg);
+}
 .user-menu {
     margin-left: 95px;
     margin-bottom: 30px;
-    height: 84px;
+    height: 66px;
     border-bottom: 1px solid rgb(221, 221, 221);
     background-color: #fff;
 }
+.menu-new-lesson{
+    height: 84px !important;
+}
+.input-table-search-profile+label{
+    font-size: 16px !important;
+    height: 37px !important;
 
 
+}
 .input-table+label {
     display: inline-block;
     line-height: 15px;
     font-weight: 300;
     font-size: 24px;
     height: 55px;
-    border-bottom: 1px solid #ADADAD;
+    border-bottom: 1px solid rgb(221, 221, 221);
     cursor: pointer;
 }
 

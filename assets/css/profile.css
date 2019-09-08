@@ -147,7 +147,7 @@ a.base-link {
 .user-menu {
     margin-left: 57px;
     height: 81px;
-    border-bottom: 1px solid #ADADAD;
+    border-bottom: 1px solid rgb(221, 221, 221);
     background-color: #fff;
 }
 
@@ -337,14 +337,14 @@ th {
     font-weight: 300;
     font-size: 24px;
     height: 50px;
-    border-bottom: 1px solid #ADADAD;
+    border-bottom: 1px solid rgb(221, 221, 221);
     cursor: pointer;
 }
 
 .input-table:checked+label {
-    color: #6A3AD7;
+    color: #3564E0;
     margin-top: 31px;
-    border-bottom: 1px solid #6A3AD7;
+    border-bottom: 1px solid #3564E0;
 }
 
 .sort-status div label div, .sort-lesson-type div label div, .sort-group div label div, .popup div label div{

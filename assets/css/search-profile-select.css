@@ -147,7 +147,7 @@ a.base-link {
 .user-menu {
     margin-left: 57px;
     height: 66px;
-    border-bottom: 1px solid #ADADAD;
+    border-bottom: 1px solid rgb(221, 221, 221);
     background-color: #fff;
 }
 
@@ -211,7 +211,7 @@ a.base-link {
     line-height: 15px;
     font-weight: 300;
     height: 37px;
-    border-bottom: 1px solid #ADADAD;
+    border-bottom: 1px solid rgb(221, 221, 221);
     cursor: pointer;
 }
 .user-name {
@@ -556,4 +556,32 @@ input[type=checkbox]:not(old)+input[type=hidden]+label>span {
     display: inline-block;
     margin-left: 20px;
     cursor: pointer;
+}
+.pagination-row {
+    width: 100%;
+    text-align: center;
+}
+.pagination {
+    display: inline-block;
+    margin-top: 27px;
+    cursor: pointer;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 13px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #2196F3;
+    color: white;
+    border-radius: 50%;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #DFDFDF;
+    border-radius: 50%;
+    transition: 0.2s;
 }
