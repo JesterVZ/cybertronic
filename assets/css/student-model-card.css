@@ -246,13 +246,16 @@ ol li{
 }
 .carousel-indicators {
     position: relative !important;
-    top: 516px !important;
+    top: 460px !important;
 }
 .model-images-block-comment{
+    position: absolute;
+    top: 672px;
+    margin-left: 36px;
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
     font-size: 13px;
     line-height: 15px;
-    width: 345px;   
+    width: 345px;
 }
