@@ -219,4 +219,40 @@ a.base-link {
     border-radius: 5px;
     background-color: white;
 }
+ol li{
+    background-size: cover;
+    opacity: 1 !important;
+    height: 60px !important;
+    width: 86px !important;
+
+}
+#slide-button-1{
+    background-image: url("../img/models/Rectangle\ 2.1.png") !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box ;
+    border-radius: 3px;
+}
+#slide-button-2{
+    background-image: url("../img/models/Rectangle\ 2model-1.png") !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box ;
+    border-radius: 3px;
+}
+#slide-button-3{
+    background-image: url("../img/models/Rectangle\ 2.1.png") !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box ;
+    border-radius: 3px;
+}
+.carousel-indicators {
+    position: relative !important;
+    top: 516px !important;
+}
+.model-images-block-comment{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    width: 345px;   
 }
