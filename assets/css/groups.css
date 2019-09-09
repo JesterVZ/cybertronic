@@ -156,6 +156,7 @@ ul{
     right: 7%;
     font-size: 18px;
     color: #DADADA;
+    cursor: pointer;
 }
 .input-search{
     width: 91%;

@@ -461,6 +461,7 @@ th {
     right: 7%;
     font-size: 18px;
     color: #DADADA;
+    cursor: pointer;
 }
 
 .button-status{

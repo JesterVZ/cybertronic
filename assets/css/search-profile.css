@@ -270,7 +270,7 @@ a.base-link {
 .description-lesson-type{
     margin-bottom: 30px;
 }
-#group{
+.group{
     padding-left: 10px;
     padding-top: 3px;
     width: 89px;
@@ -281,7 +281,7 @@ a.base-link {
     margin-bottom: 14px;
     font-size: 13px;
 }
-#group-type{
+.group-type{
     display: inline-block;
     padding-left: 10px;
     padding-right: 10px;
@@ -293,10 +293,37 @@ a.base-link {
     font-size: 13px;
 
 }
+.group{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    height: 24px;
+    background: #2196F3;
+    border-radius: 16px;
+    color: #fff;
+    margin-bottom: 14px;
+    font-size: 13px;
+}
+.individual {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 14px;
+    padding-top: 3px;
+    height: 24px;
+    font-size: 13px;
+    background: #EB5757;
+    border-radius: 16px;
+    color: #fff;
+}
 .back-arrow,
 .name,
 .user-buttons{
     display: inline-block
+}
+.back-arrow{
+    cursor: pointer;
 }
 .user-buttons button,
 .popup-buttons button {
@@ -489,22 +516,22 @@ a.base-link {
     margin-top: 15px;
 }
 .input-search {
-    width: 80%;
+    width: 100%;
     -webkit-appearance: none;
     border-radius: 5px;
     border: 1px solid #CCCCCC;
     height: 40px;
     padding: 10px;
-    margin-left: 10%;
     font-size: 16px;
     outline: none;
 }
 .search i {
-    position: relative;
-    top: 2px;
+    position: absolute;
+    top: 254px;
     right: 3%;
     font-size: 18px;
     color: #DADADA;
+    cursor: pointer;
 }
 .registry-block-item-pdf {
     position: relative;
@@ -718,22 +745,31 @@ a.base-link {
     .registry-block{
         width: 70%;
     }
-    .input-search{
-        width: 95%;
-        margin-left: 2%;
-    }
-    .search i{
-        right: 7%;
-    }
+
 }
 @media(max-width: 1668px){
     .registry-block{
         width: 60%;
     }
+
 }
-@media(max-width: 1163px){
+@media(min-width: 1668px){
     .search i{
-        right: -91%;
-        top: -29px;
+        right: 5%;
+    }
+}
+@media(min-width: 1799px){
+    .search i{
+        right: 6%;
+    }
+}
+@media(min-width: 1824px){
+    .search i{
+        right: 8%;
+    }
+}
+@media(min-width: 1924px){
+    .search i{
+        right: 10%;
     }
 }

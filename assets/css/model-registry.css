@@ -425,20 +425,21 @@ input[type=checkbox]:not(old)+input[type=hidden]+label>span {
 .attributes-level-2 {
     color: #2196F3;
 }
-
+.attributes-level-3 {
+    color: rgb(255, 123, 0);
+}
 .search {
     position: relative;
     width: 100%;
 }
 
 .input-search {
-    width: 91%;
+    width: 100%;
     -webkit-appearance: none;
     border-radius: 5px;
     border: 1px solid #CCCCCC;
     height: 40px;
     padding: 10px;
-    margin-left: 57px;
     font-size: 16px;
     outline: none;
 }
@@ -446,9 +447,10 @@ input[type=checkbox]:not(old)+input[type=hidden]+label>span {
 .search i {
     position: absolute;
     top: 11px;
-    right: 7%;
+    right: 3%;
     font-size: 18px;
     color: #DADADA;
+    cursor: pointer;
 }
 
 .attributes-header {

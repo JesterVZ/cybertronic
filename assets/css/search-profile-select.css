@@ -341,6 +341,7 @@ a.base-link {
     float: left;
     display: inline-block;
     width: 73%;
+    padding-left: 78px
 }
 input[type=checkbox]:not(old) {
     width: 2em;
@@ -476,23 +477,23 @@ input[type=checkbox]:not(old)+input[type=hidden]+label>span {
     margin-top: 15px;
 }
 .input-search {
-    width: 80%;
+    width: 100%;
     -webkit-appearance: none;
     border-radius: 5px;
     border: 1px solid #CCCCCC;
     height: 40px;
     padding: 10px;
-    margin-left: 10%;
     margin-top: 30px;
     font-size: 16px;
     outline: none;
 }
 .search i {
-    position: relative;
-    top: 2px;
-    right: 3%;
+    position: absolute;
+    top: 253px;
+    right: 33%;
     font-size: 18px;
     color: #DADADA;
+    cursor: pointer;
 }
 .registry-block-item-pdf {
     position: relative;
@@ -603,4 +604,19 @@ input[type=checkbox]:not(old)+input[type=hidden]+label>span {
     background-color: #DFDFDF;
     border-radius: 50%;
     transition: 0.2s;
+}
+@media(max-width: 1880px){
+    .search i{
+        right: 32%;
+    }
+}
+@media(max-width: 1750px){
+    .search i{
+        right: 31%;
+    }
+}
+@media(max-width: 1703px){
+    .search i{
+        right: 30%;
+    }
 }

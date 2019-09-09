@@ -1,0 +1,222 @@
+body,
+html {
+    margin: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a.white-link {
+    color: #fff;
+}
+
+a.base-link {
+    color: #3564E0;
+    text-decoration: none;
+}
+
+.for-link {
+    margin-left: 200px;
+    margin-top: 17px;
+}
+
+.header {
+    width: 100%;
+    margin: 0;
+    height: 60px;
+    background-image: url("../img/Rectangleheader.jpg");
+    background-size: cover;
+}
+
+.header-menu,
+.header-profile,
+.header-logo,
+.nav-item,
+.menu-item,
+.exit,
+.profile-text {
+    display: inline-block  !important; 
+    
+}
+.header-logo img {
+    height: 43px;
+    width: 39px;
+    margin-top: 8px;
+    margin-left: 13px;
+}
+
+#logo {
+    font-family: Roboto Slab;
+    font-size: 20px;
+    display: inline-block;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+    vertical-align: top;
+    margin-top: 16px;
+}
+
+.nav {
+    text-align: center;
+}
+
+.buttons {
+    margin-right: 18px;
+    margin-left: 18px;
+    margin-top: 21px;
+    color: #A2DFF6;
+    cursor: pointer;
+}
+
+.buttons:hover {
+    color: #fff;
+}
+
+.profile {
+    float: right;
+    margin-right: 24px;
+}
+
+.exit {
+    vertical-align: top;
+    margin-top: 12px;
+    background-color: transparent;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid #FFFFFF;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    height: 36px;
+    width: 86px;
+}
+
+.profile-text {
+    text-align: left;
+    margin-top: 12px;
+    width: 100px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.profile-group {
+    opacity: 0.5;
+}
+
+.header-logo {
+    float: left;
+}
+.back-arrow{
+    cursor: pointer;
+}
+.model-name{
+    padding-left: 24px;
+    margin-top: 28px;
+}
+.back-arrow,
+.name,
+.user-buttons{
+    display: inline-block
+}
+.input-table, .input-header {
+    display: none;
+}
+.name {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    margin-left: 17px;
+}
+.user-menu {
+    margin-left: 62px;
+    margin-bottom: 30px;
+    height: 66px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    background-color: #fff;
+}
+.input-table:checked+label {
+    color: #2196F3;
+    margin-top: 29px;
+    border-bottom: 1px solid #2196F3;
+}
+.input-table+label {
+    display: inline-block;
+    line-height: 15px;
+    font-weight: 300;
+    font-size: 24px;
+    height: 55px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    cursor: pointer;
+}
+.input-table-search-profile+label {
+    font-size: 16px !important;
+    height: 37px !important;
+}
+.label-employment, .label-registry {
+    margin-right: 37px;
+}
+.model-description{
+    display: inline-block;
+    padding-left: 62px;
+}
+/*model-description*/
+.description-block{
+    margin-bottom: 39px;
+}
+.attribute-header{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #949494;
+}
+.attribute-parameter{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 14px;
+}
+.attributes-description-block{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    width: 402px;
+}
+.attributes-level-4 {
+    color: #7234D6;
+}
+
+.attributes-level-1 {
+    color: #00BFA5;
+}
+.attributes-level-3 {
+    color: rgb(255, 123, 0);
+}
+.attributes-level-2 {
+    color: #2196F3;
+}
+.model-images-block{
+    display: inline-block;
+    float: right;
+    width: 452px;
+    margin-right: 57px;
+    margin-top: -72px;
+    height: 591px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: white;
+}
+}

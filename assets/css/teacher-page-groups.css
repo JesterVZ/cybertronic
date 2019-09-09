@@ -203,7 +203,7 @@ a.base-link {
     width: 88%;
 }
 
-.client-name:hover {
+.client-status:hover {
     color: #3564E0;
     cursor: pointer;
     transition: 0.2s;
@@ -286,7 +286,13 @@ th {
     width: 71px;
     line-height: 16px;
 }
-
+.group-name{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140.62%;
+}
 .branch,
 .group {
     min-width: 71px;
