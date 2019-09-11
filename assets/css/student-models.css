@@ -234,3 +234,11 @@ a.base-link {
     margin-top: 25px;
     padding-left: 44px;
 }
+.search i {
+    position: absolute;
+    top: 182px;
+    right: 21%;
+    font-size: 18px;
+    color: #DADADA;
+    cursor: pointer;
+}
