@@ -212,7 +212,6 @@ a.base-link {
     display: inline-block;
     float: right;
     width: 452px;
-    margin-right: 57px;
     margin-top: -72px;
     height: 591px;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -226,31 +225,20 @@ ol li{
     width: 86px !important;
 
 }
-#slide-button-1{
+.slide-button{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box ;
+    border-radius: 3px;
     background-image: url("../img/models/Rectangle\ 2.1.png") !important;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-sizing: border-box ;
-    border-radius: 3px;
 }
-#slide-button-2{
-    background-image: url("../img/models/Rectangle\ 2model-1.png") !important;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-sizing: border-box ;
-    border-radius: 3px;
-}
-#slide-button-3{
-    background-image: url("../img/models/Rectangle\ 2.1.png") !important;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-sizing: border-box ;
-    border-radius: 3px;
-}
+
 .carousel-indicators {
     position: relative !important;
-    top: 460px !important;
+    top: 435px !important;
 }
 .model-images-block-comment{
     position: absolute;
-    top: 672px;
+    top: 471px;
     margin-left: 36px;
     font-family: Roboto;
     font-style: normal;
