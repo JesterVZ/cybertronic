@@ -256,6 +256,8 @@ ol li{
 }
 #pdf-buttons{
     display: inline-block;
+    position: relative;
+    top: 14px;
     width: 156px;
     height: 40px;
     padding-top: 8px;
@@ -289,10 +291,12 @@ ol li{
 }
 .content-block{
     background-color: #EEEEEE;
-    height: 80%;
 }
 #pdf-main-container{
     padding-top: 30px;
+}
+#pdf-current-page, #pdf-total-pages{
+    display: inline-block;
 }
 .container{
     padding-top: 30px;
