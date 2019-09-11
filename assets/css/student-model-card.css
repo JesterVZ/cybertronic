@@ -137,7 +137,6 @@ a.base-link {
 }
 .user-menu {
     margin-left: 62px;
-    margin-bottom: 30px;
     height: 66px;
     border-bottom: 1px solid rgb(221, 221, 221);
     background-color: #fff;
@@ -246,4 +245,52 @@ ol li{
     font-size: 13px;
     line-height: 15px;
     width: 345px;
+}
+.nav{
+    display: block !important;
+}
+#page-count-container{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 19px;
+}
+#pdf-buttons{
+    display: inline-block;
+    width: 156px;
+    height: 40px;
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: #fff;
+}
+#pdf-prev{
+    float: left;
+}
+#pdf-next{
+    float: right;
+}
+#pdf-meta, #page-loader, #pdf-loader{
+    text-align: center;
+}
+#pdf-buttons button{
+    border-radius: 50%;
+    background-color: #CBCBCB;
+    border: none;
+    width: 24px;
+    height: 24px;
+    font-size: 9px;
+    outline: none;
+}
+#pdf-buttons button:hover{
+    background-color: #2196F3;
+    color: #fff;
+}
+.content-block{
+    background-color: #EEEEEE;
+    height: 80%;
+}
+#pdf-main-container{
+    padding-top: 30px;
 }

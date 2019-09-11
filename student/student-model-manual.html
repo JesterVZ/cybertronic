@@ -1,0 +1,82 @@
+
+<!DOCTYPE HTML>
+<html lang="ru">
+<head><div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../assets/css/student-model-card.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-grid.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Кибертроник</title>
+</div></head>
+<body onload="showPDF(&#39;http://107.175.24.14:80/img/model-instruction/2019/08/31/-1_23_06_31_287.pdf&#39;)">
+<span><div class="header">
+    <ul class="nav">
+        <li class="nav-item header-logo">
+            <img src="../assets/img/logo.png" alt="">
+            <div id="logo">Кибертроник</div>
+        </li>
+        <li class="nav-item profile">
+            <div class="profile-text">
+                <div class="profile-name">Иванов Бель...</div>
+                <div class="profile-group">Группа 1</div>
+            </div>
+            <button class="exit" onclick="submitForm('logout_form')">Выход</button>
+        </li>
+    </ul>
+    <form action="/logout" id="logout_form" method="post">
+    </form>
+</div></span>
+<div class="model-name">
+    <div class="back-arrow">
+        <img  src="../assets/img/arrow_back_24px.png" alt="" onclick="callUrl('model_list')">
+    </div>
+    <div class="name"> Модель 1</div>
+</div>
+<div class="user-menu">
+    <input type="radio" id="radio-users" class="input-table input-table-search-profile" name="radios" onclick="javascript:callUrl(&#39;/student/model_view?id=-1&#39;);">
+    <label for="radio-users" class="label-employment">Описание</label>
+    <input type="radio" id="radio-groups" class="input-table input-table-search-profile" name="radios" checked>
+    <label for="radio-groups" class="label-registry">Инструкция</label>
+</div>
+<div class="content-block">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8" id="pdf-container">
+            <div id="pdf-main-container">
+                <div id="pdf-contents">
+                    <div id="pdf-meta">
+                        <div id="pdf-buttons">
+                            <button id="pdf-prev">❮</button>
+                            <div id="page-count-container"><div id="pdf-current-page"></div> / <div id="pdf-total-pages"></div></div>
+
+                            <button id="pdf-next">❯</button>
+                        </div>
+                    </div>
+                    <canvas id="pdf-canvas"></canvas>
+                    <div id="page-loader"><img src="../assets/img/gifs/loader.gif" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+
+
+<script src="../assets/js/script.js"></script>
+
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+<script src="../assets/js/pdf.min.js"></script>
+<script src="../assets/js/pdf.worker.min.js"></script>
+<script src="../assets/js/pdf-viewer.js"></script>
+
+</body>
+</html>
