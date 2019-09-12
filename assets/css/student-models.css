@@ -115,7 +115,6 @@ a.base-link {
 /*available-models*/
 .available-models{
     margin-top: 30px;
-    margin-left: 57px;
 }
 .available-models-header{
     font-family: Roboto;
@@ -241,4 +240,31 @@ a.base-link {
     font-size: 18px;
     color: #DADADA;
     cursor: pointer;
+}
+.pagination {
+    display: inline-block;
+    margin-top: 27px;
+    cursor: pointer;
+}
+.pagination-row{
+    width: 100%;
+    text-align: center;
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 13px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #2196F3;
+    color: white;
+    border-radius: 50%;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #DFDFDF;
+    border-radius: 50%;
+    transition: 0.2s;
 }

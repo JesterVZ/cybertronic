@@ -30,17 +30,18 @@
         <form action="/logout" id="logout_form" method="post">
         </form>
     </div>
-    <div class="available-models">
-        <div class="available-models-header">
-            Привет, Петр!
-        </div>
-        <div class="available-models-description">
-            Сегодня тебе доступны эти модели:
-        </div>
-    </div>
+
     <div class="available-models-list">
         
         <div class="container">
+                <div class="available-models">
+                        <div class="available-models-header">
+                            Привет, Петр!
+                        </div>
+                        <div class="available-models-description">
+                            Сегодня тебе доступны эти модели:
+                        </div>
+                    </div>
             <div class="search">
             <input type="search" class="input-search" placeholder="Поиск по ФИО, логину" id="searchString" name="searchString" value="">
             <i class="fa fa-search"></i>
@@ -163,6 +164,15 @@
                 </div>
             </div>
         </div>
+        <div class="pagination-row">
+                <div class="pagination">
+                    <a href="#" class="disabled">❮</a>
+                    <span>
+                        <a href="#" class="active">1</a>
+                    </span>
+        <a href="#" class="disabled">❯</a>
+    </div>
+    </div>
     </div>
 </body>
 </html>
