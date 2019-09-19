@@ -137,6 +137,9 @@ input[type = radio]:checked + label{
     font-size: 17px;
 }
 .reg-error{
+    position: fixed;
+    bottom: 0;
+    right: 0;
     width: 344px;
     height: 18px;
     background-color: rgb(215, 58, 58);
@@ -146,8 +149,8 @@ input[type = radio]:checked + label{
     padding: 30px;
     font-weight: normal;
     color: #fff;
-    margin-left: 30%;
-    margin-bottom: 50px;
+    margin-bottom: 24px;
+    margin-right: 24px;
 }
 .reg-success{
     width: 344px;
