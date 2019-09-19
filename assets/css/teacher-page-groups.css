@@ -185,7 +185,10 @@ a.base-link {
     font-size: 16px;
     outline: none;
 }
-
+.teacher-page-name:hover{
+    color: #000;
+    cursor: unset;
+}
 .search i {
     position: absolute;
     top: 11px;
@@ -203,11 +206,7 @@ a.base-link {
     width: 88%;
 }
 
-.client-status:hover {
-    color: #3564E0;
-    cursor: pointer;
-    transition: 0.2s;
-}
+
 
 .table {
     width: 100%;
