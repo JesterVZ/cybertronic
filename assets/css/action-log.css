@@ -181,11 +181,6 @@ th{
     color: #000;
     cursor: pointer;
 }
-.client-login:hover {
-    color: #3564E0;
-    cursor: pointer;
-    transition: 0.2s;
-}
 .client-img-item{
     display: inline-block;
     position: relative;
@@ -196,9 +191,14 @@ th{
     background: url("../img/login-avatar.png");
     background-size: contain;
 }
-.client-login:hover .client-img-item{
+.client-img:hover .client-img-item{
     background: url("../img/login-avatar-hover.png");
     background-size: contain;
+    transition: 0.2s;
+}
+.client-img:hover .client-login{
+    color: #3564E0;
+    cursor: pointer;
     transition: 0.2s;
 }
 .search{
