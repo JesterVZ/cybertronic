@@ -129,7 +129,11 @@ a.base-link {
     color: #fff;
 }
 
-
+.save-label-close {
+    display: inline-block;
+    margin-left: 20px;
+    cursor: pointer;
+}
 /*user-menu*/
 .user-buttons button, .popup-buttons button {
     font-size: 16px;

@@ -278,6 +278,11 @@ ul{
 .select-curator{
     width: 587px;
 }
+.save-label-close {
+    display: inline-block;
+    margin-left: 20px;
+    cursor: pointer;
+}
 .input-row textarea{
     border: 1px solid #CCCCCC;
     box-sizing: border-box;
