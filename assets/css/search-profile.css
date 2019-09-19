@@ -736,6 +736,15 @@ a.base-link {
     margin-left: 20px;
     cursor: pointer;
 }
+#cancel:hover {
+    background: rgb(201, 201, 201);
+    transition: 0.2s;
+}
+#cancel{
+    width: 104px;
+    color: #000;
+    background: #DFDFDF;
+}
 .create-user-button button:hover {
     background: rgb(0, 145, 125);
     transition: 0.2s;

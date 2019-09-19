@@ -247,6 +247,15 @@ input[type=checkbox]:not(old) + input[type=hidden] + label > span{
     border-bottom: 1px solid #ADADAD;
     cursor: pointer;
 }
+#cancel:hover {
+    background: rgb(201, 201, 201);
+    transition: 0.2s;
+}
+#cancel{
+    width: 104px;
+    color: #000;
+    background: #DFDFDF;
+}
 .input-table:checked + label{
     color: #3564E0;
     margin-top: 31px;

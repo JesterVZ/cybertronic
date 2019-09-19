@@ -146,6 +146,15 @@ ul{
     background-color: rgb(24, 112, 184);
     transition: 0.2s;
 }
+#cancel:hover {
+    background: rgb(201, 201, 201);
+    transition: 0.2s;
+}
+#cancel{
+    width: 104px;
+    color: #000;
+    background: #DFDFDF;
+}
 #delete{
     background-color: #E91E63;
     width: 104px;

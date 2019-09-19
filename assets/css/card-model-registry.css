@@ -134,6 +134,15 @@ a.base-link {
     margin-left: 20px;
     cursor: pointer;
 }
+#cancel:hover {
+    background: rgb(201, 201, 201);
+    transition: 0.2s;
+}
+#cancel{
+    width: 104px;
+    color: #000;
+    background: #DFDFDF;
+}
 /*user-menu*/
 .user-buttons button, .popup-buttons button {
     font-size: 16px;
