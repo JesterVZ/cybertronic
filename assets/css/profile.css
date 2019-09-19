@@ -589,13 +589,20 @@ th {
         width: 86%;
     }
     .tr-row::after {
-        right: 20%;
+        right: 18.6%;
     }
 }
-
+@media(max-width: 1700px) {
+    .tr-row::after {
+        right: 17.8%;
+    }
+}
 @media(max-width: 1609px) {
     .admin-table {
         width: 84%;
+    }
+    .tr-row::after {
+        right: 19.2%;
     }
 }
 
@@ -616,7 +623,7 @@ th {
         width: 80%;
     }
     .tr-row::after {
-        right: 22%;
+        right: 20.5%;
     }
 }
 

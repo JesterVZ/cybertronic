@@ -186,6 +186,21 @@ th{
     cursor: pointer;
     transition: 0.2s;
 }
+.client-img-item{
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    right: 9px;
+    width: 16px;
+    height: 16px;
+    background: url("../img/login-avatar.png");
+    background-size: contain;
+}
+.client-login:hover .client-img-item{
+    background: url("../img/login-avatar-hover.png");
+    background-size: contain;
+    transition: 0.2s;
+}
 .search{
     width: 100%;
     margin-top: 26px;
@@ -201,6 +216,7 @@ th{
 .client-img{
     font-size: 13px;
     line-height: 18px;
+    width: 30%;
 }
 .client-img img{
     width: 20px;
@@ -209,9 +225,15 @@ th{
 }
 .client-login{
     display: inline-block;
-    position: absolute;
+    position: relative;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 100%;
 }
 .client-time div{
+    font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -242,7 +264,9 @@ th{
     font-size: 13px;
     line-height: 15px;
 }
-
+.sort-branch div{
+    height: 30px;
+}
 .input-search{
     width: 98%;
     -webkit-appearance: none;
@@ -254,7 +278,7 @@ th{
     outline: none;
 }
 input[type=checkbox]:not(old){
-    width     : 2em;
+    width: 8em;
     margin    : 0;
     padding   : 0;
     font-size : 1em;
@@ -263,7 +287,7 @@ input[type=checkbox]:not(old){
   }
 input[type=checkbox]:not(old) + input[type=hidden] + label{
     display      : inline-block;
-    margin-left  : -2em;
+    margin-left  : -8em;
     margin-bottom: 9px;
     line-height  : 1.5em;
 }
@@ -273,7 +297,7 @@ input[type=checkbox]:not(old):checked + input[type=hidden] +  label > span > spa
     height: 0.5em;
     margin: 0.125em;
     border-radius: 0.125em;
-    background: #683CD7;
+    background: #7135D6;
 
 }
 input[type=checkbox]:not(old):checked + input[type=hidden] + label > span{
@@ -302,9 +326,9 @@ input[type=checkbox]:not(old) + input[type=hidden] + label > span{
     cursor: pointer;
 }
 .input-table:checked + label{
-    color: #6A3AD7;
+    color: #3564E0;
     margin-top: 31px;
-    border-bottom: 1px solid #6A3AD7;
+    border-bottom: 1px solid #3564E0;
 }
 .label-models, .label-header-users, .label-magazine{
     border: none;

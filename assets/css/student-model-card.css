@@ -113,6 +113,8 @@ a.base-link {
 }
 .back-arrow{
     cursor: pointer;
+    position: relative;
+    top: -4px;
 }
 .model-name{
     padding-left: 24px;
@@ -135,7 +137,7 @@ a.base-link {
     margin-left: 17px;
 }
 .user-menu {
-    margin-left: 62px;
+    margin-left: 24%;
     height: 66px;
     border-bottom: 1px solid rgb(221, 221, 221);
     background-color: #fff;
@@ -305,4 +307,35 @@ ol li{
 }
 .image-center {
     display: inline-block!important;
+}
+/*media for user-menu*/
+@media(max-width: 1728px){
+    .user-menu{
+        margin-left: 21%;
+    }
+}
+@media(max-width: 1624px){
+    .user-menu{
+        margin-left: 19%;
+    }
+}
+@media(max-width: 1502px){
+    .user-menu{
+        margin-left: 17%;
+    }
+}
+@media(max-width: 1416px){
+    .user-menu{
+        margin-left: 15%;
+    }
+}
+@media(max-width: 1352px){
+    .user-menu{
+        margin-left: 13%;
+    }
+}
+@media(max-width: 1237px){
+    .user-menu{
+        margin-left: 10%;
+    }
 }

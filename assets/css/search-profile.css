@@ -286,7 +286,7 @@ a.base-link {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 3px;
-    height: 24px;
+    padding-bottom: 3px;
     background: #DFDFDF;
     border-radius: 16px;
     color: #000;
@@ -749,7 +749,7 @@ a.base-link {
 }
 @media(max-width: 1668px){
     .registry-block{
-        width: 60%;
+        width: 67%;
     }
 
 }

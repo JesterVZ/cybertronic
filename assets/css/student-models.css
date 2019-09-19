@@ -234,9 +234,9 @@ a.base-link {
     padding-left: 44px;
 }
 .search i {
-    position: absolute;
-    top: 182px;
-    right: 21%;
+    position: relative;
+    top: -29px;
+    left: 94%;
     font-size: 18px;
     color: #DADADA;
     cursor: pointer;

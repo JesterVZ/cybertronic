@@ -337,9 +337,15 @@ th {
     font-size: 13px;
     line-height: 15px;
 }
-
+.sort-branch div, .sort-role div, .sort-group div{
+    height: 30px;
+}
+.teacher-page-name:hover{
+    color: #000;
+    cursor: unset;
+}
 input[type=checkbox]:not(old) {
-    width: 2em;
+    width: 8em;
     margin: 0;
     padding: 0;
     font-size: 1em;
@@ -349,7 +355,7 @@ input[type=checkbox]:not(old) {
 
 input[type=checkbox]:not(old)+input[type=hidden]+label {
     display: inline-block;
-    margin-left: -2em;
+    margin-left: -8em;
     margin-bottom: 9px;
     line-height: 1.5em;
 }
@@ -360,7 +366,7 @@ input[type=checkbox]:not(old):checked+input[type=hidden]+label>span>span {
     height: 0.5em;
     margin: 0.125em;
     border-radius: 0.125em;
-    background: #683CD7;
+    background: #7135D6;
 }
 
 input[type=checkbox]:not(old):checked+input[type=hidden]+label>span {
@@ -394,9 +400,9 @@ input[type=checkbox]:not(old)+input[type=hidden]+label>span {
 }
 
 .input-table:checked+label {
-    color: #6A3AD7;
+    color: #3564E0;
     margin-top: 31px;
-    border-bottom: 1px solid #6A3AD7;
+    border-bottom: 1px solid #3564E0;
 }
 
 .label-models,

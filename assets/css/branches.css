@@ -134,6 +134,20 @@ ul{
 .label-users, .label-groups, .label-branch{
     margin-right: 59px;
 }
+.table-list{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140.62%;
+}
+.client-name{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+}
 .search{
     position: relative;
     width: 100%;
@@ -186,7 +200,7 @@ ul{
 
 }
 input[type=checkbox]:not(old){
-    width     : 2em;
+    width     : 8em;
     margin    : 0;
     padding   : 0;
     font-size : 1em;
@@ -195,7 +209,7 @@ input[type=checkbox]:not(old){
   }
 input[type=checkbox]:not(old) + input[type=hidden] + label{
     display      : inline-block;
-    margin-left  : -2em;
+    margin-left  : -8em;
     margin-bottom: 9px;
     line-height  : 1.5em;
 }
@@ -205,7 +219,7 @@ input[type=checkbox]:not(old):checked + input[type=hidden] +  label > span > spa
     height           : 0.5em;
     margin           : 0.125em;
     border-radius    : 0.125em;
-    background       : #683CD7;
+    background       : #7135D6;
 
 }
 input[type=checkbox]:not(old):checked + input[type=hidden] + label > span{
@@ -234,9 +248,9 @@ input[type=checkbox]:not(old) + input[type=hidden] + label > span{
     cursor: pointer;
 }
 .input-table:checked + label{
-    color: #6A3AD7;
+    color: #3564E0;
     margin-top: 31px;
-    border-bottom: 1px solid #6A3AD7;
+    border-bottom: 1px solid #3564E0;
 }
 .label-models, .label-header-users, .label-magazine{
     border: none;
