@@ -252,6 +252,11 @@ th{
 }
 .client-name{
     padding-left: 57px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140.62%;
 }
 .client-name:hover{
     color: #3564E0;
