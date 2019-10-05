@@ -247,7 +247,7 @@ th {
     position: absolute;
     content: "";
     left: 2.7%;
-    right: 17%;
+    right: 16.7%;
     height: 1px;
     border-bottom: 1px solid #CCCCCC;
 }
@@ -258,20 +258,36 @@ th {
 }
 
 .tr-row:hover {
-    box-shadow: 0px 30px 30px -15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 40px 30px -30px rgba(0, 0, 0, 0.1);
     transition: 0.2s;
 }
-
+.lesson{
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 18px;
+}
 .table td {
     vertical-align: middle;
     height: 40px;
     width: 22%;
 }
+.client-login{
+    min-width: 71px;
+    display: inline-block;
+    border-radius: 16px;
+    font-size: 13px;
+    border: none;
+    background-color: #DFDFDF;
+    height: 24px;
+    text-align: center;
+    padding: 5px;
+}
 
 .table th {
     vertical-align: middle;
     border: none;
-    height: 40px;
 }
 .sort-checkbox:not(old), .create-new-lesson-checkbox:not(old) {
     width: 2em;
@@ -363,7 +379,7 @@ th {
     line-height: 18px;
 }
 .individual div{
-    padding-left: 10px;
+    text-align: center;
     padding-top: 3px;
     height: 24px;
     width: 131px;
@@ -371,8 +387,12 @@ th {
     border-radius: 16px;
     color: #fff;
 }
+.space th{
+    height: 28px;
+}
+
 .group div{
-    padding-left: 10px;
+    text-align: center;
     padding-top: 3px;
     width: 89px;
     height: 24px;
@@ -441,6 +461,7 @@ th {
     position: relative;
     width: 100%;
     margin-top: 26px;
+    margin-bottom: 23px;
 }
 
 .input-search {
@@ -583,6 +604,9 @@ th {
 .cancel-button:hover{
     background: rgb(167, 167, 167);
     transition: 0.2s;
+}
+.td-button-status{
+    width: 10% !important;
 }
 @media(max-width: 1876px) {
     .admin-table {

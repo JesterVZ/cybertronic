@@ -107,7 +107,7 @@ ul{
 .user-menu{
     padding-left: 57px;
     height: 81px;
-    border-bottom: 1px solid #ADADAD;
+    border-bottom: 1px solid #0000001f;
     background-color: #fff;
 }
 .create-user-button{
@@ -149,6 +149,7 @@ ul{
     position: relative;
     width: 100%;
     margin-top: 26px;
+    margin-bottom: 23px;
 }
 .search i{
     position: absolute;
@@ -214,7 +215,6 @@ input[type=checkbox]:not(old) + input[type=hidden] + label > span{
     line-height: 15px;
     font-size: 24px;
     height: 50px;
-    border-bottom: 1px solid #ADADAD;
     cursor: pointer;
 }
 .input-table:checked + label{
@@ -270,7 +270,7 @@ th{
     height: 78px;
 }
 .tr-row:hover{
-    box-shadow: 0px 30px 30px -15px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0px 40px 30px -30px rgba(0, 0, 0, 0.1);
 }
 .tr-row::after{
     position: absolute;
@@ -279,7 +279,8 @@ th{
     right: 17%;
     height: 1px;
     border-bottom: 1px solid #000;
-    opacity: 0.1;}
+    opacity: 0.1;
+}
 .tr-row{
     height: 78px;
 }
@@ -292,7 +293,6 @@ th{
 }
 .table td, .table th{
     vertical-align: middle;
-    height: 40px;
 }
 .client-age div{
     font-size: 13px;
@@ -330,7 +330,7 @@ th{
 }
 .space th{
     border: none;
-    height: 10px;
+    height: 27px;
 }
 .client-group div{
     font-size: 16px;
@@ -348,7 +348,7 @@ th{
 .sort-branch p{
     font-size: 12px;
     line-height: 14px;
-    padding-left: 5px;
+    padding-left: 8px;
     color: #949494;
 }
 .sort-branch div{

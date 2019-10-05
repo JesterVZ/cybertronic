@@ -252,7 +252,7 @@ th {
 }
 
 .tr-row:hover {
-    box-shadow: 0px 30px 30px -15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 40px 30px -30px rgba(0, 0, 0, 0.1);
     transition: 0.2s;
 }
 

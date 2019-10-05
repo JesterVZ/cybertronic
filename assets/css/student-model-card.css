@@ -114,7 +114,7 @@ a.base-link {
 .back-arrow{
     cursor: pointer;
     position: relative;
-    top: -4px;
+    top: 0px;
 }
 .model-name{
     padding-left: 24px;
@@ -165,7 +165,7 @@ a.base-link {
 }
 .model-description{
     display: inline-block;
-    padding-left: 62px;
+    padding-left: 56px;
 }
 /*model-description*/
 .description-block{

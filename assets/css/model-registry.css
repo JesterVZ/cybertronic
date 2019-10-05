@@ -276,9 +276,9 @@ input[type=checkbox]:not(old)+input[type=hidden]+label>span {
 }
 
 .input-table:checked+label {
-    color: #6A3AD7;
+    color: #3564E0;
     margin-top: 31px;
-    border-bottom: 1px solid #6A3AD7;
+    border-bottom: 1px solid #3564E0;
 }
 
 .label-models,
@@ -313,6 +313,7 @@ input[type=checkbox]:not(old)+input[type=hidden]+label>span {
     font-size: 12px;
     line-height: 14px;
     color: #949494;
+    padding-left: 8px;
 }
 
 .sort-group p {
@@ -381,7 +382,7 @@ input[type=checkbox]:not(old)+input[type=hidden]+label>span {
 .registry-block {
     display: inline-block;
     width: 87%;
-    margin-top: 20px;
+    margin-top: 26px;
 }
 
 .registry-block-item {
@@ -413,7 +414,7 @@ input[type=checkbox]:not(old)+input[type=hidden]+label>span {
     font-weight: 500;
     font-size: 16px;
     line-height: 140.62%;
-    margin-top: 15px;
+    margin-bottom: 16px;
 }
 
 .attributes-level-4 {
