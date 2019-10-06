@@ -444,6 +444,11 @@ line-height: 18px;
     float: left;
     padding: 8px 13px;
     text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
 }
 
 .pagination a.active {

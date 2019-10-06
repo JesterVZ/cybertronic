@@ -460,6 +460,11 @@ input[type=checkbox]:not(old)+input[type=hidden]+label>span {
     float: left;
     padding: 8px 13px;
     text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
 }
 
 .pagination a.active {
