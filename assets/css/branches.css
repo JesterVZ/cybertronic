@@ -162,6 +162,9 @@ ul{
     color: #DADADA;
     cursor: pointer;
 }
+.search i:hover{
+    opacity: 0.7;
+}
 .input-search{
     width: 91%;
     -webkit-appearance: none;
@@ -203,6 +206,9 @@ ul{
     border-radius: 50%;
     transition: 0.2s;
 
+}
+.search i:hover{
+    opacity: 0.7;
 }
 input[type=checkbox]:not(old){
     width     : 8em;
@@ -333,10 +339,13 @@ thead tr th{
     transition: 0.2s;
 
 }
+.input-table+label:hover{
+    opacity: 0.7;
+}
 .tr-row::after{
     position: absolute;
     content: "";
-    left: 2.7%;
+    left: 3%;
     right: 6%;
     height: 1px;
     border-bottom: 1px solid #000;
@@ -356,4 +365,39 @@ thead tr th{
     font-size: 13px;
     line-height: 18px;
     font-weight: normal;
+}
+@media(max-width: 1701px){
+    .tr-row::after{
+        left: 3.5%;
+    }
+}
+@media(max-width: 1545px){
+
+    .tr-row::after{
+        left: 3.8%;
+    }
+}
+@media(max-width: 1486px){
+
+    .tr-row::after{
+        left: 4%;
+    }
+}
+@media(max-width: 1380px){
+
+    .tr-row::after{
+        left: 4.5%;
+    }
+}
+@media(max-width: 1173px){
+
+    .tr-row::after{
+        left: 5%;
+    }
+}
+@media(max-width: 1050px){
+
+    .tr-row::after{
+        left: 5.5%;
+    }
 }

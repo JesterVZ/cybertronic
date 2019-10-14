@@ -135,7 +135,7 @@ th{
 .table td, .table th{
     vertical-align: middle;
     border-bottom: 1px solid #CCCCCC;
-    height: 40px;
+    height: 10px;
 }
 .client-age div{
     font-size: 13px;
@@ -170,6 +170,7 @@ th{
 }
 #table-header{
     border: none;
+    padding-top: 23px;
 }
 .space th{
     height: 10px;
@@ -212,6 +213,9 @@ th{
     font-size: 18px;
     color: #DADADA;
     cursor: pointer;
+}
+.search i:hover{
+    opacity: 0.7;
 }
 .client-img{
     font-size: 13px;
@@ -350,6 +354,7 @@ input[type=checkbox]:not(old) + input[type=hidden] + label > span{
     font-size: 12px;
     line-height: 14px;
     color: #949494;
+    padding-left: 8px;
 }
 .sort-date input[type=date]{
     height: 36px;
@@ -407,6 +412,8 @@ input[type=checkbox]:not(old) + input[type=hidden] + label > span{
     font-weight: bold;
     font-size: 13px;
     line-height: 18px;
+    padding-bottom: 17px;
+    padding-top: 15px;
 }
 .input-date-img{
     position: relative;

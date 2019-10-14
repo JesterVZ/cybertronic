@@ -103,7 +103,9 @@ a.base-link {
     font-weight: normal;
     color: #fff;
 }
-
+.manual-arrow{
+    top: 0 !important;
+}
 .profile-group {
     opacity: 0.5;
 }
@@ -114,7 +116,10 @@ a.base-link {
 .back-arrow{
     cursor: pointer;
     position: relative;
-    top: 0px;
+    top: -4px;
+}
+.back-arrow:hover, .user-menu label:hover{
+    opacity: 0.7;
 }
 .model-name{
     padding-left: 24px;

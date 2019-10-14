@@ -115,6 +115,7 @@ a.base-link {
 /*available-models*/
 .available-models{
     margin-top: 30px;
+    margin-bottom: 25px;
 }
 .available-models-header{
     font-family: Roboto;
@@ -160,6 +161,7 @@ a.base-link {
     font-size: 16px;
     line-height: 140.62%;
     margin-bottom: 16px;
+    margin-top: 15px;
 }
 .registry-block-item-attributes {
     text-align: left;
@@ -236,7 +238,7 @@ a.base-link {
 .search i {
     position: relative;
     top: -29px;
-    left: 94%;
+    left: 96%;
     font-size: 18px;
     color: #DADADA;
     cursor: pointer;
@@ -249,6 +251,9 @@ a.base-link {
 .pagination-row{
     width: 100%;
     text-align: center;
+}
+.search i:hover{
+    opacity: 0.7;
 }
 .pagination a {
     color: black;
@@ -267,4 +272,9 @@ a.base-link {
     background-color: #DFDFDF;
     border-radius: 50%;
     transition: 0.2s;
+}
+@media(max-width: 850px){
+    .search i{
+        left: 94%;
+    }
 }

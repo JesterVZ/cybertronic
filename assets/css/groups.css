@@ -332,6 +332,9 @@ th{
     border: none;
     height: 27px;
 }
+.search i:hover{
+    opacity: 0.7;
+}
 .client-group div{
     font-size: 16px;
     line-height: 140.62%;
@@ -350,6 +353,9 @@ th{
     line-height: 14px;
     padding-left: 8px;
     color: #949494;
+}
+.input-table+label:hover{
+    opacity: 0.7;
 }
 .sort-branch div{
     height: 30px;
@@ -445,5 +451,42 @@ th{
     }
     .search i{
         right: 4%;
+    }
+}
+
+/*media for table ::after*/
+@media(max-width: 1701px){
+    .tr-row::after{
+        left: 3.5%;
+    }
+}
+@media(max-width: 1545px){
+
+    .tr-row::after{
+        left: 3.8%;
+    }
+}
+@media(max-width: 1486px){
+
+    .tr-row::after{
+        left: 4%;
+    }
+}
+@media(max-width: 1380px){
+
+    .tr-row::after{
+        left: 4.5%;
+    }
+}
+@media(max-width: 1173px){
+
+    .tr-row::after{
+        left: 5%;
+    }
+}
+@media(max-width: 1050px){
+
+    .tr-row::after{
+        left: 5.5%;
     }
 }

@@ -206,8 +206,12 @@ a.base-link {
     width: 88%;
 }
 
-
-
+.input-table+label:hover{
+    opacity: 0.7;
+}
+.search i:hover{
+    opacity: 0.7;
+}
 .table {
     width: 100%;
     border-collapse: collapse;
@@ -221,7 +225,13 @@ th {
     color: #949494;
     text-align: left;
 }
-
+.client-status{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140.6
+}
 .client-status,
 .thead tr th {
     padding-left: 57px;
@@ -439,14 +449,14 @@ input[type=checkbox]:not(old)+input[type=hidden]+label>span {
 .sort-group p {
     font-size: 12px;
     line-height: 14px;
-    padding-left: 5px;
+    padding-left: 8px;
     color: #949494;
 }
 
 .sort-branch p {
     font-size: 12px;
     line-height: 14px;
-    padding-left: 5px;
+    padding-left: 8px;
     color: #949494;
 }
 
@@ -565,5 +575,41 @@ a.table-list {
     }
     .client-name {
         width: 182px;
+    }
+}
+/*media for table ::after*/
+@media(max-width: 1701px){
+    .tr-row::after{
+        left: 3.5%;
+    }
+}
+@media(max-width: 1545px){
+
+    .tr-row::after{
+        left: 3.8%;
+    }
+}
+@media(max-width: 1486px){
+
+    .tr-row::after{
+        left: 4%;
+    }
+}
+@media(max-width: 1380px){
+
+    .tr-row::after{
+        left: 4.5%;
+    }
+}
+@media(max-width: 1173px){
+
+    .tr-row::after{
+        left: 5%;
+    }
+}
+@media(max-width: 1050px){
+
+    .tr-row::after{
+        left: 5.5%;
     }
 }

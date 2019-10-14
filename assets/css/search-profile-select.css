@@ -403,6 +403,7 @@ input[type=checkbox]:not(old)+input[type=hidden]+label>span {
     font-size: 12px;
     line-height: 14px;
     color: #949494;
+    padding-left: 8px;
 }
 .sort-group p {
     font-size: 12px;
@@ -422,7 +423,15 @@ input[type=checkbox]:not(old)+input[type=hidden]+label>span {
     text-align: center;
     margin-top: 29px;
 }
-
+.search i:hover{
+    opacity: 0.7;
+}
+.input-table+label:hover{
+    opacity: 0.7;
+}
+.back-arrow:hover{
+    opacity: 0.7;
+}
 .registry-block-item:hover {
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
     cursor: pointer;
