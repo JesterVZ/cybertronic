@@ -354,7 +354,7 @@ th {
 }
 
 input[type=checkbox]:not(old) {
-    width: 2em;
+    width: 8em;
     margin: 0;
     padding: 0;
     font-size: 1em;
@@ -364,7 +364,7 @@ input[type=checkbox]:not(old) {
 
 input[type=checkbox]:not(old)+input[type=hidden]+label {
     display: inline-block;
-    margin-left: -2em;
+    margin-left: -8em;
     margin-bottom: 9px;
     line-height: 1.5em;
 }
